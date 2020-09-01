@@ -1,0 +1,2 @@
+G:\mobile_league_game\proj.win32\lib\Debug\ext_convertUTF.pdb
+G:\mobile_league_game\proj.win32\engine\external\ConvertUTF\ext_convertUTF.dir\Debug\ext_convertUTF.pdb

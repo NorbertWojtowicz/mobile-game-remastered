@@ -1,0 +1,3 @@
+﻿  Building Custom Rule G:/mobile_league_game/cocos2d/external/xxtea/CMakeLists.txt
+  xxtea.cpp
+  ext_xxtea.vcxproj -> G:\mobile_league_game\proj.win32\lib\Debug\ext_xxtea.lib
