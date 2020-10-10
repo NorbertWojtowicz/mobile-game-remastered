@@ -10,13 +10,22 @@
     <ClCompile Include="G:\mobile_league_game\Classes\GameScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Hero.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Shop.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Teleport.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="G:\mobile_league_game\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="G:\mobile_league_game\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Hero.cpp">
+    <ClCompile Include="..\Classes\WorldMap.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -28,6 +37,15 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Classes\GameScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Hero.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Shop.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Teleport.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\proj.win32\main.h">
@@ -54,10 +72,34 @@
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\menuBG.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\tloGGra1440x2776.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\buyBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\cross.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\lArrow.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\playBtn.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedBuyBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedPlayBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedlArrow.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedrArrow.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\rArrow.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\fonts\Marker Felt.ttf">
@@ -66,10 +108,28 @@
     <ClInclude Include="G:\mobile_league_game\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\other\sign.png">
+      <Filter>Resources\other</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Hero.h">
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\ashe.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\garen.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\hex.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\shop.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\twisted_fate.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WorldMap.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -94,8 +154,14 @@
     <Filter Include="Resources\fonts">
       <UniqueIdentifier>{5C52A526-F73C-32FA-A44A-8A41F7B1653B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\other">
+      <UniqueIdentifier>{12E92920-4DBE-3347-81D3-009D96D12BC3}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Resources\res">
       <UniqueIdentifier>{7F01C039-C2E8-36C8-B343-5BF85158B5E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\shop">
+      <UniqueIdentifier>{AC94632C-5C83-3E17-BEA9-9FA101FD3C66}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{44DABEB0-621F-32D5-80F3-1B98078E6898}</UniqueIdentifier>

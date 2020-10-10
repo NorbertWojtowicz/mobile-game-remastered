@@ -1,0 +1,2 @@
+ninja: Entering directory `G:\mobile_league_game\proj.android\app\.cxx\cmake\debug\x86'
+ninja: no work to do.

@@ -60,12 +60,16 @@ list(APPEND GAME_SOURCE
      Classes/HelloWorldScene.cpp
 	 Classes/GameScene.cpp
 	 Classes/Hero.cpp
+	 Classes/Shop.cpp
+     Classes/Teleport.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
      Classes/HelloWorldScene.h
 	 Classes/GameScene.h
 	 Classes/Hero.h
+	 Classes/Shop.h
+     Classes/Teleport.h
      )
 
 if(ANDROID)
