@@ -12,7 +12,9 @@ public:
 	static Scene* createScene();
 	ui::ScrollView* scrollView;
 	void initScrollView();
-
+private:
+	void addIslandsToScrollView();
+	void startFirstLevel();
 };
 
 #endif

@@ -1,5 +1,5 @@
 #include "WorldMap.h"
-
+#include "BrandLevel.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -30,4 +30,18 @@ void WorldMap::initScrollView()
 	scrollView->setScrollBarEnabled(0);
 	scrollView->jumpToBottom();
 	scrollView->addChild(scrollViewBackground);
+	addIslandsToScrollView();
+}
+void WorldMap::addIslandsToScrollView()
+{
+	MenuItemImage* level1 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::startFirstLevel, this));
+	level1->setPosition(Vec2(0, -400));
+	Menu* menu = Menu::create(level1, NULL);
+	scrollView->addChild(menu, 1);
+}
+void WorldMap::startFirstLevel()
+{
+	cocos2d::log("chachsjcsa");
+	auto scene = BrandLevel::createScene();
+	Director::getInstance()->replaceScene(scene);
 }

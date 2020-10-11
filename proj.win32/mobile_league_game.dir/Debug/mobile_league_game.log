@@ -1,9 +1,2 @@
-﻿  GameScene.cpp
-  HelloWorldScene.cpp
-  Shop.cpp
-  Teleport.cpp
-  WorldMap.cpp
-G:\mobile_league_game\Classes\WorldMap.cpp(27,85): warning C4305: "argument": obcięcie z "double" do "float"
-G:\mobile_league_game\Classes\Teleport.cpp(30,46): warning C4305: "argument": obcięcie z "double" do "float"
-G:\mobile_league_game\Classes\Teleport.cpp(32,34): warning C4305: "argument": obcięcie z "double" do "float"
+﻿  BrandLevel.cpp
   mobile_league_game.vcxproj -> G:\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\mobile_league_game.exe

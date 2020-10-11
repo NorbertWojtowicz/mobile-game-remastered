@@ -28,6 +28,9 @@
     <ClCompile Include="G:\mobile_league_game\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\BrandLevel.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h">
@@ -155,6 +158,9 @@
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel1.png">
       <Filter>Resources\worldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BrandLevel.h">
+      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
