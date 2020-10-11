@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "Shop.h"
 #include "Teleport.h"
+#include "WorldMap.h"
 USING_NS_CC;
 
 class GameScene : public cocos2d::Layer
@@ -14,6 +15,5 @@ public:
 	static Scene* createScene();
 	virtual bool init();
 	CREATE_FUNC(GameScene);
-	Scene* pushWorldMapScene();
 };
 #endif

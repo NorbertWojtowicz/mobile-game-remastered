@@ -38,6 +38,10 @@ void Teleport::buildTeleportIconNode()
 }
 void Teleport::openMap()
 {
-	Sprite* map = Sprite::create("map/map.png");
-
+	pushWorldMapScene();
+}
+void Teleport::pushWorldMapScene()
+{
+	auto worldMapScene = WorldMap::createScene();
+	Director::getInstance()->pushScene(worldMapScene);
 }

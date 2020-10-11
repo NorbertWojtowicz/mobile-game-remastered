@@ -19,14 +19,14 @@
     <ClCompile Include="G:\mobile_league_game\Classes\Teleport.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\WorldMap.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="G:\mobile_league_game\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="G:\mobile_league_game\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\WorldMap.cpp">
-      <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +46,9 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Classes\Teleport.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\WorldMap.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\proj.win32\main.h">
@@ -73,6 +76,9 @@
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\tloGGra1440x2776.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\worldMapBG.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\buyBtn.png">
@@ -129,8 +135,26 @@
     <ClInclude Include="G:\mobile_league_game\Resources\shop\twisted_fate.png">
       <Filter>Resources\shop</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\WorldMap.h">
-      <Filter>Source Files\Classes</Filter>
+    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp.plist">
+      <Filter>Resources\teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp.png">
+      <Filter>Resources\teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp0.png">
+      <Filter>Resources\teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp1.png">
+      <Filter>Resources\teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp2.png">
+      <Filter>Resources\teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp3.png">
+      <Filter>Resources\teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel1.png">
+      <Filter>Resources\worldMap</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +186,12 @@
     </Filter>
     <Filter Include="Resources\shop">
       <UniqueIdentifier>{AC94632C-5C83-3E17-BEA9-9FA101FD3C66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\teleport">
+      <UniqueIdentifier>{BD402117-A5E1-3868-BA6B-3DEE82302637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\worldMap">
+      <UniqueIdentifier>{F35D8008-DFCB-3029-90E4-21DFD81A1F67}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{44DABEB0-621F-32D5-80F3-1B98078E6898}</UniqueIdentifier>

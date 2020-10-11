@@ -18,6 +18,7 @@ private:
 	Animate* createTeleportAnimate();
 	void openMap();
 	void buildTeleportIconNode();
+	void pushWorldMapScene();
 };
 
 #endif

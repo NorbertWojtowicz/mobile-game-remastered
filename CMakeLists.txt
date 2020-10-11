@@ -62,6 +62,7 @@ list(APPEND GAME_SOURCE
 	 Classes/Hero.cpp
 	 Classes/Shop.cpp
      Classes/Teleport.cpp
+     Classes/WorldMap.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
@@ -70,6 +71,7 @@ list(APPEND GAME_HEADER
 	 Classes/Hero.h
 	 Classes/Shop.h
      Classes/Teleport.h
+     Classes/WorldMap.h
      )
 
 if(ANDROID)

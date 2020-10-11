@@ -7,9 +7,12 @@ USING_NS_CC;
 class WorldMap : public cocos2d::Node
 {
 public:
-	WorldMap createMap();
 	CREATE_FUNC(WorldMap);
 	virtual bool init();
+	static Scene* createScene();
+	ui::ScrollView* scrollView;
+	void initScrollView();
+
 };
 
 #endif
