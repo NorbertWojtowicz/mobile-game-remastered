@@ -1,2 +1,3 @@
-﻿  BrandLevel.cpp
+﻿  WorldMap.cpp
+G:\mobile_league_game\Classes\WorldMap.cpp(27,85): warning C4305: "argument": obcięcie z "double" do "float"
   mobile_league_game.vcxproj -> G:\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\mobile_league_game.exe
