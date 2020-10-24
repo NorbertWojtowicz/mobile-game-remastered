@@ -1,3 +1,7 @@
 ﻿  WorldMap.cpp
-G:\mobile_league_game\Classes\WorldMap.cpp(27,85): warning C4305: "argument": obcięcie z "double" do "float"
-  mobile_league_game.vcxproj -> G:\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\mobile_league_game.exe
+G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+G:\mobile_league_game\Classes\WorldMap.cpp(29,85): warning C4305: "argument": obcięcie z "double" do "float"
+G:\mobile_league_game\Classes\WorldMap.cpp(50,26): error C2065: "enemyHero": niezadeklarowany identyfikator
+G:\mobile_league_game\Classes\WorldMap.cpp(50,15): error C2923: "BrandLevel": "enemyHero" nie jest prawidłowy argument typu szablon dla parametru "T"
+G:\mobile_league_game\Classes\WorldMap.cpp(50,38): error C2955: „BrandLevel”: użycie klasy klasa szablon wymaga listy argumentów szablon
+G:\mobile_league_game\Classes\BrandLevel.h(9): message : zobacz deklarację „BrandLevel”

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>brand0.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{537,673},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1074,673},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1074,0},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{537,1346},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1074,1346},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{537,0},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand6.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1346},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand7.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,673},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+			<key>brand8.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{536,672}}</string>
+				<key>sourceSize</key>
+				<string>{536,672}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{2048,2048}</string>
+			<key>textureFileName</key>
+			<string>brandFirstSpellAnimate.png</string>
+			</dict>
+		</dict>
+</plist>
