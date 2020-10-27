@@ -22,8 +22,6 @@ bool GameScene::init()
 	this->addChild(background);
 	background->setTag(211);
 
-#define enemyHero Brand
-
 	//adding shop
 	Shop shop = Shop::createShopLayer();
 	this->addChild(shop.shopIconsLayer);

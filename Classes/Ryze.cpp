@@ -27,3 +27,7 @@ void Ryze::initFirstSpell()
 	auto firstSpellAnimation = Animation::createWithSpriteFrames(frames, 0.4f);
 	firstSpellAnimate = Animate::create(firstSpellAnimation);
 }
+Ryze::Ryze()
+{
+	
+}

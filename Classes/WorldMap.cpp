@@ -1,6 +1,5 @@
 #include "WorldMap.h"
 #include "BrandLevel.h"
-#include "GameScene.h"
 #include "Brand.h"
 Scene* WorldMap::createScene()
 {
@@ -43,10 +42,27 @@ void WorldMap::addIslandsToScrollView()
 }
 void WorldMap::setupFirstLevel()
 {
+#define enemy Brand
+	createSceneWithAllyHero(0);
+}
+void WorldMap::createSceneWithAllyHero(int heroId)
+{
+#if heroId == 0
+#define ally Ryze
+#endif
+#if heroId == 1
+#define ally Ashe
+#endif
+#if heroId == 2
+#define ally Garen
+#endif
+#if heroId == 3
+#define ally Twisted_Fate
+#endif
 	startLevel();
 }
 void WorldMap::startLevel()
 {
-	auto scene = BrandLevel<enemyHero>::createScene();
+	auto scene = BrandLevel<enemy, ally>::createScene();
 	Director::getInstance()->replaceScene(scene);
 }
