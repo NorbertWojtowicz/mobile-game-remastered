@@ -31,6 +31,15 @@
     <ClCompile Include="..\Classes\BrandLevel.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Brand.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Ryze.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemyHero.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h">
@@ -160,6 +169,15 @@
       <Filter>Resources\worldMap</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\BrandLevel.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Brand.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Ryze.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnemyHero.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>

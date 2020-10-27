@@ -1,5 +1,6 @@
 #include "WorldMap.h"
 #include "BrandLevel.h"
+#include "Brand.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -34,14 +35,34 @@ void WorldMap::initScrollView()
 }
 void WorldMap::addIslandsToScrollView()
 {
-	MenuItemImage* level1 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::startFirstLevel, this));
+	MenuItemImage* level1 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::setupFirstLevel, this));
 	level1->setPosition(Vec2(0, -400));
 	Menu* menu = Menu::create(level1, NULL);
 	scrollView->addChild(menu, 1);
 }
-void WorldMap::startFirstLevel()
+void WorldMap::setupFirstLevel()
 {
-	cocos2d::log("chachsjcsa");
-	auto scene = BrandLevel::createScene();
+#define enemy Brand
+	createSceneWithAllyHero(0);
+}
+void WorldMap::createSceneWithAllyHero(int heroId)
+{
+#if heroId == 0
+#define ally Ryze
+#endif
+#if heroId == 1
+#define ally Ashe
+#endif
+#if heroId == 2
+#define ally Garen
+#endif
+#if heroId == 3
+#define ally Twisted_Fate
+#endif
+	startLevel();
+}
+void WorldMap::startLevel()
+{
+	auto scene = BrandLevel<enemy, ally>::createScene();
 	Director::getInstance()->replaceScene(scene);
 }

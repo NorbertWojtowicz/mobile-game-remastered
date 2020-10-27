@@ -801,7 +801,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Classes\Brand.h" />
     <ClInclude Include="..\Classes\BrandLevel.h" />
+    <ClInclude Include="..\Classes\EnemyHero.h" />
+    <ClInclude Include="..\Classes\Ryze.h" />
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h" />
     <ClInclude Include="G:\mobile_league_game\Classes\HelloWorldScene.h" />
     <ClInclude Include="G:\mobile_league_game\Classes\GameScene.h" />
@@ -811,7 +814,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="G:\mobile_league_game\Classes\WorldMap.h" />
     <ClInclude Include="G:\mobile_league_game\proj.win32\main.h" />
     <ClInclude Include="G:\mobile_league_game\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\Brand.cpp" />
     <ClCompile Include="..\Classes\BrandLevel.cpp" />
+    <ClCompile Include="..\Classes\EnemyHero.cpp" />
+    <ClCompile Include="..\Classes\Ryze.cpp" />
     <ClCompile Include="G:\mobile_league_game\Classes\AppDelegate.cpp" />
     <ClCompile Include="G:\mobile_league_game\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="G:\mobile_league_game\Classes\GameScene.cpp" />
