@@ -5,6 +5,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
 
+
     defaultConfig {
         applicationId "org.cocos2dx.mobile_league_game"
         minSdkVersion PROP_MIN_SDK_VERSION
@@ -22,6 +23,7 @@ android {
 
         ndk {
             abiFilters = []
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86_64", "x86"
             abiFilters.addAll(PROP_APP_ABI.split(':').collect{it as String})
         }
     }
@@ -80,6 +82,7 @@ android.applicationVariants.all { variant ->
     delete dest_assets_folder
     def targetName = variant.name.capitalize()
     def copyTaskName = "copy${targetName}ResourcesToAssets"
+	
     
     tasks.register(copyTaskName) {
         copy {
@@ -95,3 +98,4 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':libcocos2dx')
 }
+

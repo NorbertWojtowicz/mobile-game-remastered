@@ -1,9 +1,9 @@
 #include "GameScene.h"
 #include <cocos2d.h>
 
-cocos2d::Scene* GameScene::createScene()
+Scene* GameScene::createScene()
 {
-	auto scene = cocos2d::Scene::create();
+	auto scene = Scene::create();
 	auto layer = GameScene::create();
 	layer->setTag(999);
 	scene->addChild(layer);
