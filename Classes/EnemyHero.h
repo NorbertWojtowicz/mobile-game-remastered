@@ -11,14 +11,18 @@ public:
 	virtual void castSecondSpell() = 0;
 	virtual void initAnimates() = 0;
 	virtual void updateFirstSpellTime(float dt) = 0;
+	virtual void dealDamageToAllyHero(short damage) = 0;
 	void setName(std::string name);
 	std::string getName();
 	void setSprite(std::string nameOfHero);
+	short strength;
+	short health;
 	Sprite* sprite;
-
+	float firstSpellCooldown, secondSpellCooldown;
+	Animate* firstSpellAnimate, * secondSpellAnimate;
+	
 protected:
 	std::string name;
-	Animate* firstSpellAnimate, * secondSpellAnimate;
-	float firstSpellCooldown, secondSpellCooldown, firstSpellTimer, secondSpellTimer;
+	float firstSpellTimer, secondSpellTimer;
 };
 #endif
