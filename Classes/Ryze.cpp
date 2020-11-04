@@ -12,7 +12,13 @@ void Ryze::castFirstSpell()
 {
 	initFirstSpell();
 	auto sceneNode = Director::getInstance()->getRunningScene()->getChildByName("levelNode");
-	auto heroSprite = sceneNode->getChildByName("allyHero");
+	auto sprite = Sprite::create();
+	sprite->setPosition(Vec2(320, 250));
+	sceneNode->addChild(sprite);
+	auto moveBy = MoveBy::create(1.95f, Vec2(0, 300));
+	sprite->runAction(moveBy);
+	auto attackSequence = Sequence::create(firstSpellAnimate, RemoveSelf::create(), nullptr);
+	sprite->runAction(attackSequence);
 }
 void Ryze::initFirstSpell()
 {
@@ -24,10 +30,10 @@ void Ryze::initFirstSpell()
 		auto num = StringUtils::format("%d", i);
 		frames.pushBack(cache->getSpriteFrameByName("ryze" + num + ".png"));
 	}
-	auto firstSpellAnimation = Animation::createWithSpriteFrames(frames, 0.4f);
+	auto firstSpellAnimation = Animation::createWithSpriteFrames(frames, 0.15f);
 	firstSpellAnimate = Animate::create(firstSpellAnimation);
 }
 Ryze::Ryze()
 {
-	
+	this->setName("ryze");
 }

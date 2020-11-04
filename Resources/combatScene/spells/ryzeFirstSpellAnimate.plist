@@ -4,242 +4,242 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>ryzeSpellOne00.png</key>
+			<key>ryze0.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{338,618},{168,308}}</string>
+				<string>{{0,1768},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne01.png</key>
+			<key>ryze1.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{845,0},{168,308}}</string>
+				<string>{{121,1326},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne02.png</key>
+			<key>ryze10.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{676,618},{168,308}}</string>
+				<string>{{0,1326},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne03.png</key>
+			<key>ryze11.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{676,309},{168,308}}</string>
+				<string>{{0,1105},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne04.png</key>
+			<key>ryze12.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{676,0},{168,308}}</string>
+				<string>{{0,884},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne05.png</key>
+			<key>ryze13.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{507,618},{168,308}}</string>
+				<string>{{0,663},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne06.png</key>
+			<key>ryze14.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{507,309},{168,308}}</string>
+				<string>{{0,442},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne07.png</key>
+			<key>ryze15.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{507,0},{168,308}}</string>
+				<string>{{0,221},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne08.png</key>
+			<key>ryze16.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{845,309},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne09.png</key>
+			<key>ryze2.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{338,309},{168,308}}</string>
+				<string>{{121,1105},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne10.png</key>
+			<key>ryze3.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{338,0},{168,308}}</string>
+				<string>{{121,884},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne11.png</key>
+			<key>ryze4.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{169,618},{168,308}}</string>
+				<string>{{121,663},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne12.png</key>
+			<key>ryze5.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{169,309},{168,308}}</string>
+				<string>{{121,442},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne13.png</key>
+			<key>ryze6.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{169,0},{168,308}}</string>
+				<string>{{121,221},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne14.png</key>
+			<key>ryze7.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,618},{168,308}}</string>
+				<string>{{121,0},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne15.png</key>
+			<key>ryze8.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,309},{168,308}}</string>
+				<string>{{121,1547},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
-			<key>ryzeSpellOne16.png</key>
+			<key>ryze9.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,1547},{120,220}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false/>
 				<key>sourceColorRect</key>
-				<string>{{0,0},{168,308}}</string>
+				<string>{{0,0},{120,220}}</string>
 				<key>sourceSize</key>
-				<string>{168,308}</string>
+				<string>{120,220}</string>
 			</dict>
 
 		</dict>
@@ -249,9 +249,9 @@
 			<key>format</key>
 			<integer>2</integer>
 			<key>size</key>
-			<string>{1024,1024}</string>
+			<string>{256,2048}</string>
 			<key>textureFileName</key>
-			<string>ryzeSpellOne.png</string>
+			<string>ryzeFirstSpellAnimate.png</string>
 			</dict>
 		</dict>
 </plist>

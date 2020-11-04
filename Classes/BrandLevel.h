@@ -56,6 +56,7 @@ bool BrandLevel<T, U>::init()
 		return false;
 	}
 	this->enemyHero = T();
+	this->allyHero = U();
 	this->addEssentialElements();
 	this->addChild(enemyHero.sprite);
 	this->enemyHero.sprite->setName("heroSprite");
@@ -66,7 +67,7 @@ template <typename enemy, typename ally>
 void BrandLevel<enemy, ally>::addEssentialElements()
 {
 	addBackground("backgrounds/firstSceneBG.png");
-	addHeroFace("ryze");
+	addHeroFace(allyHero.getName());
 	addHud();
 }
 template <typename enemy, typename ally>
@@ -89,12 +90,12 @@ void BrandLevel<enemy, ally>::addHud()
 	auto hud = Sprite::create("combatScene/hud.png");
 	hud->setPosition(Vec2(320, 128));
 	addChild(hud);
-	addHeroSpells("ryze");
+	addHeroSpells(allyHero.getName());
 }
 template <typename enemy, typename ally>
 void BrandLevel<enemy, ally>::addHeroSpells(std::string nameOfHero)
 {
-	auto spellOneIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell1.png", "combatScene/spells/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(Brand::castFirstSpell, this->enemyHero));
+	auto spellOneIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell1.png", "combatScene/spells/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(ally::castFirstSpell, this->allyHero));
 	//TBD correct filepath
 	auto spellTwoIcon = MenuItemImage::create("combatScene/spells/ryzeSpell2.png", "combatScene/spells/ryzeSpell2.png");
 	spellOneIcon->setPosition(Vec2(-30, -436));
