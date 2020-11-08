@@ -7,6 +7,7 @@
 #include "Brand.h"
 #include <sstream>
 #include "EnemyHero.h"
+#include "GameScene.h"
 USING_NS_CC;
 template <typename T, typename U>
 class BrandLevel : public cocos2d::Node
@@ -19,6 +20,7 @@ public:
 	T enemyHero;
 	U allyHero;
 	short allyHeroHealth, enemyHeroHealth;
+	ui::LoadingBar* allyHeroHpBar, *enemyHeroHpBar;
 	void addEssentialElements();
 	void initHeroesHealth();
 	void addBackground(std::string backgroundFilePath);
@@ -26,15 +28,22 @@ public:
 	void addHud();
 	void addHeroSpells(std::string nameOfHero);
 	void updateSpellsCooldown(float dt);
-	void addAllyHeroHpBar(short amountOfHp);
+	//hp bars
+	void addAllyHeroHpBar();
+	void addEnemyHeroHpBar();
 	void addAllyHeroHpBorder();
+	void addEnemyHeroHpBorder();
 	void addAllyHeroHpLoadingBar();
-	void addAllyHeroHpLabel(short amountOfHp);
+	void addEnemyHeroHpLoadingBar();
+	void addAllyHeroHpLabel();
+	void addEnemyHeroHpLabel();
 	void updateAllyHeroHpBar(short amountOfHp);
+	void updateEnemyHeroHpBar(short amountOfHp);
+
+	void dealDamageToAllyHero();
+	void dealDamageToEnemyHero();
 	void castFirstAllyHeroSpell();
 	void castFirstEnemyHeroSpell();
-	void dealDamageToEnemyHero();
-	void dealDamageToAllyHero();
 	void updateAllyHeroFirstSpellCooldown(float dt);
 	void updateEnemyHeroFirstSpellCooldown(float dt);
 };
@@ -88,7 +97,8 @@ template <typename enemy, typename ally>
 void BrandLevel<enemy, ally>::addEssentialElements()
 {
 	addBackground("backgrounds/firstSceneBG.png");
-	addAllyHeroHpBar(9);
+	addAllyHeroHpBar();
+	addEnemyHeroHpBar();
 	addHeroFace(allyHero.getName());
 	addHud();
 }
@@ -134,11 +144,18 @@ void BrandLevel<T, U>::updateSpellsCooldown(float dt)
 }
 //TBD
 template <typename T, typename U>
-void BrandLevel<T, U>::addAllyHeroHpBar(short amountOfHp)
+void BrandLevel<T, U>::addAllyHeroHpBar()
 {
 	addAllyHeroHpBorder();
 	addAllyHeroHpLoadingBar();
-	addAllyHeroHpLabel(amountOfHp);
+	addAllyHeroHpLabel();
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::addEnemyHeroHpBar()
+{
+	addEnemyHeroHpBorder();
+	addEnemyHeroHpLoadingBar();
+	addEnemyHeroHpLabel();
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::addAllyHeroHpBorder()
@@ -148,20 +165,47 @@ void BrandLevel<T, U>::addAllyHeroHpBorder()
 	this->addChild(healthBarBorder, 2);
 }
 template <typename T, typename U>
-void BrandLevel<T, U>::addAllyHeroHpLoadingBar()
+void BrandLevel<T, U>::addEnemyHeroHpBorder()
 {
-	auto healthBar = ui::LoadingBar::create("combatScene/health.png");
-	healthBar->setPosition(Vec2(360, 35));
-	healthBar->setPercent(100);
-	this->addChild(healthBar, 2);
+	auto healthBarBorder = Sprite::create("combatScene/healthBar.png");
+	healthBarBorder->setPosition(Vec2(320, 870));
+	this->addChild(healthBarBorder, 2);
 }
 template <typename T, typename U>
-void BrandLevel<T, U>::addAllyHeroHpLabel(short amountOfHp)
+void BrandLevel<T, U>::addAllyHeroHpLoadingBar()
 {
-	allyHero.hpLabel = Label::createWithTTF("10/10", "fonts/Marker Felt.ttf", 30.0f);
+	allyHeroHpBar = ui::LoadingBar::create("combatScene/health.png");
+	allyHeroHpBar->setPosition(Vec2(360, 35));
+	allyHeroHpBar->setPercent(100);
+	this->addChild(allyHeroHpBar, 2);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::addEnemyHeroHpLoadingBar()
+{
+	enemyHeroHpBar = ui::LoadingBar::create("combatScene/health.png");
+	enemyHeroHpBar->setPosition(Vec2(320, 870));
+	enemyHeroHpBar->setPercent(100);
+	this->addChild(enemyHeroHpBar, 2);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::addAllyHeroHpLabel()
+{
+	std::stringstream ss;
+	ss << allyHeroHealth << "/" << allyHeroHealth;
+	allyHero.hpLabel = Label::createWithTTF(ss.str(), "fonts/Marker Felt.ttf", 30.0f);
 	allyHero.hpLabel->setPosition(Vec2(360, 35));
 	allyHero.hpLabel->setTextColor(Color4B::BLACK);
 	this->addChild(allyHero.hpLabel, 3);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::addEnemyHeroHpLabel()
+{
+	std::stringstream ss;
+	ss << enemyHeroHealth << "/" << enemyHeroHealth;
+	enemyHero.hpLabel = Label::createWithTTF(ss.str(), "fonts/Marker Felt.ttf", 30.0f);
+	enemyHero.hpLabel->setPosition(Vec2(320, 870));
+	enemyHero.hpLabel->setTextColor(Color4B::BLACK);
+	this->addChild(enemyHero.hpLabel, 3);
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::updateAllyHeroHpBar(short amountOfHp)
@@ -170,27 +214,48 @@ void BrandLevel<T, U>::updateAllyHeroHpBar(short amountOfHp)
 	ss << amountOfHp << "/" << allyHeroHealth;
 	std::string health = ss.str();
 	allyHero.hpLabel->setString(health);
+	double remainingHealthInPercent = ((double)amountOfHp / allyHeroHealth) * 100;
+	allyHeroHpBar->setPercent(remainingHealthInPercent);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::updateEnemyHeroHpBar(short amountOfHp)
+{
+	std::stringstream ss;
+	ss << amountOfHp << "/" << enemyHeroHealth;
+	std::string health = ss.str();
+	enemyHero.hpLabel->setString(health);
+	double remainingHealthInPercent = ((double)amountOfHp / enemyHeroHealth) * 100;
+	enemyHeroHpBar->setPercent(remainingHealthInPercent);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::dealDamageToAllyHero()
+{
+	short enemyStrength = 2;
+	allyHero.health -= enemyStrength;
+	updateAllyHeroHpBar(allyHero.health);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::dealDamageToEnemyHero()
+{
+	short enemyStrength = 2;
+	enemyHero.health -= enemyStrength;
+	updateEnemyHeroHpBar(enemyHero.health);
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::castFirstAllyHeroSpell()
 {
 	allyHero.castFirstSpell();
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this));
-	auto damageSequence = Sequence::create(DelayTime::create(5.0f), damageCallFunc, nullptr);
+	auto damageSequence = Sequence::create(DelayTime::create(enemyHero.timeToGetDamage), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>
-void BrandLevel<T, U>::dealDamageToEnemyHero()
+void BrandLevel<T, U>::castFirstEnemyHeroSpell()
 {
-	
-}
-template <typename T, typename U>
-void BrandLevel<T, U>::dealDamageToAllyHero()
-{
-	short enemyStrength = 2;
-	cocos2d::log("cock :)");
-	allyHero.health -= enemyStrength;
-	updateAllyHeroHpBar(allyHero.health);
+	enemyHero.castFirstSpell();
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToAllyHero, this));
+	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToGetDamage), damageCallFunc, nullptr);
+	this->runAction(damageSequence);
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::updateAllyHeroFirstSpellCooldown(float dt)
@@ -206,13 +271,5 @@ void BrandLevel<T, U>::updateEnemyHeroFirstSpellCooldown(float dt)
 		castFirstEnemyHeroSpell();
 		enemyHero.firstSpellCooldown = 5.0 + enemyHero.firstSpellAnimate->getDuration();
 	}
-}
-template <typename T, typename U>
-void BrandLevel<T, U>::castFirstEnemyHeroSpell()
-{
-	enemyHero.castFirstSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToAllyHero, this));
-	auto damageSequence = Sequence::create(DelayTime::create(2.5f), damageCallFunc, nullptr);
-	this->runAction(damageSequence);
 }
 #endif

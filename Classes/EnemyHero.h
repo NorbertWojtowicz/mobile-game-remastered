@@ -15,12 +15,11 @@ public:
 	void setName(std::string name);
 	std::string getName();
 	void setSprite(std::string nameOfHero);
-	short strength;
-	short health;
+	short strength, health;
 	Sprite* sprite;
-	float firstSpellCooldown, secondSpellCooldown;
+	float firstSpellCooldown, secondSpellCooldown, timeToGetDamage;
 	Animate* firstSpellAnimate, * secondSpellAnimate;
-	
+	Label* hpLabel;
 protected:
 	std::string name;
 	float firstSpellTimer, secondSpellTimer;

@@ -5,12 +5,13 @@ Brand::Brand()
 	this->setName("brand");
 	this->setSprite("brand");
 	this->strength = 2;
-	this->health = 30;
+	this->health = 10;
 	this->initAnimates();
 	this->firstSpellCooldown = 5.0;
 	this->secondSpellCooldown = 0.0;
 	this->firstSpellTimer = 0.0;
 	this->secondSpellTimer = 0.0;
+	this->timeToGetDamage = 2.0;
 }
 void Brand::initAnimates()
 {

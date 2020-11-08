@@ -17,6 +17,6 @@ public:
 	void initFirstSpell();
 	Animate* firstSpellAnimate;
 	Label* hpLabel;
-	float timeToDamage;
+	float timeToGetDamage;
 };
 #endif

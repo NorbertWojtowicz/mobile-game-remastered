@@ -38,5 +38,5 @@ Ryze::Ryze()
 	this->setName("ryze");
 	this->health = 10;
 	this->strength = 2;
-	this->timeToDamage = 1.95f;
+	this->timeToGetDamage = 1.95f;
 }
