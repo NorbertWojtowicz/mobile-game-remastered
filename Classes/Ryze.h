@@ -12,10 +12,11 @@ public:
 	short strength;
 	void setName(std::string name);
 	std::string getName();
-	void castFirstSpell();
-	void castSecondSpell();
 	void initFirstSpell();
-	Animate* firstSpellAnimate;
+	void castFirstSpell();
+	void initSecondSpell();
+	void castSecondSpell();
+	Animate* firstSpellAnimate, *secondSpellAnimate;
 	Label* hpLabel;
 	float timeToGetDamage;
 };
