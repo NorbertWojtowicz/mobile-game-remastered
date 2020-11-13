@@ -36,4 +36,7 @@ void Ryze::initFirstSpell()
 Ryze::Ryze()
 {
 	this->setName("ryze");
+	this->health = 10;
+	this->strength = 2;
+	this->timeToGetDamage = 1.95f;
 }

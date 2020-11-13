@@ -13,6 +13,7 @@ public:
 	void castSecondSpell();
 	void castFirstSpellAnimate();
 	void initAnimates();
+	void dealDamageToAllyHero(short damage);
 	void updateFirstSpellTime(float dt);
 	void updateSecondSpellTime();/*
 private:

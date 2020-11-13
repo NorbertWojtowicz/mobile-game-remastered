@@ -4,11 +4,14 @@ Brand::Brand()
 {
 	this->setName("brand");
 	this->setSprite("brand");
+	this->strength = 2;
+	this->health = 10;
 	this->initAnimates();
 	this->firstSpellCooldown = 5.0;
 	this->secondSpellCooldown = 0.0;
 	this->firstSpellTimer = 0.0;
 	this->secondSpellTimer = 0.0;
+	this->timeToGetDamage = 2.0;
 }
 void Brand::initAnimates()
 {
@@ -35,7 +38,6 @@ void Brand::castFirstSpell()
 																										 this->sprite->setName("heroSprite");
 																									  }), NULL);
 	x->runAction(seq);
-	
 	x->setPosition(Vec2(296, 598));
 }
 void Brand::castSecondSpell()
@@ -56,5 +58,10 @@ void Brand::updateFirstSpellTime(float dt)
 		castFirstSpell();
 		firstSpellCooldown = 5.0 + firstSpellAnimate->getDuration();
 	}
+}
+void Brand::dealDamageToAllyHero(short damage)
+{
+	auto scene = Director::getInstance()->getRunningScene();
+	
 }
 
