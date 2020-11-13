@@ -17,7 +17,7 @@ public:
 	void setSprite(std::string nameOfHero);
 	short strength, health;
 	Sprite* sprite;
-	float firstSpellCooldown, secondSpellCooldown, timeToGetDamage;
+	float firstSpellCooldown, secondSpellCooldown, timeToDealDamageInFirstSpell;
 	Animate* firstSpellAnimate, * secondSpellAnimate;
 	Label* hpLabel;
 protected:

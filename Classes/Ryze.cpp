@@ -5,7 +5,9 @@ Ryze::Ryze()
 	this->setName("ryze");
 	this->health = 10;
 	this->strength = 2;
-	this->timeToGetDamage = 1.95f;
+	this->timeToDealDamageInFirstSpell = 1.95f;
+	this->timeToDealDamageInSecondSpell = 0.8f;
+	this->timeBetweenDamageInSecondSpell = 0.2f;
 }
 void Ryze::setName(std::string name)
 {
@@ -51,7 +53,7 @@ void Ryze::initSecondSpell()
 		auto num = StringUtils::format("%d", i);
 		frames.pushBack(cache->getSpriteFrameByName("ryze" + num + ".png"));
 	}
-	auto firstSpellAnimation = Animation::createWithSpriteFrames(frames, 0.15f);
+	auto firstSpellAnimation = Animation::createWithSpriteFrames(frames, 0.2f);
 	secondSpellAnimate = Animate::create(firstSpellAnimation);
 	cache->destroyInstance();
 }

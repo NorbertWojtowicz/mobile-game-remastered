@@ -11,7 +11,7 @@ Brand::Brand()
 	this->secondSpellCooldown = 0.0;
 	this->firstSpellTimer = 0.0;
 	this->secondSpellTimer = 0.0;
-	this->timeToGetDamage = 2.0;
+	this->timeToDealDamageInFirstSpell = 2.0;
 }
 void Brand::initAnimates()
 {

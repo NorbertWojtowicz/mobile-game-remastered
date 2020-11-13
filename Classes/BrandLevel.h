@@ -263,7 +263,7 @@ void BrandLevel<T, U>::castFirstAllyHeroSpell()
 {
 	allyHero.castFirstSpell();
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this));
-	auto damageSequence = Sequence::create(DelayTime::create(enemyHero.timeToGetDamage), damageCallFunc, nullptr);
+	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>
@@ -271,7 +271,10 @@ void BrandLevel<T, U>::castSecondAllyHeroSpell()
 {
 	allyHero.castSecondSpell();
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this));
-	auto damageSequence = Sequence::create(DelayTime::create(enemyHero.timeToGetDamage), damageCallFunc, nullptr);
+	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToDealDamageInSecondSpell), damageCallFunc,
+										   DelayTime::create(allyHero.timeBetweenDamageInSecondSpell), damageCallFunc,
+										   DelayTime::create(allyHero.timeBetweenDamageInSecondSpell), damageCallFunc,
+										   DelayTime::create(allyHero.timeBetweenDamageInSecondSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>
@@ -279,7 +282,7 @@ void BrandLevel<T, U>::castFirstEnemyHeroSpell()
 {
 	enemyHero.castFirstSpell();
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToAllyHero, this));
-	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToGetDamage), damageCallFunc, nullptr);
+	auto damageSequence = Sequence::create(DelayTime::create(enemyHero.timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>

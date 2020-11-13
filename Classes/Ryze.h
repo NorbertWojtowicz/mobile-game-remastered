@@ -18,6 +18,8 @@ public:
 	void castSecondSpell();
 	Animate* firstSpellAnimate, *secondSpellAnimate;
 	Label* hpLabel;
-	float timeToGetDamage;
+	float timeToDealDamageInFirstSpell;
+	float timeToDealDamageInSecondSpell;
+	float timeBetweenDamageInSecondSpell;
 };
 #endif
