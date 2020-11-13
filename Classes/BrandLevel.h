@@ -46,6 +46,18 @@ public:
 	void castFirstEnemyHeroSpell();
 	void updateAllyHeroFirstSpellCooldown(float dt);
 	void updateEnemyHeroFirstSpellCooldown(float dt);
+
+	//end level
+	void finishLevel();
+	void finishBattleWithWin();
+	void finishBattleWithLose();
+	void showWinPopUp();
+	void showLosePopUp();
+	void prepareSceneToBeDeleted();
+	void stopRunningActions();
+
+	void returnToGameScene();
+
 };
 template <typename T, typename U>
 bool BrandLevel<T, U>::init()
@@ -233,6 +245,8 @@ void BrandLevel<T, U>::dealDamageToAllyHero()
 	short enemyStrength = 2;
 	allyHero.health -= enemyStrength;
 	updateAllyHeroHpBar(allyHero.health);
+	if (allyHero.health <= 0)
+		finishBattleWithLose();
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::dealDamageToEnemyHero()
@@ -240,6 +254,8 @@ void BrandLevel<T, U>::dealDamageToEnemyHero()
 	short enemyStrength = 2;
 	enemyHero.health -= enemyStrength;
 	updateEnemyHeroHpBar(enemyHero.health);
+	if (enemyHero.health <= 0)
+		finishBattleWithWin();
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::castFirstAllyHeroSpell()
@@ -271,5 +287,57 @@ void BrandLevel<T, U>::updateEnemyHeroFirstSpellCooldown(float dt)
 		castFirstEnemyHeroSpell();
 		enemyHero.firstSpellCooldown = 5.0 + enemyHero.firstSpellAnimate->getDuration();
 	}
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::finishBattleWithWin()
+{
+	stopRunningActions();
+	showWinPopUp();
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::finishBattleWithLose()
+{
+	stopRunningActions();
+	finishLevel();
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::finishLevel()
+{
+	auto scene = GameScene::createScene();
+	Director::getInstance()->replaceScene(scene);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::showWinPopUp()
+{
+	auto spritePopup = Sprite::create("popups/popup.png");
+	spritePopup->setPosition(Vec2(320, 630));
+	this->addChild(spritePopup, 4);
+	auto okBtn = MenuItemImage::create("buttons/okBtn.png", "buttons/pressedOkBtn.png", CC_CALLBACK_0(BrandLevel<T, U>::returnToGameScene, this));
+	okBtn->setPosition(Vec2(0, -200));
+	auto menu = Menu::create(okBtn, NULL);
+	this->addChild(menu, 4);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::showLosePopUp()
+{
+
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::stopRunningActions()
+{
+	this->stopAllActions();
+	this->unscheduleAllCallbacks();
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::prepareSceneToBeDeleted()
+{
+	this->removeAllChildrenWithCleanup(true);
+}
+template <typename T, typename U>
+void BrandLevel<T, U>::returnToGameScene()
+{
+	prepareSceneToBeDeleted();
+	auto scene = GameScene::createScene();
+	Director::getInstance()->replaceScene(scene);
 }
 #endif
