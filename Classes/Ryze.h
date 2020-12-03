@@ -20,6 +20,5 @@ public:
 	Label* hpLabel;
 	float timeToDealDamageInFirstSpell;
 	float timeToDealDamageInSecondSpell;
-	float timeBetweenDamageInSecondSpell;
 };
 #endif

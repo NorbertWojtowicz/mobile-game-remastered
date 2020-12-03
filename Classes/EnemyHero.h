@@ -12,13 +12,15 @@ public:
 	virtual void initAnimates() = 0;
 	virtual void updateFirstSpellTime(float dt) = 0;
 	virtual void dealDamageToAllyHero(short damage) = 0;
+	virtual void runWalkAnimate() = 0;
+	virtual void stopWalkAnimate() = 0;
 	void setName(std::string name);
 	std::string getName();
 	void setSprite(std::string nameOfHero);
 	short strength, health;
 	Sprite* sprite;
 	float firstSpellCooldown, secondSpellCooldown, timeToDealDamageInFirstSpell;
-	Animate* firstSpellAnimate, * secondSpellAnimate;
+	Animate* firstSpellAnimate, * secondSpellAnimate, *walkAnimate;
 	Label* hpLabel;
 protected:
 	std::string name;

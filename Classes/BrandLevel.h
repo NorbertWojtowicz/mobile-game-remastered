@@ -40,8 +40,8 @@ public:
 	void updateAllyHeroHpBar(short amountOfHp);
 	void updateEnemyHeroHpBar(short amountOfHp);
 
-	void dealDamageToAllyHero();
-	void dealDamageToEnemyHero();
+	void dealDamageToAllyHero(short strength);
+	void dealDamageToEnemyHero(short strength);
 	void castFirstAllyHeroSpell();
 	void castFirstEnemyHeroSpell();
 	void castSecondAllyHeroSpell();
@@ -73,6 +73,7 @@ bool BrandLevel<T, U>::init()
 	this->addEssentialElements();
 	this->addChild(enemyHero.sprite);
 	this->enemyHero.sprite->setName("heroSprite");
+	this->enemyHero.runWalkAnimate();
 	this->schedule(SEL_SCHEDULE(&BrandLevel<T, U>::updateSpellsCooldown), 0.1);
 	return true;
 }
@@ -241,19 +242,17 @@ void BrandLevel<T, U>::updateEnemyHeroHpBar(short amountOfHp)
 	enemyHeroHpBar->setPercent(remainingHealthInPercent);
 }
 template <typename T, typename U>
-void BrandLevel<T, U>::dealDamageToAllyHero()
+void BrandLevel<T, U>::dealDamageToAllyHero(short strength)
 {
-	short enemyStrength = 2;
-	allyHero.health -= enemyStrength;
+	allyHero.health -= strength;
 	updateAllyHeroHpBar(allyHero.health);
 	if (allyHero.health <= 0)
 		finishBattleWithLose();
 }
 template <typename T, typename U>
-void BrandLevel<T, U>::dealDamageToEnemyHero()
+void BrandLevel<T, U>::dealDamageToEnemyHero(short strength)
 {
-	short enemyStrength = 2;
-	enemyHero.health -= enemyStrength;
+	enemyHero.health -= strength;
 	updateEnemyHeroHpBar(enemyHero.health);
 	if (enemyHero.health <= 0)
 		finishBattleWithWin();
@@ -262,7 +261,7 @@ template <typename T, typename U>
 void BrandLevel<T, U>::castFirstAllyHeroSpell()
 {
 	allyHero.castFirstSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this));
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this, allyHero.strength));
 	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
@@ -270,18 +269,15 @@ template <typename T, typename U>
 void BrandLevel<T, U>::castSecondAllyHeroSpell()
 {
 	allyHero.castSecondSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this));
-	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToDealDamageInSecondSpell), damageCallFunc,
-										   DelayTime::create(allyHero.timeBetweenDamageInSecondSpell), damageCallFunc,
-										   DelayTime::create(allyHero.timeBetweenDamageInSecondSpell), damageCallFunc,
-										   DelayTime::create(allyHero.timeBetweenDamageInSecondSpell), damageCallFunc, nullptr);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this, allyHero.strength));
+	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::castFirstEnemyHeroSpell()
 {
 	enemyHero.castFirstSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToAllyHero, this));
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToAllyHero, this, enemyHero.strength));
 	auto damageSequence = Sequence::create(DelayTime::create(enemyHero.timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
