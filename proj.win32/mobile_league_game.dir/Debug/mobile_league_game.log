@@ -1,30 +1,42 @@
 ﻿  Brand.cpp
+  Ryze.cpp
+  GameScene.cpp
+  HelloWorldScene.cpp
+  Shop.cpp
+  Teleport.cpp
   WorldMap.cpp
 G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego ..\Classes\Brand.cpp)
 G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\HelloWorldScene.cpp)
+G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\Shop.cpp)
+G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\Teleport.cpp)
+G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego ..\Classes\Ryze.cpp)
+G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\GameScene.cpp)
+..\Classes\Brand.cpp(62,28): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
 G:\mobile_league_game\Classes\WorldMap.cpp(28,85): warning C4305: "argument": obcięcie z "double" do "float"
-..\Classes\Brand.cpp(59,28): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-G:\mobile_league_game\Classes\BrandLevel.h(76,1): warning C4305: "argument": obcięcie z "double" do "float" (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\Teleport.cpp(30,46): warning C4305: "argument": obcięcie z "double" do "float"
+G:\mobile_league_game\Classes\Teleport.cpp(32,34): warning C4305: "argument": obcięcie z "double" do "float"
+G:\mobile_league_game\Classes\BrandLevel.h(77,1): warning C4305: "argument": obcięcie z "double" do "float" (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
 G:\mobile_league_game\Classes\BrandLevel.h(65): message : podczas kompilowania funkcji składowej „bool BrandLevel<Brand,Ryze>::init(void)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
 G:\mobile_league_game\Classes\WorldMap.cpp(66): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „BrandLevel<Brand,Ryze>” klasy klasa szablon
-G:\mobile_league_game\Classes\BrandLevel.h(300,38): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(295): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateEnemyHeroFirstSpellCooldown(float)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(156): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::updateEnemyHeroFirstSpellCooldown(float)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(96): message : podczas kompilowania funkcji składowej „BrandLevel<Brand,Ryze> *BrandLevel<Brand,Ryze>::create(void)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(89): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „BrandLevel<Brand,Ryze> *BrandLevel<Brand,Ryze>::create(void)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(296,38): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(291): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateEnemyHeroFirstSpellCooldown(float)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(157): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::updateEnemyHeroFirstSpellCooldown(float)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(97): message : podczas kompilowania funkcji składowej „BrandLevel<Brand,Ryze> *BrandLevel<Brand,Ryze>::create(void)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(90): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „BrandLevel<Brand,Ryze> *BrandLevel<Brand,Ryze>::create(void)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
 G:\mobile_league_game\Classes\BrandLevel.h(65): message : podczas kompilowania funkcji składowej „bool BrandLevel<Brand,Ryze>::init(void)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(231,28): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(225): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateAllyHeroHpBar(short)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(232,28): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(226): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateAllyHeroHpBar(short)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
 G:\mobile_league_game\Classes\BrandLevel.h(248): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::updateAllyHeroHpBar(short)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(245): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::dealDamageToAllyHero(void)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(284): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::dealDamageToAllyHero(void)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(142): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::addHeroSpells(std::string)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(138): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::addHeroSpells(std::string)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(120): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::addBackground(std::string)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(112): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::addBackground(std::string)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(241,29): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(235): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateEnemyHeroHpBar(short)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(257): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::updateEnemyHeroHpBar(short)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\BrandLevel.h(225): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateAllyHeroHpBar(short)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(246): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::dealDamageToAllyHero(short)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(280): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::dealDamageToAllyHero(short)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(143): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::addHeroSpells(std::string)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(139): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::addHeroSpells(std::string)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(121): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::addBackground(std::string)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(113): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::addBackground(std::string)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(242,29): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(236): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateEnemyHeroHpBar(short)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(256): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::updateEnemyHeroHpBar(short)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
+G:\mobile_league_game\Classes\BrandLevel.h(226): message : podczas kompilowania funkcji składowej „void BrandLevel<Brand,Ryze>::updateAllyHeroHpBar(short)” klasy klasa szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
 G:\mobile_league_game\Classes\BrandLevel.h(248): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void BrandLevel<Brand,Ryze>::updateAllyHeroHpBar(short)” funkcji szablon (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
   mobile_league_game.vcxproj -> G:\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\mobile_league_game.exe

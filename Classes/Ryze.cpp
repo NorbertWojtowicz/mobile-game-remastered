@@ -1,5 +1,5 @@
 #include "Ryze.h"
-
+#include "BrandLevel.h"
 Ryze::Ryze()
 {
 	this->setName("ryze");
@@ -7,7 +7,6 @@ Ryze::Ryze()
 	this->strength = 2;
 	this->timeToDealDamageInFirstSpell = 1.95f;
 	this->timeToDealDamageInSecondSpell = 0.8f;
-	this->timeBetweenDamageInSecondSpell = 0.2f;
 }
 void Ryze::setName(std::string name)
 {

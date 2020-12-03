@@ -15,7 +15,11 @@ public:
 	void initAnimates();
 	void dealDamageToAllyHero(short damage);
 	void updateFirstSpellTime(float dt);
-	void updateSecondSpellTime();/*
+	void updateSecondSpellTime();
+	void initWalkAnimate();
+	void runWalkAnimate();
+	void stopWalkAnimate();
+	 /*
 private:
 	std::string name;
 	Sprite* sprite;
