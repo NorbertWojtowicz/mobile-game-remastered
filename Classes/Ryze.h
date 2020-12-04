@@ -16,7 +16,15 @@ public:
 	void castFirstSpell();
 	void initSecondSpell();
 	void castSecondSpell();
-	Animate* firstSpellAnimate, *secondSpellAnimate;
+	void runFirstSpellCooldown();
+	void initFirstSpellCooldownAnimate();
+	void initFirstSpellCooldownSprite();
+	void addFirstSpellCooldownSpriteToRunningScene();
+	Animate* firstSpellAnimate, * secondSpellAnimate,
+		* firstSpellCooldownAnimate;
+	Menu* spellsMenu;
+	MenuItemImage* spellOneIcon, * spellTwoIcon;
+	Sprite* firstSpellCooldownSprite, *secondSpellCooldownSprite;
 	Label* hpLabel;
 	float timeToDealDamageInFirstSpell;
 	float timeToDealDamageInSecondSpell;
