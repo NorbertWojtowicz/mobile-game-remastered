@@ -271,7 +271,8 @@ void BrandLevel<T, U>::castSecondAllyHeroSpell()
 {
 	allyHero->castSecondSpell();
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this, allyHero->strength));
-	auto damageSequence = Sequence::create(DelayTime::create(allyHero->timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(U::runSecondSpellCooldown, allyHero));
+	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(allyHero->timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>

@@ -17,11 +17,15 @@ public:
 	void initSecondSpell();
 	void castSecondSpell();
 	void runFirstSpellCooldown();
+	void runSecondSpellCooldown();
 	void initFirstSpellCooldownAnimate();
+	void initSecondSpellCooldownAnimate();
 	void initFirstSpellCooldownSprite();
+	void initSecondSpellCooldownSprite();
 	void addFirstSpellCooldownSpriteToRunningScene();
-	Animate* firstSpellAnimate, * secondSpellAnimate,
-		* firstSpellCooldownAnimate;
+	void addSecondSpellCooldownSpriteToRunningScene();
+	Animate* firstSpellAnimate, *secondSpellAnimate, 
+		    *firstSpellCooldownAnimate, *secondSpellCooldownAnimate;
 	Menu* spellsMenu;
 	MenuItemImage* spellOneIcon, * spellTwoIcon;
 	Sprite* firstSpellCooldownSprite, *secondSpellCooldownSprite;
