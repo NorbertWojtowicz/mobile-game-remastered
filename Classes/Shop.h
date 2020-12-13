@@ -9,7 +9,7 @@ USING_NS_CC;
 
 class Shop {
 public:
-	static Shop createShopLayer();
+	static Shop *createShopLayer();
 	Node* shopIconsLayer = Node::create();
 private:
 	void addSignToLayer();
@@ -18,10 +18,13 @@ private:
 	void turnPageToRight();
 	void turnPageToLeft();
 	void addButtons();
+	void buyHero();
 	Menu* shopMenu;
+	void removePreviousHero();
 	void changeShopPage(int numberOfPage);
 	void closeShop();
 	Node* shopLayer;
+	Sprite* boughtHeroSprite;
 	static const std::string hero_names[4];
 };
 

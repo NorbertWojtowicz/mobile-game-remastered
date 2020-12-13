@@ -5817,6 +5817,16 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "G:\\mobile_league_game\\Classes\\Teleport.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\WorldMap.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "G:\\mobile_league_game\\proj.android\\app\\jni\\hellocpp\\main.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
@@ -5842,13 +5852,25 @@
         {
           "header": "G:\\mobile_league_game\\Classes\\Shop.h",
           "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Teleport.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\WorldMap.h",
+          "workingDirectoryOrdinal": 0
         }
       ],
       "output": "G:\\mobile_league_game\\proj.android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libMyGame.so",
       "runtimeFiles": [
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\engine\\cocos\\platform\\libcpp_android_spec.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libcocos2d.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libexternal.a",
         "G:\\mobile_league_game\\cocos2d\\external\\Box2D\\prebuilt\\android\\arm64-v8a\\libbox2d.a",
         "G:\\mobile_league_game\\cocos2d\\external\\chipmunk\\prebuilt\\android\\arm64-v8a\\libchipmunk.a",
         "G:\\mobile_league_game\\cocos2d\\external\\freetype2\\prebuilt\\android\\arm64-v8a\\libfreetype.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_recast.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\arm64-v8a\\libLinearMath.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\arm64-v8a\\libBulletDynamics.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\arm64-v8a\\libBulletCollision.a",
@@ -5861,9 +5883,21 @@
         "G:\\mobile_league_game\\cocos2d\\external\\openssl\\prebuilt\\android\\arm64-v8a\\libssl.a",
         "G:\\mobile_league_game\\cocos2d\\external\\openssl\\prebuilt\\android\\arm64-v8a\\libcrypto.a",
         "G:\\mobile_league_game\\cocos2d\\external\\uv\\prebuilt\\android\\arm64-v8a\\libuv_a.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_tinyxml2.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_xxhash.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_xxtea.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_clipper.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_edtaa3func.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_convertUTF.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_poly2tri.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_md5.a",
         "G:\\mobile_league_game\\cocos2d\\external\\curl\\prebuilt\\android\\arm64-v8a\\libcurl.a",
         "G:\\mobile_league_game\\cocos2d\\external\\png\\prebuilt\\android\\arm64-v8a\\libpng.a",
-        "G:\\mobile_league_game\\cocos2d\\external\\zlib\\prebuilt\\android\\arm64-v8a\\libz.a"
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\engine\\external\\android-specific\\cpufeatures\\libext_cpufeatures.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_pvmp3dec.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_tremolo.a",
+        "G:\\mobile_league_game\\cocos2d\\external\\zlib\\prebuilt\\android\\arm64-v8a\\libz.a",
+        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_unzip.a"
       ]
     },
     "external-Debug-arm64-v8a": {

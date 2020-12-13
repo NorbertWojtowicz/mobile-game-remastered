@@ -521,6 +521,16 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "G:\\mobile_league_game\\Classes\\Teleport.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\WorldMap.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "G:\\mobile_league_game\\proj.android\\app\\jni\\hellocpp\\main.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
@@ -545,6 +555,14 @@
         },
         {
           "header": "G:\\mobile_league_game\\Classes\\Shop.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Teleport.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\WorldMap.h",
           "workingDirectoryOrdinal": 0
         }
       ],
@@ -715,23 +733,6 @@
       "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_tinyxml2.a",
       "runtimeFiles": []
     },
-    "ext_xxhash-Release-x86": {
-      "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\" ext_xxhash",
-      "buildType": "release",
-      "toolchain": "1892717472",
-      "abi": "x86",
-      "artifactName": "ext_xxhash",
-      "files": [
-        {
-          "src": "G:\\mobile_league_game\\cocos2d\\external\\xxhash\\xxhash.c",
-          "flagsOrdinal": 8,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": [],
-      "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxhash.a",
-      "runtimeFiles": []
-    },
     "ext_xxtea-Release-x86": {
       "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\" ext_xxtea",
       "buildType": "release",
@@ -747,6 +748,23 @@
       ],
       "headers": [],
       "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxtea.a",
+      "runtimeFiles": []
+    },
+    "ext_xxhash-Release-x86": {
+      "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\" ext_xxhash",
+      "buildType": "release",
+      "toolchain": "1892717472",
+      "abi": "x86",
+      "artifactName": "ext_xxhash",
+      "files": [
+        {
+          "src": "G:\\mobile_league_game\\cocos2d\\external\\xxhash\\xxhash.c",
+          "flagsOrdinal": 8,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxhash.a",
       "runtimeFiles": []
     },
     "ext_clipper-Release-x86": {

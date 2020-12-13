@@ -1,2 +1,93 @@
 ninja: Entering directory `G:\mobile_league_game\proj.android\app\.cxx\cmake\debug\x86'
-ninja: no work to do.
+[1/6] Building CXX object CMakeFiles/MyGame.dir/Classes/WorldMap.cpp.o
+FAILED: CMakeFiles/MyGame.dir/Classes/WorldMap.cpp.o 
+G:\androidstudioSDK\ndk\21.0.6113669\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android16 --gcc-toolchain=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IG:/androidstudioSDK/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/. -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11 -MD -MT CMakeFiles/MyGame.dir/Classes/WorldMap.cpp.o -MF CMakeFiles\MyGame.dir\Classes\WorldMap.cpp.o.d -o CMakeFiles/MyGame.dir/Classes/WorldMap.cpp.o -c ../../../../../../Classes/WorldMap.cpp
+In file included from ../../../../../../Classes/WorldMap.cpp:1:
+In file included from ../../../../../../Classes/WorldMap.h:5:
+../../../../../../Classes/Brand.h:3:21: warning: extra tokens at end of #include directive [-Wextra-tokens]
+#include "cocos2d.h";
+                    ^
+                    //
+In file included from ../../../../../../Classes/WorldMap.cpp:1:
+In file included from ../../../../../../Classes/WorldMap.h:6:
+../../../../../../Classes/Ryze.h:9:8: error: extra qualification on member 'Ryze'
+        Ryze::Ryze();
+        ~~~~~~^
+1 warning and 1 error generated.
+[2/6] Building CXX object CMakeFiles/MyGame.dir/Classes/Teleport.cpp.o
+FAILED: CMakeFiles/MyGame.dir/Classes/Teleport.cpp.o 
+G:\androidstudioSDK\ndk\21.0.6113669\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android16 --gcc-toolchain=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IG:/androidstudioSDK/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/. -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11 -MD -MT CMakeFiles/MyGame.dir/Classes/Teleport.cpp.o -MF CMakeFiles\MyGame.dir\Classes\Teleport.cpp.o.d -o CMakeFiles/MyGame.dir/Classes/Teleport.cpp.o -c ../../../../../../Classes/Teleport.cpp
+../../../../../../Classes/Teleport.cpp:1:10: warning: non-portable path to file '"Teleport.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "teleport.h"
+         ^~~~~~~~~~~~
+         "Teleport.h"
+In file included from ../../../../../../Classes/Teleport.cpp:1:
+In file included from ../../../../../../Classes/Teleport.h:6:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:5:
+../../../../../../Classes/Brand.h:3:21: warning: extra tokens at end of #include directive [-Wextra-tokens]
+#include "cocos2d.h";
+                    ^
+                    //
+In file included from ../../../../../../Classes/Teleport.cpp:1:
+In file included from ../../../../../../Classes/Teleport.h:6:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:6:
+../../../../../../Classes/Ryze.h:9:8: error: extra qualification on member 'Ryze'
+        Ryze::Ryze();
+        ~~~~~~^
+2 warnings and 1 error generated.
+[3/6] Building CXX object CMakeFiles/MyGame.dir/Classes/Shop.cpp.o
+FAILED: CMakeFiles/MyGame.dir/Classes/Shop.cpp.o 
+G:\androidstudioSDK\ndk\21.0.6113669\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android16 --gcc-toolchain=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IG:/androidstudioSDK/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/. -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11 -MD -MT CMakeFiles/MyGame.dir/Classes/Shop.cpp.o -MF CMakeFiles\MyGame.dir\Classes\Shop.cpp.o.d -o CMakeFiles/MyGame.dir/Classes/Shop.cpp.o -c ../../../../../../Classes/Shop.cpp
+In file included from ../../../../../../Classes/Shop.cpp:1:
+In file included from ../../../../../../Classes/Shop.h:5:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:5:
+../../../../../../Classes/Brand.h:3:21: warning: extra tokens at end of #include directive [-Wextra-tokens]
+#include "cocos2d.h";
+                    ^
+                    //
+In file included from ../../../../../../Classes/Shop.cpp:1:
+In file included from ../../../../../../Classes/Shop.h:5:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:6:
+../../../../../../Classes/Ryze.h:9:8: error: extra qualification on member 'Ryze'
+        Ryze::Ryze();
+        ~~~~~~^
+1 warning and 1 error generated.
+[4/6] Building CXX object CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
+FAILED: CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o 
+G:\androidstudioSDK\ndk\21.0.6113669\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android16 --gcc-toolchain=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IG:/androidstudioSDK/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/. -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11 -MD -MT CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o -MF CMakeFiles\MyGame.dir\Classes\HelloWorldScene.cpp.o.d -o CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o -c ../../../../../../Classes/HelloWorldScene.cpp
+In file included from ../../../../../../Classes/HelloWorldScene.cpp:26:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:5:
+../../../../../../Classes/Brand.h:3:21: warning: extra tokens at end of #include directive [-Wextra-tokens]
+#include "cocos2d.h";
+                    ^
+                    //
+In file included from ../../../../../../Classes/HelloWorldScene.cpp:26:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:6:
+../../../../../../Classes/Ryze.h:9:8: error: extra qualification on member 'Ryze'
+        Ryze::Ryze();
+        ~~~~~~^
+1 warning and 1 error generated.
+[5/6] Building CXX object CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o
+FAILED: CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o 
+G:\androidstudioSDK\ndk\21.0.6113669\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android16 --gcc-toolchain=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=G:/androidstudioSDK/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IG:/androidstudioSDK/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/. -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11 -MD -MT CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o -MF CMakeFiles\MyGame.dir\Classes\GameScene.cpp.o.d -o CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o -c ../../../../../../Classes/GameScene.cpp
+In file included from ../../../../../../Classes/GameScene.cpp:1:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:5:
+../../../../../../Classes/Brand.h:3:21: warning: extra tokens at end of #include directive [-Wextra-tokens]
+#include "cocos2d.h";
+                    ^
+                    //
+In file included from ../../../../../../Classes/GameScene.cpp:1:
+In file included from ../../../../../../Classes/GameScene.h:7:
+In file included from ../../../../../../Classes/WorldMap.h:6:
+../../../../../../Classes/Ryze.h:9:8: error: extra qualification on member 'Ryze'
+        Ryze::Ryze();
+        ~~~~~~^
+1 warning and 1 error generated.
+ninja: build stopped: subcommand failed.
