@@ -23,8 +23,8 @@ bool GameScene::init()
 	background->setTag(211);
 
 	//adding shop
-	Shop shop = Shop::createShopLayer();
-	this->addChild(shop.shopIconsLayer);
+	Shop *shop = Shop::createShopLayer();
+	this->addChild(shop->shopIconsLayer);
 
 	//adding teleport
 	Teleport teleport = Teleport::createWithIcon();

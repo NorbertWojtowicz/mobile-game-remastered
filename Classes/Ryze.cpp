@@ -52,8 +52,8 @@ void Ryze::initSecondSpell()
 		auto num = StringUtils::format("%d", i);
 		frames.pushBack(cache->getSpriteFrameByName("ryze" + num + ".png"));
 	}
-	auto firstSpellAnimation = Animation::createWithSpriteFrames(frames, 0.2f);
-	secondSpellAnimate = Animate::create(firstSpellAnimation);
+	auto secondSpellAnimation = Animation::createWithSpriteFrames(frames, 0.2f);
+	secondSpellAnimate = Animate::create(secondSpellAnimation);
 	cache->destroyInstance();
 }
 void Ryze::castSecondSpell()
@@ -65,4 +65,72 @@ void Ryze::castSecondSpell()
 	sceneNode->addChild(sprite);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
+}
+void Ryze::runFirstSpellCooldown()
+{
+	initFirstSpellCooldownAnimate();
+	initFirstSpellCooldownSprite();
+	spellOneIcon->setEnabled(0);
+	auto seq = Sequence::create(firstSpellCooldownAnimate, RemoveSelf::create(), CallFunc::create([this]() {this->spellOneIcon->setEnabled(1); }), NULL);
+	firstSpellCooldownSprite->runAction(seq);
+}
+void Ryze::runSecondSpellCooldown()
+{
+	initSecondSpellCooldownAnimate();
+	initSecondSpellCooldownSprite();
+	spellTwoIcon->setEnabled(0);
+	auto seq = Sequence::create(secondSpellCooldownAnimate, RemoveSelf::create(), CallFunc::create([this]() {this->spellTwoIcon->setEnabled(1); }), NULL);
+	secondSpellCooldownSprite->runAction(seq);
+}
+void Ryze::initFirstSpellCooldownAnimate()
+{
+	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
+	Vector<SpriteFrame*> frames;
+	cache->addSpriteFramesWithFile("heroes/" + name + "/spells/first/" + name + "FirstSpellCooldown.plist");
+	for (int i = 0; i <= 4; i++)
+	{
+		auto num = StringUtils::format("%d", i);
+		frames.pushBack(cache->getSpriteFrameByName(name + "Cooldown" + num + ".png"));
+	}
+	auto firstSpellCooldownAnimation = Animation::createWithSpriteFrames(frames, 1.0f);
+	firstSpellCooldownAnimate = Animate::create(firstSpellCooldownAnimation);
+	cache->destroyInstance();
+}
+void Ryze::initSecondSpellCooldownAnimate()
+{
+	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
+	Vector<SpriteFrame*> frames;
+	cache->addSpriteFramesWithFile("heroes/" + name + "/spells/second/" + name + "SecondSpellCooldown.plist");
+	for (int i = 0; i <= 9; i++)
+	{
+		auto num = StringUtils::format("%d", i);
+		frames.pushBack(cache->getSpriteFrameByName(name + "Cooldown" + num + ".png"));
+	}
+	auto secondSpellCooldownAnimation = Animation::createWithSpriteFrames(frames, 1.0f);
+	secondSpellCooldownAnimate = Animate::create(secondSpellCooldownAnimation);
+	cache->destroyInstance();
+}
+void Ryze::initFirstSpellCooldownSprite()
+{
+	firstSpellCooldownSprite = Sprite::create();
+	firstSpellCooldownSprite->setPosition(Vec2(290, 132));
+	firstSpellCooldownSprite->setContentSize(spellOneIcon->getContentSize());
+	addFirstSpellCooldownSpriteToRunningScene();
+}
+void Ryze::initSecondSpellCooldownSprite()
+{
+	secondSpellCooldownSprite = Sprite::create();
+	secondSpellCooldownSprite->setPosition(Vec2(470, 132));
+	secondSpellCooldownSprite->setContentSize(spellTwoIcon->getContentSize());
+	addSecondSpellCooldownSpriteToRunningScene();
+}
+void Ryze::addFirstSpellCooldownSpriteToRunningScene()
+{
+	auto node = spellOneIcon->getScene();
+	node->addChild(firstSpellCooldownSprite);
+}
+void Ryze::addSecondSpellCooldownSpriteToRunningScene()
+{
+	auto node = spellTwoIcon->getScene();
+	node->addChild(secondSpellCooldownSprite);
 }

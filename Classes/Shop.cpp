@@ -1,15 +1,15 @@
 #include "Shop.h"
 
-Shop Shop::createShopLayer()
+Shop* Shop::createShopLayer()
 {
-	Shop shop = Shop();
+	Shop *shop = new Shop();
 	MenuItemImage* table = MenuItemImage::create("shop/shop.png", "shop/shop.png", CC_CALLBACK_0(Shop::addShopMenuToLayer, shop));
 	Menu* menu = Menu::create();
 	menu->setPosition(Vec2(114, 750));
 	menu->addChild(table);
 	//this->shopLayer->setPosition(Vec2(114, 750));
-	shop.shopIconsLayer->addChild(menu, 1);
-	shop.addSignToLayer();
+	shop->shopIconsLayer->addChild(menu, 1);
+	shop->addSignToLayer();
 	return shop;
 }
 void Shop::addSignToLayer()
@@ -51,7 +51,7 @@ void Shop::changeShopPage(int numberOfPage)
 }
 void Shop::turnPageToRight()
 {
-	if (numberOfPage == 2)
+	if (numberOfPage == 3)
 		return;
 	numberOfPage++;
 	cocos2d::log("numberOfPage incremented in turnPageToRigth function: %d", this->numberOfPage);
@@ -68,7 +68,7 @@ void Shop::turnPageToLeft()
 std::string const Shop::hero_names[4] = { "ryze", "ashe" ,"garen", "twisted_fate" };
 void Shop::addButtons()
 {
-	MenuItemImage* buyButton = MenuItemImage::create("buttons/buyBtn.png", "buttons/pressedBuyBtn.png", CC_CALLBACK_0(Shop::closeShop, this));
+	MenuItemImage* buyButton = MenuItemImage::create("buttons/buyBtn.png", "buttons/pressedBuyBtn.png", CC_CALLBACK_0(Shop::buyHero, this));
 	buyButton->setPosition(Vec2(320, 200));
 	MenuItemImage* crossButton = MenuItemImage::create("buttons/cross.png", "buttons/cross.png", CC_CALLBACK_0(Shop::closeShop, this));
 	crossButton->setPosition(Vec2(520, 880));
@@ -84,4 +84,18 @@ void Shop::addButtons()
 void Shop::closeShop()
 {
 	shopMenu->removeAllChildren();
+}
+void Shop::buyHero()
+{
+	removePreviousHero();
+	boughtHeroSprite = Sprite::create("heroes/" + hero_names[numberOfPage] + "/bodySprite.png");
+	boughtHeroSprite->setTag(1212);
+	boughtHeroSprite->setPosition(Vec2(320, 920));
+	Director::getInstance()->getRunningScene()->addChild(boughtHeroSprite);
+	closeShop();
+}
+void Shop::removePreviousHero()
+{
+	if (boughtHeroSprite)
+		Director::getInstance()->getRunningScene()->removeChild(boughtHeroSprite);
 }

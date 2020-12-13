@@ -5425,6 +5425,16 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "G:\\mobile_league_game\\Classes\\Teleport.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\WorldMap.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "G:\\mobile_league_game\\proj.android\\app\\jni\\hellocpp\\main.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
@@ -5449,6 +5459,14 @@
         },
         {
           "header": "G:\\mobile_league_game\\Classes\\Shop.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Teleport.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\WorldMap.h",
           "workingDirectoryOrdinal": 0
         }
       ],

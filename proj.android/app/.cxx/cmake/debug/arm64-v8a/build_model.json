@@ -193,7 +193,6 @@
       "project": {
         "compilerSettingsCacheFolder": "G:\\mobile_league_game\\proj.android\\.cxx",
         "cxxFolder": "G:\\mobile_league_game\\proj.android\\.cxx",
-        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -217,7 +216,10 @@
     "objFolder": "G:\\mobile_league_game\\proj.android\\app\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
-      "ARM64_V8A"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
     ],
     "prefabDirectory": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\prefab",
     "prefabPackageDirectoryList": []

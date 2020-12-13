@@ -18,7 +18,7 @@ public:
 	static BrandLevel<T, U>* create();
 	static Scene* createScene();
 	T enemyHero;
-	U allyHero;
+	U *allyHero;
 	short allyHeroHealth, enemyHeroHealth;
 	ui::LoadingBar* allyHeroHpBar, *enemyHeroHpBar;
 	void addEssentialElements();
@@ -68,7 +68,7 @@ bool BrandLevel<T, U>::init()
 		return false;
 	}
 	this->enemyHero = T();
-	this->allyHero = U();
+	this->allyHero = new U();
 	this->initHeroesHealth();
 	this->addEssentialElements();
 	this->addChild(enemyHero.sprite);
@@ -80,7 +80,7 @@ bool BrandLevel<T, U>::init()
 template <typename T, typename U>
 void BrandLevel<T, U>::initHeroesHealth()
 {
-	allyHeroHealth = allyHero.health;
+	allyHeroHealth = allyHero->health;
 	enemyHeroHealth = enemyHero.health;
 }
 template <typename T, typename U>
@@ -113,7 +113,7 @@ void BrandLevel<enemy, ally>::addEssentialElements()
 	addBackground("backgrounds/firstSceneBG.png");
 	addAllyHeroHpBar();
 	addEnemyHeroHpBar();
-	addHeroFace(allyHero.getName());
+	addHeroFace(allyHero->getName());
 	addHud();
 }
 template <typename enemy, typename ally>
@@ -136,20 +136,20 @@ void BrandLevel<enemy, ally>::addHud()
 	auto hud = Sprite::create("combatScene/hud.png");
 	hud->setPosition(Vec2(320, 128));
 	addChild(hud);
-	addHeroSpells(allyHero.getName());
+	addHeroSpells(allyHero->getName());
 }
 template <typename enemy, typename ally>
 void BrandLevel<enemy, ally>::addHeroSpells(std::string nameOfHero)
 {
-	auto spellOneIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell1.png", "combatScene/spells/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(BrandLevel<enemy, ally>::castFirstAllyHeroSpell, this));
+	allyHero->spellOneIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell1.png", "combatScene/spells/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(BrandLevel<enemy, ally>::castFirstAllyHeroSpell, this));
 	//TBD correct filepath
-	auto spellTwoIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell2.png", "combatScene/spells/" + nameOfHero + "Spell2.png", CC_CALLBACK_0(BrandLevel<enemy, ally>::castSecondAllyHeroSpell, this));
-	spellOneIcon->setPosition(Vec2(-30, -436));
-	spellTwoIcon->setPosition(Vec2(+150, -436));
-	auto spellsIconMenu = Menu::create();
-	spellsIconMenu->addChild(spellOneIcon);
-	spellsIconMenu->addChild(spellTwoIcon);
-	addChild(spellsIconMenu);
+	allyHero->spellTwoIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell2.png", "combatScene/spells/" + nameOfHero + "Spell2.png", CC_CALLBACK_0(BrandLevel<enemy, ally>::castSecondAllyHeroSpell, this));
+	allyHero->spellOneIcon->setPosition(Vec2(-30, -436));
+	allyHero->spellTwoIcon->setPosition(Vec2(+150, -436));
+	allyHero->spellsMenu = Menu::create();
+	allyHero->spellsMenu->addChild(allyHero->spellOneIcon);
+	allyHero->spellsMenu->addChild(allyHero->spellTwoIcon);
+	addChild(allyHero->spellsMenu);
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::updateSpellsCooldown(float dt)
@@ -206,10 +206,10 @@ void BrandLevel<T, U>::addAllyHeroHpLabel()
 {
 	std::stringstream ss;
 	ss << allyHeroHealth << "/" << allyHeroHealth;
-	allyHero.hpLabel = Label::createWithTTF(ss.str(), "fonts/Marker Felt.ttf", 30.0f);
-	allyHero.hpLabel->setPosition(Vec2(360, 35));
-	allyHero.hpLabel->setTextColor(Color4B::BLACK);
-	this->addChild(allyHero.hpLabel, 3);
+	allyHero->hpLabel = Label::createWithTTF(ss.str(), "fonts/Marker Felt.ttf", 30.0f);
+	allyHero->hpLabel->setPosition(Vec2(360, 35));
+	allyHero->hpLabel->setTextColor(Color4B::BLACK);
+	this->addChild(allyHero->hpLabel, 3);
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::addEnemyHeroHpLabel()
@@ -227,7 +227,7 @@ void BrandLevel<T, U>::updateAllyHeroHpBar(short amountOfHp)
 	std::stringstream ss;
 	ss << amountOfHp << "/" << allyHeroHealth;
 	std::string health = ss.str();
-	allyHero.hpLabel->setString(health);
+	allyHero->hpLabel->setString(health);
 	double remainingHealthInPercent = ((double)amountOfHp / allyHeroHealth) * 100;
 	allyHeroHpBar->setPercent(remainingHealthInPercent);
 }
@@ -244,9 +244,9 @@ void BrandLevel<T, U>::updateEnemyHeroHpBar(short amountOfHp)
 template <typename T, typename U>
 void BrandLevel<T, U>::dealDamageToAllyHero(short strength)
 {
-	allyHero.health -= strength;
-	updateAllyHeroHpBar(allyHero.health);
-	if (allyHero.health <= 0)
+	allyHero->health -= strength;
+	updateAllyHeroHpBar(allyHero->health);
+	if (allyHero->health <= 0)
 		finishBattleWithLose();
 }
 template <typename T, typename U>
@@ -260,17 +260,19 @@ void BrandLevel<T, U>::dealDamageToEnemyHero(short strength)
 template <typename T, typename U>
 void BrandLevel<T, U>::castFirstAllyHeroSpell()
 {
-	allyHero.castFirstSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this, allyHero.strength));
-	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	allyHero->castFirstSpell();
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this, allyHero->strength));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(U::runFirstSpellCooldown, allyHero));
+	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(allyHero->timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>
 void BrandLevel<T, U>::castSecondAllyHeroSpell()
 {
-	allyHero.castSecondSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this, allyHero.strength));
-	auto damageSequence = Sequence::create(DelayTime::create(allyHero.timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
+	allyHero->castSecondSpell();
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel<T, U>::dealDamageToEnemyHero, this, allyHero->strength));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(U::runSecondSpellCooldown, allyHero));
+	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(allyHero->timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
 template <typename T, typename U>

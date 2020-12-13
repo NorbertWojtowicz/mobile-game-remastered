@@ -166,18 +166,18 @@
       "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_tinyxml2.a",
       "runtimeFiles": []
     },
-    "ext_xxhash-Release-x86": {
-      "artifactName": "ext_xxhash",
-      "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\" ext_xxhash",
-      "abi": "x86",
-      "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxhash.a",
-      "runtimeFiles": []
-    },
     "ext_xxtea-Release-x86": {
       "artifactName": "ext_xxtea",
       "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\" ext_xxtea",
       "abi": "x86",
       "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxtea.a",
+      "runtimeFiles": []
+    },
+    "ext_xxhash-Release-x86": {
+      "artifactName": "ext_xxhash",
+      "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\" ext_xxhash",
+      "abi": "x86",
+      "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxhash.a",
       "runtimeFiles": []
     },
     "ext_clipper-Release-x86": {
