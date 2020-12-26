@@ -2,14 +2,12 @@
 #define __RYZE_H__
 
 #include "cocos2d.h"
+#include "AllyHero.h"
 USING_NS_CC;
-class Ryze
+class Ryze : public AllyHero
 {
 public:
 	Ryze::Ryze();
-	std::string name;
-	short health;
-	short strength;
 	void setName(std::string name);
 	std::string getName();
 	void initFirstSpell();
@@ -24,13 +22,5 @@ public:
 	void initSecondSpellCooldownSprite();
 	void addFirstSpellCooldownSpriteToRunningScene();
 	void addSecondSpellCooldownSpriteToRunningScene();
-	Animate* firstSpellAnimate, *secondSpellAnimate, 
-		    *firstSpellCooldownAnimate, *secondSpellCooldownAnimate;
-	Menu* spellsMenu;
-	MenuItemImage* spellOneIcon, * spellTwoIcon;
-	Sprite* firstSpellCooldownSprite, *secondSpellCooldownSprite;
-	Label* hpLabel;
-	float timeToDealDamageInFirstSpell;
-	float timeToDealDamageInSecondSpell;
 };
 #endif
