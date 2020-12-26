@@ -1,1 +1,2 @@
-﻿  ext_xxhash.vcxproj -> G:\mobile_league_game\proj.win32\lib\Debug\ext_xxhash.lib
+﻿  xxhash.c
+  ext_xxhash.vcxproj -> G:\mobile_league_game\proj.win32\lib\Debug\ext_xxhash.lib
