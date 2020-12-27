@@ -1,5 +1,5 @@
 #include <BrandLevel.h>
-BrandLevel::BrandLevel(EnemyHero* enemy, Ryze* ally)
+BrandLevel::BrandLevel(EnemyHero* enemy, AllyHero* ally)
 {
 	this->allyHero = ally;
 	this->enemyHero = enemy;
@@ -24,7 +24,7 @@ void BrandLevel::initHeroesHealth()
 	enemyHeroHealth = enemyHero->health;
 }
 
-Scene* BrandLevel::createSceneWithEnemyAndAllyHero(EnemyHero* enemy, Ryze* ally)
+Scene* BrandLevel::createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally)
 {
 	auto scene = Scene::create();
 	auto node = BrandLevel::create(enemy, ally);
@@ -32,7 +32,7 @@ Scene* BrandLevel::createSceneWithEnemyAndAllyHero(EnemyHero* enemy, Ryze* ally)
 	node->setName("levelNode");
 	return scene;
 }
-BrandLevel* BrandLevel::create(EnemyHero* enemy, Ryze* ally)
+BrandLevel* BrandLevel::create(EnemyHero* enemy, AllyHero* ally)
 {
 	auto scene = new BrandLevel(enemy, ally);
 	if (scene && scene->init())
@@ -183,7 +183,7 @@ void BrandLevel::castFirstAllyHeroSpell()
 {
 	allyHero->castFirstSpell();
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel::dealDamageToEnemyHero, this, allyHero->strength));
-	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(Ryze::runFirstSpellCooldown, allyHero));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runFirstSpellCooldown, allyHero));
 	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(allyHero->timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }
@@ -191,7 +191,7 @@ void BrandLevel::castSecondAllyHeroSpell()
 {
 	allyHero->castSecondSpell();
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel::dealDamageToEnemyHero, this, allyHero->strength));
-	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(Ryze::runSecondSpellCooldown, allyHero));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, allyHero));
 	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(allyHero->timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	this->runAction(damageSequence);
 }

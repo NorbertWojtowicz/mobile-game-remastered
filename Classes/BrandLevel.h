@@ -12,15 +12,15 @@ USING_NS_CC;
 class BrandLevel : public cocos2d::Node
 {
 public:
-	BrandLevel(EnemyHero* enemy, Ryze* ally);
+	BrandLevel(EnemyHero* enemy, AllyHero *ally);
 	~BrandLevel() {};
 	//static BrandLevel createLevelWithEnemyAndAllyHero(EnemyHero* enemy, Ryze* ally);
-	static Scene* createSceneWithEnemyAndAllyHero(EnemyHero* enemy, Ryze* ally);
+	static Scene* createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally);
 	virtual bool init();
-	static BrandLevel* create(EnemyHero* enemy, Ryze* ally);
+	static BrandLevel* create(EnemyHero* enemy, AllyHero* ally);
 	//static Scene* createScene();
 	EnemyHero* enemyHero;
-	Ryze* allyHero;
+	AllyHero* allyHero;
 	short allyHeroHealth, enemyHeroHealth;
 	ui::LoadingBar* allyHeroHpBar, *enemyHeroHpBar;
 	void addEssentialElements();

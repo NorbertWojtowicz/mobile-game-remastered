@@ -44,14 +44,21 @@ void WorldMap::addIslandsToScrollView()
 void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
 {
 	prepareEnemyMap();
+	prepareAllyMap();
 	auto enemy = mapEnemy[enemiesTab[enemyId]]();
-	auto ally = new Ryze();
+	auto ally = mapAlly[alliesTab[allyId]]();
 	auto scene = BrandLevel::createSceneWithEnemyAndAllyHero(enemy, ally);
 	Director::getInstance()->replaceScene(scene);
 }
 template <typename T>
-EnemyHero* createInstance() { return new T; }
+EnemyHero* createEnemyHeroInstance() { return new T; }
 void WorldMap::prepareEnemyMap()
 {
-	mapEnemy["Brand"] = &createInstance<Brand>;
+	mapEnemy["Brand"] = &createEnemyHeroInstance<Brand>;
+}
+template <typename T>
+AllyHero* createAllyHeroInstance() { return new T; }
+void WorldMap::prepareAllyMap()
+{
+	mapAlly["Ryze"] = &createAllyHeroInstance<Ryze>;
 }

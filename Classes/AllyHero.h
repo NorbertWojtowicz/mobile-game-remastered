@@ -2,34 +2,36 @@
 #define __ALLY_HERO_H__
 
 #include "cocos2d.h"
+#include <string>
 USING_NS_CC;
 class AllyHero
 {
 public:
 	std::string name;
-	short health;
-	short strength;
-	virtual void setName(std::string name) = 0;
-	virtual std::string getName() = 0;
-	virtual void initFirstSpell() = 0;
+	short health, strength;
+	void setName(std::string name);
+	std::string getName();
+	void initFirstSpell();
 	virtual void castFirstSpell() = 0;
-	virtual void initSecondSpell() = 0;
+	void initSecondSpell();
 	virtual void castSecondSpell() = 0;
-	virtual void runFirstSpellCooldown() = 0;
-	virtual void runSecondSpellCooldown() = 0;
-	virtual void initFirstSpellCooldownAnimate() = 0;
-	virtual void initSecondSpellCooldownAnimate() = 0;
-	virtual void initFirstSpellCooldownSprite() = 0;
-	virtual void initSecondSpellCooldownSprite() = 0;
-	virtual void addFirstSpellCooldownSpriteToRunningScene() = 0;
-	virtual void addSecondSpellCooldownSpriteToRunningScene() = 0;
+	void runFirstSpellCooldown();
+	void runSecondSpellCooldown();
+	void initFirstSpellCooldownAnimate();
+	void initSecondSpellCooldownAnimate();
+	void initFirstSpellCooldownSprite();
+	void initSecondSpellCooldownSprite();
+	void addFirstSpellCooldownSpriteToRunningScene();
+	void addSecondSpellCooldownSpriteToRunningScene();
 	Animate* firstSpellAnimate, * secondSpellAnimate,
-		* firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
+		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;
 	MenuItemImage* spellOneIcon, * spellTwoIcon;
 	Sprite* firstSpellCooldownSprite, * secondSpellCooldownSprite;
 	Label* hpLabel;
-	float timeToDealDamageInFirstSpell;
-	float timeToDealDamageInSecondSpell;
+	float timeToDealDamageInFirstSpell, timeToDealDamageInSecondSpell,
+		  firstSpellFrameDuration, secondSpellFrameDuration;
+	short firstSpellNumberOfFrames, secondSpellNumberOfFrames, 
+		  firstSpellCooldownNumberOfFrames, secondSpellCooldownNumberOfFrames;
 };
 #endif

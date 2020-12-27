@@ -1,25 +1,4 @@
-﻿  Brand.cpp
-  BrandLevel.cpp
-  Ryze.cpp
-  GameScene.cpp
-  HelloWorldScene.cpp
-  Shop.cpp
-  Teleport.cpp
-  WorldMap.cpp
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego ..\Classes\Brand.cpp)
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\WorldMap.cpp)
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\Shop.cpp)
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\HelloWorldScene.cpp)
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego ..\Classes\Ryze.cpp)
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\Teleport.cpp)
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego G:\mobile_league_game\Classes\GameScene.cpp)
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza (kompilowanie pliku źródłowego ..\Classes\BrandLevel.cpp)
-..\Classes\Brand.cpp(62,28): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+﻿  WorldMap.cpp
+G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
 G:\mobile_league_game\Classes\WorldMap.cpp(28,85): warning C4305: "argument": obcięcie z "double" do "float"
-G:\mobile_league_game\Classes\Teleport.cpp(30,46): warning C4305: "argument": obcięcie z "double" do "float"
-G:\mobile_league_game\Classes\Teleport.cpp(32,34): warning C4305: "argument": obcięcie z "double" do "float"
-..\Classes\BrandLevel.cpp(18,69): warning C4305: "argument": obcięcie z "double" do "float"
-..\Classes\BrandLevel.cpp(157,28): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-..\Classes\BrandLevel.cpp(166,29): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-..\Classes\BrandLevel.cpp(215,39): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
   mobile_league_game.vcxproj -> G:\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\mobile_league_game.exe

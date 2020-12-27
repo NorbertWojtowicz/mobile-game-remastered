@@ -118,3 +118,8 @@ proj.win32/engine/cocos/core/cocos2d.dir/Debug/cocos2d.pch
 *cmake_install.cmake
 *Makefile
 lib/
+
+.pdb
+.obj
+.log
+.tlog
