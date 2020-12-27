@@ -13,13 +13,16 @@ public:
 	CREATE_FUNC(WorldMap);
 	virtual bool init();
 	static Scene* createScene();
-	static void createSceneWithAllyHero(int heroId);
 	ui::ScrollView* scrollView;
 	void initScrollView();
-	void setupFirstLevel();
+	void startLevelWithHeroesId(short enemyId, short allyId);
+	typedef std::map<std::string, EnemyHero* (*)()> map_Enemy;
+	map_Enemy mapEnemy;
+	void prepareEnemyMap();
 private:
 	void addIslandsToScrollView();
-	static void startLevel();
+	short allyId, enemyId;
+	std::string alliesTab[4] = { "Ryze", "Ashe", "Garen", "Twisted_Fate" };
+	std::string enemiesTab[4] = { "Brand" };
 };
-
 #endif

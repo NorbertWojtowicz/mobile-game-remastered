@@ -35,34 +35,23 @@ void WorldMap::initScrollView()
 }
 void WorldMap::addIslandsToScrollView()
 {
-	MenuItemImage* level1 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::setupFirstLevel, this));
-	level1->setPosition(Vec2(0, -400));
+	allyId = UserDefault::getInstance()->getIntegerForKey("allyHeroId");
+	MenuItemImage* level1 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 0, allyId));
+	level1->setPosition(Vec2(0, -380));
 	Menu* menu = Menu::create(level1, NULL);
 	scrollView->addChild(menu, 1);
 }
-void WorldMap::setupFirstLevel()
+void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
 {
-#define enemy Brand
-	createSceneWithAllyHero(0);
-}
-void WorldMap::createSceneWithAllyHero(int heroId)
-{
-#if heroId == 0
-#define ally Ryze
-#endif
-#if heroId == 1
-#define ally Ashe
-#endif
-#if heroId == 2
-#define ally Garen
-#endif
-#if heroId == 3
-#define ally Twisted_Fate
-#endif
-	startLevel();
-}
-void WorldMap::startLevel()
-{
-	auto scene = BrandLevel<enemy, ally>::createScene();
+	prepareEnemyMap();
+	auto enemy = mapEnemy[enemiesTab[enemyId]]();
+	auto ally = new Ryze();
+	auto scene = BrandLevel::createSceneWithEnemyAndAllyHero(enemy, ally);
 	Director::getInstance()->replaceScene(scene);
+}
+template <typename T>
+EnemyHero* createInstance() { return new T; }
+void WorldMap::prepareEnemyMap()
+{
+	mapEnemy["Brand"] = &createInstance<Brand>;
 }

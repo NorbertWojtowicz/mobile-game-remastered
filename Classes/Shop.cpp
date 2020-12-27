@@ -92,6 +92,7 @@ void Shop::buyHero()
 	boughtHeroSprite->setTag(1212);
 	boughtHeroSprite->setPosition(Vec2(320, 920));
 	Director::getInstance()->getRunningScene()->addChild(boughtHeroSprite);
+	UserDefault::getInstance()->setIntegerForKey("allyHeroId", numberOfPage);
 	closeShop();
 }
 void Shop::removePreviousHero()
