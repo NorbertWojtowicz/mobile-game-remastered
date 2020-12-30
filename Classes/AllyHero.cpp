@@ -11,7 +11,7 @@ void AllyHero::initFirstSpell()
 {
 	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
 	Vector<SpriteFrame*> frames;
-	cache->addSpriteFramesWithFile("combatScene/spells/" + name + "FirstSpellAnimate.plist");
+	cache->addSpriteFramesWithFile("heroes/" + name + "/spells/first/" + name + "FirstSpellAnimate.plist");
 	for (int i = 0; i <= firstSpellNumberOfFrames; i++)
 	{
 		auto num = StringUtils::format("%d", i);
@@ -25,7 +25,7 @@ void AllyHero::initSecondSpell()
 {
 	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
 	Vector<SpriteFrame*> frames;
-	cache->addSpriteFramesWithFile("combatScene/spells/" + name + "SecondSpellAnimate.plist");
+	cache->addSpriteFramesWithFile("heroes/" + name + "/spells/second/" + name + "SecondSpellAnimate.plist");
 	for (int i = 0; i <= secondSpellNumberOfFrames; i++)
 	{
 		auto num = StringUtils::format("%d", i);
@@ -56,7 +56,7 @@ void AllyHero::initFirstSpellCooldownAnimate()
 	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
 	Vector<SpriteFrame*> frames;
 	cache->addSpriteFramesWithFile("heroes/" + name + "/spells/first/" + name + "FirstSpellCooldown.plist");
-	for (int i = 0; i <= firstSpellCooldownNumberOfFrames; i++)
+	for (int i = firstSpellCooldownNumberOfFrames; i >= 0; i--)
 	{
 		auto num = StringUtils::format("%d", i);
 		frames.pushBack(cache->getSpriteFrameByName(name + "Cooldown" + num + ".png"));

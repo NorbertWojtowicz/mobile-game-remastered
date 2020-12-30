@@ -1,4 +1,0 @@
-﻿  WorldMap.cpp
-G:\mobile_league_game\Classes\Brand.h(3,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-G:\mobile_league_game\Classes\WorldMap.cpp(28,85): warning C4305: "argument": obcięcie z "double" do "float"
-  mobile_league_game.vcxproj -> G:\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\mobile_league_game.exe

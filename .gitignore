@@ -119,7 +119,7 @@ proj.win32/engine/cocos/core/cocos2d.dir/Debug/cocos2d.pch
 *Makefile
 lib/
 
-.pdb
-.obj
-.log
-.tlog
+*.pdb
+*.obj
+*.log
+*.tlog

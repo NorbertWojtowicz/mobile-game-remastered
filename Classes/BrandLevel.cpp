@@ -23,7 +23,6 @@ void BrandLevel::initHeroesHealth()
 	allyHeroHealth = allyHero->health;
 	enemyHeroHealth = enemyHero->health;
 }
-
 Scene* BrandLevel::createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally)
 {
 	auto scene = Scene::create();
@@ -62,8 +61,8 @@ void BrandLevel::addBackground(std::string backgroundFilePath)
 }
 void BrandLevel::addHeroFace(std::string nameOfHero)
 {
-	auto heroFace = Sprite::create("combatScene/" + nameOfHero + "Face.png");
-	heroFace->setPosition(Vec2(74, 126));
+	auto heroFace = Sprite::create("heroes/" + nameOfHero + "/" + nameOfHero + "Face.png");
+	heroFace->setPosition(Vec2(61, 132));
 	addChild(heroFace);
 }
 void BrandLevel::addHud()
@@ -75,9 +74,9 @@ void BrandLevel::addHud()
 }
 void BrandLevel::addHeroSpells(std::string nameOfHero)
 {
-	allyHero->spellOneIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell1.png", "combatScene/spells/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(BrandLevel::castFirstAllyHeroSpell, this));
+	allyHero->spellOneIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", "heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(BrandLevel::castFirstAllyHeroSpell, this));
 	//TBD correct filepath
-	allyHero->spellTwoIcon = MenuItemImage::create("combatScene/spells/" + nameOfHero + "Spell2.png", "combatScene/spells/" + nameOfHero + "Spell2.png", CC_CALLBACK_0(BrandLevel::castSecondAllyHeroSpell, this));
+	allyHero->spellTwoIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", "heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", CC_CALLBACK_0(BrandLevel::castSecondAllyHeroSpell, this));
 	allyHero->spellOneIcon->setPosition(Vec2(-30, -436));
 	allyHero->spellTwoIcon->setPosition(Vec2(+150, -436));
 	allyHero->spellsMenu = Menu::create();

@@ -1,6 +1,7 @@
 #include "WorldMap.h"
 #include "BrandLevel.h"
 #include "Brand.h"
+#include "Ashe.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -61,4 +62,5 @@ AllyHero* createAllyHeroInstance() { return new T; }
 void WorldMap::prepareAllyMap()
 {
 	mapAlly["Ryze"] = &createAllyHeroInstance<Ryze>;
+	mapAlly["Ashe"] = &createAllyHeroInstance<Ashe>;
 }

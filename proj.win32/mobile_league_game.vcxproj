@@ -801,7 +801,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Garen.cpp" />
     <ClInclude Include="..\Classes\AllyHero.h" />
+    <ClInclude Include="..\Classes\Ashe.h" />
     <ClInclude Include="..\Classes\Brand.h" />
     <ClInclude Include="..\Classes\BrandLevel.h" />
     <ClInclude Include="..\Classes\EnemyHero.h" />
@@ -816,6 +818,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="G:\mobile_league_game\proj.win32\main.h" />
     <ClInclude Include="G:\mobile_league_game\proj.win32\resource.h" />
     <ClCompile Include="..\Classes\AllyHero.cpp" />
+    <ClCompile Include="..\Classes\Ashe.cpp" />
     <ClCompile Include="..\Classes\Brand.cpp" />
     <ClCompile Include="..\Classes\BrandLevel.cpp" />
     <ClCompile Include="..\Classes\EnemyHero.cpp" />
@@ -828,6 +831,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="G:\mobile_league_game\Classes\Teleport.cpp" />
     <ClCompile Include="G:\mobile_league_game\Classes\WorldMap.cpp" />
     <ClCompile Include="G:\mobile_league_game\proj.win32\main.cpp" />
+    <ClInclude Include="Garen.h" />
     <ResourceCompile Include="G:\mobile_league_game\proj.win32\game.rc" />
     <ClInclude Include="G:\mobile_league_game\Resources\CloseNormal.png" />
     <ClInclude Include="G:\mobile_league_game\Resources\CloseSelected.png" />

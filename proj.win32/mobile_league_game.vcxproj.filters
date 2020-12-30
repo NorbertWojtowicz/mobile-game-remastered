@@ -43,6 +43,10 @@
     <ClCompile Include="..\Classes\AllyHero.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Ashe.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Garen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h">
@@ -186,6 +190,10 @@
     <ClInclude Include="..\Classes\AllyHero.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Ashe.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Garen.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="G:\mobile_league_game\CMakeLists.txt" />
