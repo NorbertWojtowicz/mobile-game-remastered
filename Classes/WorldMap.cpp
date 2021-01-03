@@ -2,6 +2,7 @@
 #include "BrandLevel.h"
 #include "Brand.h"
 #include "Ashe.h"
+#include "Garen.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -39,7 +40,10 @@ void WorldMap::addIslandsToScrollView()
 	allyId = UserDefault::getInstance()->getIntegerForKey("allyHeroId");
 	MenuItemImage* level1 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 0, allyId));
 	level1->setPosition(Vec2(0, -380));
+	MenuItemImage* level2 = MenuItemImage::create("worldMap/islandLevel2.png", "worldMap/islandLevel2.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 1, allyId));
+	level2->setPosition(Vec2(0, -155));
 	Menu* menu = Menu::create(level1, NULL);
+	menu->addChild(level2);
 	scrollView->addChild(menu, 1);
 }
 void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
@@ -63,4 +67,5 @@ void WorldMap::prepareAllyMap()
 {
 	mapAlly["Ryze"] = &createAllyHeroInstance<Ryze>;
 	mapAlly["Ashe"] = &createAllyHeroInstance<Ashe>;
+	mapAlly["Garen"] = &createAllyHeroInstance<Garen>;
 }

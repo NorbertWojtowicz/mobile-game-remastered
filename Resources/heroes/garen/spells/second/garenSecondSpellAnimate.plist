@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>garen0.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{613,649},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1226,649},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1226,0},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{613,1298},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{1226,1298},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{613,0},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen6.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1298},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen7.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,649},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+			<key>garen8.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{612,648}}</string>
+				<key>sourceSize</key>
+				<string>{612,648}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{2048,2048}</string>
+			<key>textureFileName</key>
+			<string>garenSecondSpellAnimate.png</string>
+			</dict>
+		</dict>
+</plist>

@@ -70,7 +70,7 @@ void AllyHero::initSecondSpellCooldownAnimate()
 	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
 	Vector<SpriteFrame*> frames;
 	cache->addSpriteFramesWithFile("heroes/" + name + "/spells/second/" + name + "SecondSpellCooldown.plist");
-	for (int i = 0; i <= secondSpellCooldownNumberOfFrames; i++)
+	for (int i = secondSpellCooldownNumberOfFrames; i >= 0; i--)
 	{
 		auto num = StringUtils::format("%d", i);
 		frames.pushBack(cache->getSpriteFrameByName(name + "Cooldown" + num + ".png"));
