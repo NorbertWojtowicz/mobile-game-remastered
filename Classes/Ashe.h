@@ -1,13 +1,12 @@
-#ifndef __RYZE_H__
-#define __RYZE_H__
-#include <string>
+#ifndef __ASHE_H__
+#define __ASHE_H__
 #include "cocos2d.h"
 #include "AllyHero.h"
 USING_NS_CC;
-class Ryze : public AllyHero
+class Ashe : public AllyHero
 {
 public:
-	Ryze::Ryze();
+	Ashe();
 	void castFirstSpell();
 	void castSecondSpell();
 };

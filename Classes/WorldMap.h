@@ -4,6 +4,7 @@
 #include "EnemyHero.h"
 #include "Brand.h"
 #include "Ryze.h"
+#include "AllyHero.h"
 #include "ui/CocosGUI.h"
 USING_NS_CC;
 
@@ -17,12 +18,15 @@ public:
 	void initScrollView();
 	void startLevelWithHeroesId(short enemyId, short allyId);
 	typedef std::map<std::string, EnemyHero* (*)()> map_Enemy;
+	typedef std::map<std::string, AllyHero* (*)()> map_Ally;
 	map_Enemy mapEnemy;
+	map_Ally mapAlly;
 	void prepareEnemyMap();
+	void prepareAllyMap();
 private:
 	void addIslandsToScrollView();
 	short allyId, enemyId;
 	std::string alliesTab[4] = { "Ryze", "Ashe", "Garen", "Twisted_Fate" };
-	std::string enemiesTab[4] = { "Brand" };
+	std::string enemiesTab[4] = { "Brand", "", "", "" };
 };
 #endif
