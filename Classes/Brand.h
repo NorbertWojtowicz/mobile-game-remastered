@@ -10,20 +10,5 @@ class Brand : public EnemyHero
 public:
 	Brand();
 	void castFirstSpell();
-	void castSecondSpell();
-	void castFirstSpellAnimate();
-	void initAnimates();
-	void dealDamageToAllyHero(short damage);
-	void updateFirstSpellTime(float dt);
-	void updateSecondSpellTime();
-	void initWalkAnimate();
-	void runWalkAnimate();
-	void stopWalkAnimate();
-	 /*
-private:
-	std::string name;
-	Sprite* sprite;
-	float firstSpellCooldown, secondSpellCooldown, firstSpellTimer, secondSpellTimer;
-	Animate* firstSpellAnimate, * secondSpellAnimate;*/
 };
 #endif

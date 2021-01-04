@@ -46,7 +46,12 @@
     <ClCompile Include="..\Classes\Ashe.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Garen.cpp" />
+    <ClCompile Include="..\Classes\Garen.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Cassiopeia.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h">
@@ -193,7 +198,12 @@
     <ClInclude Include="..\Classes\Ashe.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Garen.h" />
+    <ClInclude Include="..\Classes\Garen.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Cassiopeia.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="G:\mobile_league_game\CMakeLists.txt" />

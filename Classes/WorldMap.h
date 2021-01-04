@@ -27,6 +27,6 @@ private:
 	void addIslandsToScrollView();
 	short allyId, enemyId;
 	std::string alliesTab[4] = { "Ryze", "Ashe", "Garen", "Twisted_Fate" };
-	std::string enemiesTab[4] = { "Brand", "", "", "" };
+	std::string enemiesTab[4] = { "Brand", "Cassiopeia", "", "" };
 };
 #endif
