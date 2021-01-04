@@ -3,6 +3,7 @@
 #include "Brand.h"
 #include "Ashe.h"
 #include "Garen.h"
+#include "Cassiopeia.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -60,6 +61,7 @@ EnemyHero* createEnemyHeroInstance() { return new T; }
 void WorldMap::prepareEnemyMap()
 {
 	mapEnemy["Brand"] = &createEnemyHeroInstance<Brand>;
+	mapEnemy["Cassiopeia"] = &createEnemyHeroInstance<Cassiopeia>;
 }
 template <typename T>
 AllyHero* createAllyHeroInstance() { return new T; }
