@@ -806,6 +806,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\Brand.h" />
     <ClInclude Include="..\Classes\BrandLevel.h" />
     <ClInclude Include="..\Classes\Cassiopeia.h" />
+    <ClInclude Include="..\Classes\Darius.h" />
     <ClInclude Include="..\Classes\EnemyHero.h" />
     <ClInclude Include="..\Classes\Garen.h" />
     <ClInclude Include="..\Classes\Ryze.h" />
@@ -823,6 +824,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\Brand.cpp" />
     <ClCompile Include="..\Classes\BrandLevel.cpp" />
     <ClCompile Include="..\Classes\Cassiopeia.cpp" />
+    <ClCompile Include="..\Classes\Darius.cpp" />
     <ClCompile Include="..\Classes\EnemyHero.cpp" />
     <ClCompile Include="..\Classes\Garen.cpp" />
     <ClCompile Include="..\Classes\Ryze.cpp" />

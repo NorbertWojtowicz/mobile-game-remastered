@@ -4,6 +4,7 @@
 #include "Ashe.h"
 #include "Garen.h"
 #include "Cassiopeia.h"
+#include "Darius.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -43,8 +44,11 @@ void WorldMap::addIslandsToScrollView()
 	level1->setPosition(Vec2(0, -380));
 	MenuItemImage* level2 = MenuItemImage::create("worldMap/islandLevel2.png", "worldMap/islandLevel2.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 1, allyId));
 	level2->setPosition(Vec2(0, -155));
+	MenuItemImage* level3 = MenuItemImage::create("worldMap/islandLevel3.png", "worldMap/islandLevel3.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 2, allyId));
+	level3->setPosition(Vec2(0, 120));
 	Menu* menu = Menu::create(level1, NULL);
 	menu->addChild(level2);
+	menu->addChild(level3);
 	scrollView->addChild(menu, 1);
 }
 void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
@@ -62,6 +66,7 @@ void WorldMap::prepareEnemyMap()
 {
 	mapEnemy["Brand"] = &createEnemyHeroInstance<Brand>;
 	mapEnemy["Cassiopeia"] = &createEnemyHeroInstance<Cassiopeia>;
+	mapEnemy["Darius"] = &createEnemyHeroInstance<Darius>;
 }
 template <typename T>
 AllyHero* createAllyHeroInstance() { return new T; }
