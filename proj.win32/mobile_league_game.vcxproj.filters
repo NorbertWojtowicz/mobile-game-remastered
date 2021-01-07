@@ -52,6 +52,9 @@
     <ClCompile Include="..\Classes\Cassiopeia.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Darius.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h">
@@ -202,6 +205,9 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Cassiopeia.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Darius.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
