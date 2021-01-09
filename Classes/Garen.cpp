@@ -3,6 +3,7 @@ Garen::Garen()
 {
 	this->setName("garen");
 	this->health = 10;
+	this->constHealth = 10;
 	this->strength = 4;
 	this->timeToDealDamageInFirstSpell = 0.4f;
 	this->timeToDealDamageInSecondSpell = 1.05f;

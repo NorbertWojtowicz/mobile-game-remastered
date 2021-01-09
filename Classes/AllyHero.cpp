@@ -103,3 +103,8 @@ void AllyHero::addSecondSpellCooldownSpriteToRunningScene()
 	auto node = spellTwoIcon->getScene();
 	node->addChild(secondSpellCooldownSprite);
 }
+void AllyHero::turnOffSpells()
+{
+	spellOneIcon->setEnabled(0);
+	spellTwoIcon->setEnabled(0);
+}

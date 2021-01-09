@@ -17,7 +17,7 @@ Brand::Brand()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 }
-void Brand::castFirstSpell()
+void Brand::castFirstSpell(AllyHero* hero)
 {
 	stopWalkAnimate();
 	initAnimates();
@@ -31,4 +31,7 @@ void Brand::castFirstSpell()
 																										 runWalkAnimate();
 																									  }), NULL);
 	heroSprite->runAction(seq);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(EnemyHero::dealDamageToAllyHero, this));
+	auto damageSequence = Sequence::create(DelayTime::create(timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	node->runAction(damageSequence);
 }

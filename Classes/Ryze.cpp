@@ -4,6 +4,7 @@ Ryze::Ryze()
 {
 	setName("ryze");
 	this->health = 10;
+	this->constHealth = 10;
 	this->strength = 2;
 	this->timeToDealDamageInFirstSpell = 1.95f;
 	this->timeToDealDamageInSecondSpell = 0.8f;

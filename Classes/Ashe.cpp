@@ -2,6 +2,7 @@
 Ashe::Ashe()
 {
 	this->setName("ashe");
+	this->constHealth = 10;
 	this->health = 10;
 	this->strength = 3;
 	this->timeToDealDamageInFirstSpell = 1.95f;

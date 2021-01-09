@@ -16,7 +16,7 @@ Darius::Darius()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 }
-void Darius::castFirstSpell()
+void Darius::castFirstSpell(AllyHero* hero)
 {
 	stopWalkAnimate();
 	initAnimates();
@@ -30,4 +30,7 @@ void Darius::castFirstSpell()
 		runWalkAnimate();
 		}), NULL);
 	heroSprite->runAction(seq);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(Darius::dealDamageToAllyHero, this));
+	auto damageSequence = Sequence::create(DelayTime::create(timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	node->runAction(damageSequence);
 }

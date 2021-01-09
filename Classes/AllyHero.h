@@ -3,12 +3,13 @@
 
 #include "cocos2d.h"
 #include <string>
+#include "ui/CocosGUI.h"
 USING_NS_CC;
 class AllyHero
 {
 public:
 	std::string name;
-	short health, strength;
+	short health, strength, const constHealth;
 	void setName(std::string name);
 	std::string getName();
 	void initFirstSpell();
@@ -23,6 +24,7 @@ public:
 	void initSecondSpellCooldownSprite();
 	void addFirstSpellCooldownSpriteToRunningScene();
 	void addSecondSpellCooldownSpriteToRunningScene();
+	void turnOffSpells();
 	Animate* firstSpellAnimate, * secondSpellAnimate,
 		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;
@@ -33,5 +35,6 @@ public:
 		  firstSpellFrameDuration, secondSpellFrameDuration;
 	short firstSpellNumberOfFrames, secondSpellNumberOfFrames, 
 		  firstSpellCooldownNumberOfFrames, secondSpellCooldownNumberOfFrames;
+	ui::LoadingBar* hpBar;
 };
 #endif

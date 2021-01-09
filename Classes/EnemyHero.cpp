@@ -1,4 +1,5 @@
 #include "EnemyHero.h"
+#include "BrandLevel.h"
 void EnemyHero::setName(std::string name)
 {
 	this->name = name;
@@ -33,7 +34,7 @@ void EnemyHero::updateFirstSpellTime(float dt)
 	cocos2d::log("Actual time2 is: %d", firstSpellCooldown);
 	if (firstSpellCooldown <= 0)
 	{
-		castFirstSpell();
+		//castFirstSpell();
 		firstSpellCooldown = firstSpellCooldownConst + firstSpellAnimate->getDuration();
 	}
 }
@@ -59,4 +60,29 @@ void EnemyHero::runWalkAnimate()
 void EnemyHero::stopWalkAnimate()
 {
 	sprite->stopActionByTag(1);
+}
+void EnemyHero::dealDamageToAllyHero()
+{
+	oponent->health -= strength;
+	updateAllyHeroHpBar(oponent->health);
+	if (oponent->health <= 0)
+		finishBattleWithLose();
+}
+void EnemyHero::updateAllyHeroHpBar(short health)
+{
+	std::stringstream ss;
+	ss << health << "/" << oponent->constHealth;
+	std::string healthStr = ss.str();
+	oponent->hpLabel->setString(healthStr);
+	double remainingHealthInPercent = ((double)health / oponent->constHealth) * 100;
+	oponent->hpBar->setPercent(remainingHealthInPercent);
+}
+void EnemyHero::initAllyHero(AllyHero* hero)
+{
+	oponent = hero;
+}
+void EnemyHero::finishBattleWithLose()
+{
+	auto scene = GameScene::createScene();
+	Director::getInstance()->replaceScene(scene);
 }

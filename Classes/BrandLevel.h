@@ -39,10 +39,8 @@ public:
 	void addEnemyHeroHpLoadingBar();
 	void addAllyHeroHpLabel();
 	void addEnemyHeroHpLabel();
-	void updateAllyHeroHpBar(short amountOfHp);
 	void updateEnemyHeroHpBar(short amountOfHp);
 
-	void dealDamageToAllyHero(short strength);
 	void dealDamageToEnemyHero(short strength);
 	void castFirstAllyHeroSpell();
 	void castFirstEnemyHeroSpell();

@@ -3,6 +3,7 @@ BrandLevel::BrandLevel(EnemyHero* enemy, AllyHero* ally)
 {
 	this->allyHero = ally;
 	this->enemyHero = enemy;
+	this->enemyHero->initAllyHero(this->allyHero);
 }
 bool BrandLevel::init()
 {
@@ -116,16 +117,17 @@ void BrandLevel::addEnemyHeroHpBorder()
 }
 void BrandLevel::addAllyHeroHpLoadingBar()
 {
-	allyHeroHpBar = ui::LoadingBar::create("combatScene/health.png");
-	allyHeroHpBar->setPosition(Vec2(360, 35));
-	allyHeroHpBar->setPercent(100);
-	this->addChild(allyHeroHpBar, 2);
+	allyHero->hpBar = ui::LoadingBar::create("combatScene/health.png");
+	allyHero->hpBar->setPosition(Vec2(360, 35));
+	allyHero->hpBar->setPercent(100);
+	this->addChild(allyHero->hpBar, 2);
 }
 void BrandLevel::addEnemyHeroHpLoadingBar()
 {
 	enemyHeroHpBar = ui::LoadingBar::create("combatScene/health.png");
 	enemyHeroHpBar->setPosition(Vec2(320, 870));
 	enemyHeroHpBar->setPercent(100);
+	enemyHeroHpBar->setName("enemyHpBar");
 	this->addChild(enemyHeroHpBar, 2);
 }
 void BrandLevel::addAllyHeroHpLabel()
@@ -134,7 +136,7 @@ void BrandLevel::addAllyHeroHpLabel()
 	ss << allyHeroHealth << "/" << allyHeroHealth;
 	allyHero->hpLabel = Label::createWithTTF(ss.str(), "fonts/Marker Felt.ttf", 30.0f);
 	allyHero->hpLabel->setPosition(Vec2(360, 35));
-	allyHero->hpLabel->setTextColor(Color4B::BLACK);
+	allyHero->hpLabel->setTextColor(Color4B::WHITE);
 	this->addChild(allyHero->hpLabel, 3);
 }
 void BrandLevel::addEnemyHeroHpLabel()
@@ -146,15 +148,6 @@ void BrandLevel::addEnemyHeroHpLabel()
 	enemyHero->hpLabel->setTextColor(Color4B::BLACK);
 	this->addChild(enemyHero->hpLabel, 3);
 }
-void BrandLevel::updateAllyHeroHpBar(short amountOfHp)
-{
-	std::stringstream ss;
-	ss << amountOfHp << "/" << allyHeroHealth;
-	std::string health = ss.str();
-	allyHero->hpLabel->setString(health);
-	double remainingHealthInPercent = ((double)amountOfHp / allyHeroHealth) * 100;
-	allyHeroHpBar->setPercent(remainingHealthInPercent);
-}
 void BrandLevel::updateEnemyHeroHpBar(short amountOfHp)
 {
 	std::stringstream ss;
@@ -163,13 +156,6 @@ void BrandLevel::updateEnemyHeroHpBar(short amountOfHp)
 	enemyHero->hpLabel->setString(health);
 	double remainingHealthInPercent = ((double)amountOfHp / enemyHeroHealth) * 100;
 	enemyHeroHpBar->setPercent(remainingHealthInPercent);
-}
-void BrandLevel::dealDamageToAllyHero(short strength)
-{
-	allyHero->health -= strength;
-	updateAllyHeroHpBar(allyHero->health);
-	if (allyHero->health <= 0)
-		finishBattleWithLose();
 }
 void BrandLevel::dealDamageToEnemyHero(short strength)
 {
@@ -196,10 +182,10 @@ void BrandLevel::castSecondAllyHeroSpell()
 }
 void BrandLevel::castFirstEnemyHeroSpell()
 {
-	enemyHero->castFirstSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel::dealDamageToAllyHero, this, enemyHero->strength));
-	auto damageSequence = Sequence::create(DelayTime::create(enemyHero->timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
-	this->runAction(damageSequence);
+	enemyHero->castFirstSpell(allyHero);
+	//auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel::dealDamageToAllyHero, this, enemyHero->strength));
+	//auto damageSequence = Sequence::create(DelayTime::create(enemyHero->timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	//this->runAction(damageSequence);
 }
 void BrandLevel::updateAllyHeroFirstSpellCooldown(float dt)
 {

@@ -16,7 +16,7 @@ Cassiopeia::Cassiopeia()
 	this->walkFrameDuration = 0.2f;
 	this->walkNumberOfFrames = 7;
 }
-void Cassiopeia::castFirstSpell()
+void Cassiopeia::castFirstSpell(AllyHero* hero)
 {
 	stopWalkAnimate();
 	initAnimates();
@@ -30,4 +30,7 @@ void Cassiopeia::castFirstSpell()
 		runWalkAnimate();
 		}), NULL);
 	heroSprite->runAction(seq);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(EnemyHero::dealDamageToAllyHero, this));
+	auto damageSequence = Sequence::create(DelayTime::create(timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	node->runAction(damageSequence);
 }
