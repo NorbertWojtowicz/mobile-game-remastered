@@ -5,6 +5,7 @@ Darius::Darius()
 	this->setSprite(name);
 	this->strength = 6;
 	this->health = 20;
+	this->constHealth = 20;
 	this->defaultPosition = Vec2(290, 450);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

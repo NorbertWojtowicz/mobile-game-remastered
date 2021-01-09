@@ -5,6 +5,7 @@
 #include <string>
 #include "ui/CocosGUI.h"
 USING_NS_CC;
+#include "EnemyHero.h"
 class AllyHero
 {
 public:
@@ -17,6 +18,8 @@ public:
 	void initSecondSpell();
 	virtual void castSecondSpell() = 0;
 	void runFirstSpellCooldown();
+	void dealDamageToEnemyHero();
+	void finishBattleWithWin();
 	void runSecondSpellCooldown();
 	void initFirstSpellCooldownAnimate();
 	void initSecondSpellCooldownAnimate();
@@ -25,9 +28,12 @@ public:
 	void addFirstSpellCooldownSpriteToRunningScene();
 	void addSecondSpellCooldownSpriteToRunningScene();
 	void turnOffSpells();
+	void updateEnemyHeroHpBar(short health);
+	void initEnemyHero(EnemyHero* oponent);
 	Animate* firstSpellAnimate, * secondSpellAnimate,
 		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;
+	EnemyHero* oponent;
 	MenuItemImage* spellOneIcon, * spellTwoIcon;
 	Sprite* firstSpellCooldownSprite, * secondSpellCooldownSprite;
 	Label* hpLabel;

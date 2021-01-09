@@ -23,6 +23,10 @@ void Garen::castFirstSpell()
 	sceneNode->addChild(sprite);
 	auto attackSequence = Sequence::create(firstSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runFirstSpellCooldown, this));
+	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	sceneNode->runAction(damageSequence);
 }
 void Garen::castSecondSpell()
 {
@@ -33,4 +37,8 @@ void Garen::castSecondSpell()
 	sceneNode->addChild(sword);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	sword->runAction(attackSequence);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, this));
+	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
+	sceneNode->runAction(damageSequence);
 }

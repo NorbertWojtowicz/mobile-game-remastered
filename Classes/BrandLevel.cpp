@@ -4,6 +4,7 @@ BrandLevel::BrandLevel(EnemyHero* enemy, AllyHero* ally)
 	this->allyHero = ally;
 	this->enemyHero = enemy;
 	this->enemyHero->initAllyHero(this->allyHero);
+	this->allyHero->initEnemyHero(this->enemyHero);
 }
 bool BrandLevel::init()
 {
@@ -124,11 +125,11 @@ void BrandLevel::addAllyHeroHpLoadingBar()
 }
 void BrandLevel::addEnemyHeroHpLoadingBar()
 {
-	enemyHeroHpBar = ui::LoadingBar::create("combatScene/health.png");
-	enemyHeroHpBar->setPosition(Vec2(320, 870));
-	enemyHeroHpBar->setPercent(100);
-	enemyHeroHpBar->setName("enemyHpBar");
-	this->addChild(enemyHeroHpBar, 2);
+	enemyHero->hpBar = ui::LoadingBar::create("combatScene/health.png");
+	enemyHero->hpBar->setPosition(Vec2(320, 870));
+	enemyHero->hpBar->setPercent(100);
+	enemyHero->hpBar->setName("enemyHpBar");
+	this->addChild(enemyHero->hpBar, 2);
 }
 void BrandLevel::addAllyHeroHpLabel()
 {
@@ -148,44 +149,17 @@ void BrandLevel::addEnemyHeroHpLabel()
 	enemyHero->hpLabel->setTextColor(Color4B::BLACK);
 	this->addChild(enemyHero->hpLabel, 3);
 }
-void BrandLevel::updateEnemyHeroHpBar(short amountOfHp)
-{
-	std::stringstream ss;
-	ss << amountOfHp << "/" << enemyHeroHealth;
-	std::string health = ss.str();
-	enemyHero->hpLabel->setString(health);
-	double remainingHealthInPercent = ((double)amountOfHp / enemyHeroHealth) * 100;
-	enemyHeroHpBar->setPercent(remainingHealthInPercent);
-}
-void BrandLevel::dealDamageToEnemyHero(short strength)
-{
-	enemyHero->health -= strength;
-	updateEnemyHeroHpBar(enemyHero->health);
-	if (enemyHero->health <= 0)
-		finishBattleWithWin();
-}
 void BrandLevel::castFirstAllyHeroSpell()
 {
 	allyHero->castFirstSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel::dealDamageToEnemyHero, this, allyHero->strength));
-	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runFirstSpellCooldown, allyHero));
-	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(allyHero->timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
-	this->runAction(damageSequence);
 }
 void BrandLevel::castSecondAllyHeroSpell()
 {
 	allyHero->castSecondSpell();
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel::dealDamageToEnemyHero, this, allyHero->strength));
-	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, allyHero));
-	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(allyHero->timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
-	this->runAction(damageSequence);
 }
 void BrandLevel::castFirstEnemyHeroSpell()
 {
 	enemyHero->castFirstSpell(allyHero);
-	//auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(BrandLevel::dealDamageToAllyHero, this, enemyHero->strength));
-	//auto damageSequence = Sequence::create(DelayTime::create(enemyHero->timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
-	//this->runAction(damageSequence);
 }
 void BrandLevel::updateAllyHeroFirstSpellCooldown(float dt)
 {

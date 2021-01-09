@@ -6,6 +6,7 @@ Brand::Brand()
 	this->setSprite("brand");
 	this->strength = 2;
 	this->health = 10;
+	this->constHealth = 10;
 	this->defaultPosition = Vec2(310, 545);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

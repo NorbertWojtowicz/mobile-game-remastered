@@ -1,4 +1,5 @@
 #include "AllyHero.h"
+#include "GameScene.h"
 void AllyHero::setName(std::string name)
 {
 	this->name = name;
@@ -107,4 +108,29 @@ void AllyHero::turnOffSpells()
 {
 	spellOneIcon->setEnabled(0);
 	spellTwoIcon->setEnabled(0);
+}
+void AllyHero::initEnemyHero(EnemyHero* oponent)
+{
+	this->oponent = oponent;
+}
+void AllyHero::updateEnemyHeroHpBar(short health)
+{
+	std::stringstream ss;
+	ss << health << "/" << oponent->constHealth;
+	std::string healthStr = ss.str();
+	oponent->hpLabel->setString(healthStr);
+	double remainingHealthInPercent = ((double)health / oponent->constHealth) * 100;
+	oponent->hpBar->setPercent(remainingHealthInPercent);
+}
+void AllyHero::dealDamageToEnemyHero()
+{
+	oponent->health -= strength;
+	updateEnemyHeroHpBar(oponent->health);
+	if (oponent->health <= 0)
+		finishBattleWithWin();
+}
+void AllyHero::finishBattleWithWin()
+{
+	auto scene = GameScene::createScene();
+	Director::getInstance()->replaceScene(scene);
 }

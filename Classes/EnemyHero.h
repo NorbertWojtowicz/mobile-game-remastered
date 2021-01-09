@@ -1,9 +1,10 @@
 #ifndef __ENEMY_HERO_H__
 #define __ENEMY_HERO_H__
 #include "cocos2d.h"
+#include "ui/CocosGUI.h"
 #include <string>
-#include "AllyHero.h"
 USING_NS_CC;
+class AllyHero;
 class EnemyHero
 {
 public:
@@ -21,12 +22,13 @@ public:
 	void finishBattleWithLose();
 	void initAllyHero(AllyHero* hero);
 	void setSprite(std::string nameOfHero);
-	short strength, health;
+	short strength, health, const constHealth;
 	Sprite* sprite;
 	float firstSpellCooldown, timeToDealDamageInFirstSpell;
 	Animate* firstSpellAnimate, *walkAnimate;
 	Label* hpLabel;
 	AllyHero* oponent;
+	ui::LoadingBar* hpBar;
 protected:
 	std::string name;
 	float firstSpellTimer, firstSpellFrameDuration,const firstSpellCooldownConst, walkFrameDuration;

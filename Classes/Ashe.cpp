@@ -25,6 +25,10 @@ void Ashe::castFirstSpell()
 	sprite->runAction(moveBy);
 	auto attackSequence = Sequence::create(firstSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runFirstSpellCooldown, this));
+	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	sceneNode->runAction(damageSequence);
 }
 void Ashe::castSecondSpell()
 {
@@ -37,4 +41,8 @@ void Ashe::castSecondSpell()
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	arrow->runAction(attackSequence);
 	arrow->runAction(arrowMove);
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this));
+	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, this));
+	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
+	sceneNode->runAction(damageSequence);
 }
