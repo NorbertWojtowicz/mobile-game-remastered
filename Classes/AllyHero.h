@@ -18,7 +18,7 @@ public:
 	void initSecondSpell();
 	virtual void castSecondSpell() = 0;
 	void runFirstSpellCooldown();
-	void dealDamageToEnemyHero();
+	void dealDamageToEnemyHero(short dmg);
 	void finishBattleWithWin();
 	void runSecondSpellCooldown();
 	void initFirstSpellCooldownAnimate();

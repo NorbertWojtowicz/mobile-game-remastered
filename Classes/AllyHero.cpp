@@ -122,9 +122,9 @@ void AllyHero::updateEnemyHeroHpBar(short health)
 	double remainingHealthInPercent = ((double)health / oponent->constHealth) * 100;
 	oponent->hpBar->setPercent(remainingHealthInPercent);
 }
-void AllyHero::dealDamageToEnemyHero()
+void AllyHero::dealDamageToEnemyHero(short dmg)
 {
-	oponent->health -= strength;
+	oponent->health -= dmg;
 	updateEnemyHeroHpBar(oponent->health);
 	if (oponent->health <= 0)
 		finishBattleWithWin();
