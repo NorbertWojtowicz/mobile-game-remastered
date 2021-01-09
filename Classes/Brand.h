@@ -9,6 +9,6 @@ class Brand : public EnemyHero
 {
 public:
 	Brand();
-	void castFirstSpell();
+	void castFirstSpell(AllyHero* hero);
 };
 #endif

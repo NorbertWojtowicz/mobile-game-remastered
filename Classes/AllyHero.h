@@ -3,12 +3,14 @@
 
 #include "cocos2d.h"
 #include <string>
+#include "ui/CocosGUI.h"
 USING_NS_CC;
+#include "EnemyHero.h"
 class AllyHero
 {
 public:
 	std::string name;
-	short health, strength;
+	short health, strength, const constHealth;
 	void setName(std::string name);
 	std::string getName();
 	void initFirstSpell();
@@ -16,6 +18,8 @@ public:
 	void initSecondSpell();
 	virtual void castSecondSpell() = 0;
 	void runFirstSpellCooldown();
+	void dealDamageToEnemyHero();
+	void finishBattleWithWin();
 	void runSecondSpellCooldown();
 	void initFirstSpellCooldownAnimate();
 	void initSecondSpellCooldownAnimate();
@@ -23,9 +27,13 @@ public:
 	void initSecondSpellCooldownSprite();
 	void addFirstSpellCooldownSpriteToRunningScene();
 	void addSecondSpellCooldownSpriteToRunningScene();
+	void turnOffSpells();
+	void updateEnemyHeroHpBar(short health);
+	void initEnemyHero(EnemyHero* oponent);
 	Animate* firstSpellAnimate, * secondSpellAnimate,
 		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;
+	EnemyHero* oponent;
 	MenuItemImage* spellOneIcon, * spellTwoIcon;
 	Sprite* firstSpellCooldownSprite, * secondSpellCooldownSprite;
 	Label* hpLabel;
@@ -33,5 +41,6 @@ public:
 		  firstSpellFrameDuration, secondSpellFrameDuration;
 	short firstSpellNumberOfFrames, secondSpellNumberOfFrames, 
 		  firstSpellCooldownNumberOfFrames, secondSpellCooldownNumberOfFrames;
+	ui::LoadingBar* hpBar;
 };
 #endif
