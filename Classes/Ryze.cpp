@@ -26,7 +26,7 @@ void Ryze::castFirstSpell()
 	sprite->runAction(moveBy);
 	auto attackSequence = Sequence::create(firstSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this));
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));
 	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runFirstSpellCooldown, this));
 	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
 	sceneNode->runAction(damageSequence);
@@ -40,7 +40,7 @@ void Ryze::castSecondSpell()
 	sceneNode->addChild(sprite);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this));
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));
 	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, this));
 	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	sceneNode->runAction(damageSequence);

@@ -5,6 +5,7 @@
 #include "Garen.h"
 #include "Cassiopeia.h"
 #include "Darius.h"
+#include "Twisted_Fate.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -75,4 +76,5 @@ void WorldMap::prepareAllyMap()
 	mapAlly["Ryze"] = &createAllyHeroInstance<Ryze>;
 	mapAlly["Ashe"] = &createAllyHeroInstance<Ashe>;
 	mapAlly["Garen"] = &createAllyHeroInstance<Garen>;
+	mapAlly["Twisted_Fate"] = &createAllyHeroInstance<Twisted_Fate>;
 }
