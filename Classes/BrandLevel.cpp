@@ -159,7 +159,7 @@ void BrandLevel::castSecondAllyHeroSpell()
 }
 void BrandLevel::castFirstEnemyHeroSpell()
 {
-	enemyHero->castFirstSpell(allyHero);
+	enemyHero->castFirstSpell();
 }
 void BrandLevel::updateAllyHeroFirstSpellCooldown(float dt)
 {

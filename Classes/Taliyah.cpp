@@ -17,7 +17,7 @@ Taliyah::Taliyah()
 	this->walkFrameDuration = 0.3f;
 	this->walkNumberOfFrames = 3;
 }
-void Taliyah::castFirstSpell(AllyHero* hero)
+void Taliyah::castFirstSpell()
 {
 	stopWalkAnimate();
 	initAnimates();

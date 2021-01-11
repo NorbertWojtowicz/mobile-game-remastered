@@ -5,6 +5,6 @@ class Taliyah : public EnemyHero
 {
 public:
 	Taliyah();
-	void castFirstSpell(AllyHero* hero);
+	void castFirstSpell();
 };
 #endif

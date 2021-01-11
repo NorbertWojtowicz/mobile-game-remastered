@@ -8,7 +8,7 @@ class AllyHero;
 class EnemyHero
 {
 public:
-	virtual void castFirstSpell(AllyHero* hero) = 0;
+	virtual void castFirstSpell() = 0;
 	void initAnimates();
 	void updateFirstSpellTime(float dt);
 	void runWalkAnimate();

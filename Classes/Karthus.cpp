@@ -1,23 +1,23 @@
-#include "Darius.h"
-Darius::Darius()
+#include "Karthus.h"
+Karthus::Karthus()
 {
-	this->setName("darius");
+	this->setName("karthus");
 	this->setSprite(name);
-	this->strength = 6;
+	this->strength = 9;
 	this->health = 20;
 	this->constHealth = 20;
-	this->defaultPosition = Vec2(290, 450);
+	this->defaultPosition = Vec2(180, 500);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;
 	this->firstSpellCooldownConst = 5.0;
 	this->firstSpellTimer = 0.0;
-	this->timeToDealDamageInFirstSpell = 1.4;
-	this->firstSpellNumberOfFrames = 7;
-	this->firstSpellFrameDuration = 0.2f;
+	this->timeToDealDamageInFirstSpell = 1.25f;
+	this->firstSpellNumberOfFrames = 9;
+	this->firstSpellFrameDuration = 0.125f;
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 }
-void Darius::castFirstSpell()
+void Karthus::castFirstSpell()
 {
 	stopWalkAnimate();
 	initAnimates();
@@ -31,7 +31,9 @@ void Darius::castFirstSpell()
 		runWalkAnimate();
 		}), NULL);
 	heroSprite->runAction(seq);
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(Darius::dealDamageToAllyHero, this));
-	auto damageSequence = Sequence::create(DelayTime::create(timeToDealDamageInFirstSpell), damageCallFunc, nullptr);
+	auto dmg = CallFunc::create(CC_CALLBACK_0(Karthus::dealDamageToAllyHero, this));
+	auto delay = DelayTime::create(timeToDealDamageInFirstSpell);
+	auto delayBetween = DelayTime::create(firstSpellFrameDuration);
+	auto damageSequence = Sequence::create(delay, dmg, nullptr);
 	node->runAction(damageSequence);
 }
