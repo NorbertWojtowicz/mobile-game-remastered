@@ -810,6 +810,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\EnemyHero.h" />
     <ClInclude Include="..\Classes\Garen.h" />
     <ClInclude Include="..\Classes\Karthus.h" />
+    <ClInclude Include="..\Classes\Lucian.h" />
     <ClInclude Include="..\Classes\Pantheon.h" />
     <ClInclude Include="..\Classes\Ryze.h" />
     <ClInclude Include="..\Classes\Taliyah.h" />
@@ -832,6 +833,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\EnemyHero.cpp" />
     <ClCompile Include="..\Classes\Garen.cpp" />
     <ClCompile Include="..\Classes\Karthus.cpp" />
+    <ClCompile Include="..\Classes\Lucian.cpp" />
     <ClCompile Include="..\Classes\Pantheon.cpp" />
     <ClCompile Include="..\Classes\Ryze.cpp" />
     <ClCompile Include="..\Classes\Taliyah.cpp" />
