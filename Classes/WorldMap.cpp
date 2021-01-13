@@ -11,6 +11,7 @@
 #include "Pantheon.h"
 #include "Lucian.h"
 #include "Kogmaw.h"
+#include "Malhazar.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -31,11 +32,11 @@ bool WorldMap::init()
 void WorldMap::initScrollView()
 {
 	auto scrollViewBackground = Sprite::create("backgrounds/worldMapBG.png");
-	scrollViewBackground->setPosition(Vec2(320, 948));
+	scrollViewBackground->setPosition(Vec2(320, 1125));
 	scrollView = ui::ScrollView::create();
 	scrollView->setPosition(Vec2(0, 0));
 	scrollView->setBounceEnabled(1);
-	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.3);
+	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.8);
 	scrollView->setContentSize(scrollViewBackground->getContentSize());
 	scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
 	scrollView->setScrollBarEnabled(0);
@@ -62,6 +63,8 @@ void WorldMap::addIslandsToScrollView()
 	level7->setPosition(Vec2(0, 1000));
 	MenuItemImage* level8 = MenuItemImage::create("worldMap/islandLevel3.png", "worldMap/islandLevel3.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 7, allyId));
 	level8->setPosition(Vec2(0, 1200));
+	MenuItemImage* level9 = MenuItemImage::create("worldMap/islandLevel3.png", "worldMap/islandLevel3.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 8, allyId));
+	level9->setPosition(Vec2(0, 1400));
 	Menu* menu = Menu::create(level1, NULL);
 	menu->addChild(level2);
 	menu->addChild(level3);
@@ -70,6 +73,7 @@ void WorldMap::addIslandsToScrollView()
 	menu->addChild(level6);
 	menu->addChild(level7);
 	menu->addChild(level8);
+	menu->addChild(level9);
 	scrollView->addChild(menu, 1);
 }
 void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
@@ -93,6 +97,7 @@ void WorldMap::prepareEnemyMap()
 	mapEnemy["Pantheon"] = &createEnemyHeroInstance<Pantheon>;
 	mapEnemy["Lucian"] = &createEnemyHeroInstance<Lucian>;
 	mapEnemy["Kogmaw"] = &createEnemyHeroInstance<Kogmaw>;
+	mapEnemy["Malhazar"] = &createEnemyHeroInstance<Malhazar>;
 }
 template <typename T>
 AllyHero* createAllyHeroInstance() { return new T; }
