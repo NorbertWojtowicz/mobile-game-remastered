@@ -12,6 +12,7 @@
 #include "Lucian.h"
 #include "Kogmaw.h"
 #include "Malhazar.h"
+#include "Irelia.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -65,15 +66,9 @@ void WorldMap::addIslandsToScrollView()
 	level8->setPosition(Vec2(0, 1200));
 	MenuItemImage* level9 = MenuItemImage::create("worldMap/islandLevel3.png", "worldMap/islandLevel3.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 8, allyId));
 	level9->setPosition(Vec2(0, 1400));
-	Menu* menu = Menu::create(level1, NULL);
-	menu->addChild(level2);
-	menu->addChild(level3);
-	menu->addChild(level4);
-	menu->addChild(level5);
-	menu->addChild(level6);
-	menu->addChild(level7);
-	menu->addChild(level8);
-	menu->addChild(level9);
+	MenuItemImage* level10 = MenuItemImage::create("worldMap/islandLevel3.png", "worldMap/islandLevel3.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 9, allyId));
+	level10->setPosition(Vec2(0, 1600));
+	Menu* menu = Menu::create(level1, level2, level3, level4, level5, level6, level7, level8, level9, level10, NULL);
 	scrollView->addChild(menu, 1);
 }
 void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
@@ -98,6 +93,7 @@ void WorldMap::prepareEnemyMap()
 	mapEnemy["Lucian"] = &createEnemyHeroInstance<Lucian>;
 	mapEnemy["Kogmaw"] = &createEnemyHeroInstance<Kogmaw>;
 	mapEnemy["Malhazar"] = &createEnemyHeroInstance<Malhazar>;
+	mapEnemy["Irelia"] = &createEnemyHeroInstance<Irelia>;
 }
 template <typename T>
 AllyHero* createAllyHeroInstance() { return new T; }

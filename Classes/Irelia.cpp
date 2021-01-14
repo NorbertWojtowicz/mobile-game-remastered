@@ -1,23 +1,23 @@
-#include "Malhazar.h"
-Malhazar::Malhazar()
+#include "Irelia.h"
+Irelia::Irelia()
 {
-	this->setName("malhazar");
+	this->setName("irelia");
 	this->setSprite(name);
-	this->strength = 9;
+	this->strength = 1;
 	this->health = 20;
 	this->constHealth = 20;
-	this->defaultPosition = Vec2(190, 500);
+	this->defaultPosition = Vec2(260, 500);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;
 	this->firstSpellCooldownConst = 5.0;
 	this->firstSpellTimer = 0.0;
-	this->timeToDealDamageInFirstSpell = 0.8f;
-	this->firstSpellNumberOfFrames = 14;
+	this->timeToDealDamageInFirstSpell = 0.5f;
+	this->firstSpellNumberOfFrames = 12;
 	this->firstSpellFrameDuration = 0.1f;
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 }
-void Malhazar::castFirstSpell()
+void Irelia::castFirstSpell()
 {
 	stopWalkAnimate();
 	initAnimates();
@@ -31,8 +31,9 @@ void Malhazar::castFirstSpell()
 		runWalkAnimate();
 		}), NULL);
 	heroSprite->runAction(seq);
-	auto dmg = CallFunc::create(CC_CALLBACK_0(Malhazar::dealDamageToAllyHero, this));
+	auto dmg = CallFunc::create(CC_CALLBACK_0(Irelia::dealDamageToAllyHero, this));
 	auto delay = DelayTime::create(timeToDealDamageInFirstSpell);
-	auto damageSequence = Sequence::create(delay, dmg, nullptr);
+	auto delayBetween = DelayTime::create(firstSpellFrameDuration);
+	auto damageSequence = Sequence::create(delay, dmg, delayBetween, delayBetween, dmg, delayBetween, dmg, delayBetween, delayBetween, dmg, delayBetween, dmg, delayBetween, dmg, nullptr);
 	node->runAction(damageSequence);
 }
