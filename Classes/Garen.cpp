@@ -20,7 +20,7 @@ void Garen::castFirstSpell()
 	auto sceneNode = Director::getInstance()->getRunningScene()->getChildByName("levelNode");
 	auto sprite = Sprite::create();
 	sprite->setPosition(Vec2(320, 450));
-	sceneNode->addChild(sprite);
+	sceneNode->addChild(sprite, 3);
 	auto attackSequence = Sequence::create(firstSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));
@@ -34,7 +34,7 @@ void Garen::castSecondSpell()
 	auto sceneNode = Director::getInstance()->getRunningScene()->getChildByName("levelNode");
 	Sprite* sword = Sprite::create();
 	sword->setPosition(Vec2(320, 610));
-	sceneNode->addChild(sword);
+	sceneNode->addChild(sword, 3);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	sword->runAction(attackSequence);
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));

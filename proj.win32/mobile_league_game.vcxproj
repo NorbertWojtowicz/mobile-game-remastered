@@ -818,6 +818,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\Ryze.h" />
     <ClInclude Include="..\Classes\Taliyah.h" />
     <ClInclude Include="..\Classes\Twisted_Fate.h" />
+    <ClInclude Include="..\Classes\Yuumi.h" />
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h" />
     <ClInclude Include="G:\mobile_league_game\Classes\HelloWorldScene.h" />
     <ClInclude Include="G:\mobile_league_game\Classes\GameScene.h" />
@@ -844,6 +845,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\Ryze.cpp" />
     <ClCompile Include="..\Classes\Taliyah.cpp" />
     <ClCompile Include="..\Classes\Twisted_Fate.cpp" />
+    <ClCompile Include="..\Classes\Yuumi.cpp" />
     <ClCompile Include="G:\mobile_league_game\Classes\AppDelegate.cpp" />
     <ClCompile Include="G:\mobile_league_game\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="G:\mobile_league_game\Classes\GameScene.cpp" />

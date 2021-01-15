@@ -14,7 +14,7 @@ bool BrandLevel::init()
 	}
 	this->initHeroesHealth();
 	this->addEssentialElements();
-	this->addChild(enemyHero->sprite);
+	this->addChild(enemyHero->sprite, 2);
 	this->enemyHero->sprite->setName("heroSprite");
 	this->enemyHero->runWalkAnimate();
 	this->schedule(SEL_SCHEDULE(&BrandLevel::updateSpellsCooldown), 0.1);
@@ -113,7 +113,7 @@ void BrandLevel::addAllyHeroHpBorder()
 void BrandLevel::addEnemyHeroHpBorder()
 {
 	auto healthBarBorder = Sprite::create("combatScene/healthBar.png");
-	healthBarBorder->setPosition(Vec2(320, 870));
+	healthBarBorder->setPosition(Vec2(320, 920));
 	this->addChild(healthBarBorder, 2);
 }
 void BrandLevel::addAllyHeroHpLoadingBar()
@@ -126,7 +126,7 @@ void BrandLevel::addAllyHeroHpLoadingBar()
 void BrandLevel::addEnemyHeroHpLoadingBar()
 {
 	enemyHero->hpBar = ui::LoadingBar::create("combatScene/health.png");
-	enemyHero->hpBar->setPosition(Vec2(320, 870));
+	enemyHero->hpBar->setPosition(Vec2(320, 920));
 	enemyHero->hpBar->setPercent(100);
 	enemyHero->hpBar->setName("enemyHpBar");
 	this->addChild(enemyHero->hpBar, 2);
@@ -145,7 +145,7 @@ void BrandLevel::addEnemyHeroHpLabel()
 	std::stringstream ss;
 	ss << enemyHeroHealth << "/" << enemyHeroHealth;
 	enemyHero->hpLabel = Label::createWithTTF(ss.str(), "fonts/Marker Felt.ttf", 30.0f);
-	enemyHero->hpLabel->setPosition(Vec2(320, 870));
+	enemyHero->hpLabel->setPosition(Vec2(320, 920));
 	enemyHero->hpLabel->setTextColor(Color4B::BLACK);
 	this->addChild(enemyHero->hpLabel, 3);
 }
