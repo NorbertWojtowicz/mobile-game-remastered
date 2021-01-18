@@ -5,6 +5,6 @@ class Darius : public EnemyHero
 {
 public:
 	Darius();
-	void castFirstSpell(AllyHero* hero);
+	void castFirstSpell();
 };
 #endif

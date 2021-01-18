@@ -20,7 +20,7 @@ void Ashe::castFirstSpell()
 	auto sceneNode = Director::getInstance()->getRunningScene()->getChildByName("levelNode");
 	auto sprite = Sprite::create();
 	sprite->setPosition(Vec2(320, 250));
-	sceneNode->addChild(sprite);
+	sceneNode->addChild(sprite, 3);
 	auto moveBy = MoveBy::create(1.65f, Vec2(0, 220));
 	sprite->runAction(moveBy);
 	auto attackSequence = Sequence::create(firstSpellAnimate, RemoveSelf::create(), nullptr);
@@ -37,7 +37,7 @@ void Ashe::castSecondSpell()
 	Sprite* arrow = Sprite::create();
 	arrow->setPosition(Vec2(620, 710));
 	MoveBy* arrowMove = MoveBy::create(2.25f, Vec2(-250, -300));
-	sceneNode->addChild(arrow);
+	sceneNode->addChild(arrow, 3);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	arrow->runAction(attackSequence);
 	arrow->runAction(arrowMove);

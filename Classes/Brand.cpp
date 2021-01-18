@@ -18,7 +18,7 @@ Brand::Brand()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 }
-void Brand::castFirstSpell(AllyHero* hero)
+void Brand::castFirstSpell()
 {
 	stopWalkAnimate();
 	initAnimates();

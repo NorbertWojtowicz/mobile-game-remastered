@@ -17,7 +17,7 @@ Darius::Darius()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 }
-void Darius::castFirstSpell(AllyHero* hero)
+void Darius::castFirstSpell()
 {
 	stopWalkAnimate();
 	initAnimates();

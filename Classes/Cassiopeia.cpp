@@ -17,7 +17,7 @@ Cassiopeia::Cassiopeia()
 	this->walkFrameDuration = 0.2f;
 	this->walkNumberOfFrames = 7;
 }
-void Cassiopeia::castFirstSpell(AllyHero* hero)
+void Cassiopeia::castFirstSpell()
 {
 	stopWalkAnimate();
 	initAnimates();

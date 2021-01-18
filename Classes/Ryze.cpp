@@ -21,7 +21,7 @@ void Ryze::castFirstSpell()
 	auto sceneNode = Director::getInstance()->getRunningScene()->getChildByName("levelNode");
 	auto sprite = Sprite::create();
 	sprite->setPosition(Vec2(320, 250));
-	sceneNode->addChild(sprite);
+	sceneNode->addChild(sprite, 3);
 	auto moveBy = MoveBy::create(1.95f, Vec2(0, 300));
 	sprite->runAction(moveBy);
 	auto attackSequence = Sequence::create(firstSpellAnimate, RemoveSelf::create(), nullptr);
@@ -37,7 +37,7 @@ void Ryze::castSecondSpell()
 	auto sceneNode = Director::getInstance()->getRunningScene()->getChildByName("levelNode");
 	auto sprite = Sprite::create();
 	sprite->setPosition(Vec2(320, 510));
-	sceneNode->addChild(sprite);
+	sceneNode->addChild(sprite, 3);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
 	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));

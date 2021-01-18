@@ -5,6 +5,6 @@ class Cassiopeia : public EnemyHero
 {
 public:
 	Cassiopeia();
-	void castFirstSpell(AllyHero* hero);
+	void castFirstSpell();
 };
 #endif
