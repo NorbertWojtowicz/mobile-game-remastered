@@ -25,7 +25,7 @@ private:
 	void closeShop();
 	Node* shopLayer;
 	Sprite* boughtHeroSprite;
-	static const std::string hero_names[4];
+	static const std::string hero_names[6];
 };
 
 

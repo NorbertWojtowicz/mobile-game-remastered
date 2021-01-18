@@ -51,7 +51,7 @@ void Shop::changeShopPage(int numberOfPage)
 }
 void Shop::turnPageToRight()
 {
-	if (numberOfPage == 3)
+	if (numberOfPage == 5)
 		return;
 	numberOfPage++;
 	cocos2d::log("numberOfPage incremented in turnPageToRigth function: %d", this->numberOfPage);
@@ -65,7 +65,7 @@ void Shop::turnPageToLeft()
 	cocos2d::log("numberOfPage decremented in turnPageToRigth function: %d", this->numberOfPage);
 	changeShopPage(numberOfPage);
 }
-std::string const Shop::hero_names[4] = { "ryze", "ashe" ,"garen", "twisted_fate" };
+std::string const Shop::hero_names[6] = { "ryze", "ashe" ,"garen", "twisted_fate", "elise", "katarina" };
 void Shop::addButtons()
 {
 	MenuItemImage* buyButton = MenuItemImage::create("buttons/buyBtn.png", "buttons/pressedBuyBtn.png", CC_CALLBACK_0(Shop::buyHero, this));
