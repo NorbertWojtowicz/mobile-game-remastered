@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>kaisa0.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{354,0},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{531,177},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{531,0},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{354,177},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{708,0},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{177,177},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa6.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{177,0},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa7.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,177},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+			<key>kaisa8.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{176,176}}</string>
+				<key>sourceSize</key>
+				<string>{176,176}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{1024,512}</string>
+			<key>textureFileName</key>
+			<string>kaisaFirstSpellAnimate.png</string>
+			</dict>
+		</dict>
+</plist>
