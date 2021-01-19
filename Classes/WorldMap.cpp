@@ -14,6 +14,9 @@
 #include "Malhazar.h"
 #include "Irelia.h"
 #include "Yuumi.h"
+#include "Elise.h"
+#include "Katarina.h"
+#include "Kaisa.h"
 Scene* WorldMap::createScene()
 {
 	auto scene = Scene::create();
@@ -107,4 +110,7 @@ void WorldMap::prepareAllyMap()
 	mapAlly["Ashe"] = &createAllyHeroInstance<Ashe>;
 	mapAlly["Garen"] = &createAllyHeroInstance<Garen>;
 	mapAlly["Twisted_Fate"] = &createAllyHeroInstance<Twisted_Fate>;
+	mapAlly["Elise"] = &createAllyHeroInstance<Elise>;
+	mapAlly["Katarina"] = &createAllyHeroInstance<Katarina>;
+	mapAlly["Kaisa"] = &createAllyHeroInstance<Kaisa>;
 }
