@@ -1,4 +1,5 @@
 #include "Ashe.h"
+#include "GameScene.h"
 Ashe::Ashe()
 {
 	this->setName("ashe");

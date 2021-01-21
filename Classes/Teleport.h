@@ -3,7 +3,7 @@
 #define __TELEPORT_H__
 
 #include "cocos2d.h"
-#include "GameScene.h"
+//#include "GameScene.h"
 #include <string>
 #include <vector>
 

@@ -7,7 +7,7 @@
 #include "WorldMap.h"
 USING_NS_CC;
 
-class GameScene : public cocos2d::Layer
+class GameScene : public cocos2d::Node
 {
 public:
 	Size visibleSize = Director::getInstance()->getVisibleSize();
@@ -15,5 +15,7 @@ public:
 	static Scene* createScene();
 	virtual bool init();
 	CREATE_FUNC(GameScene);
+	void addArtifactChest();
+	void runArtifactView();
 };
 #endif

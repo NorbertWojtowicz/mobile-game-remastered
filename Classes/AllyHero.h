@@ -30,6 +30,7 @@ public:
 	void turnOffSpells();
 	void updateEnemyHeroHpBar(short health);
 	void initEnemyHero(EnemyHero* oponent);
+	void removePopupsFromScene(Scene* scene);
 	Animate* firstSpellAnimate, * secondSpellAnimate,
 		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;

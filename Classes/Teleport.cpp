@@ -1,5 +1,5 @@
 #include "teleport.h"
-
+#include "GameScene.h"
 
 Teleport Teleport::createWithIcon()
 {
