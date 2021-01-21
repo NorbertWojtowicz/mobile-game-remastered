@@ -31,5 +31,7 @@ private:
 	int money = 0;
 	int costsOfHeroes[7] = { 0, 100, 100, 100, 100, 100, 100 };
 	void addMoneyStatusToShopLayer();
+	void addNoMoneyPopup();
+	void removeNoMoneyPopup();
 };
 #endif

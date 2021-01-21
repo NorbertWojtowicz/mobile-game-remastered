@@ -91,6 +91,12 @@ void Shop::closeShop()
 void Shop::buyHero()
 {
 	removePreviousHero();
+	if (money < costsOfHeroes[numberOfPage])
+	{
+		addNoMoneyPopup();
+		closeShop();
+		return;
+	}
 	money -= costsOfHeroes[numberOfPage];
 	std::string moneyStr = generateMoneyStringFromInt(money);
 	moneyLabel->setString(moneyStr);
@@ -120,4 +126,22 @@ std::string Shop::generateMoneyStringFromInt(int money)
 	std::stringstream ss;
 	ss << money << "  X";
 	return ss.str();
+}
+void Shop::addNoMoneyPopup()
+{
+	auto popup = Sprite::create("popups/popup.png");
+	popup->setPosition(Vec2(320, 650));
+	popup->setName("noMoneyPopup");
+	auto btnOk = MenuItemImage::create("buttons/okBtn.png", "buttons/pressedOkBtn.png", CC_CALLBACK_0(Shop::removeNoMoneyPopup, this));
+	auto btnMenu = Menu::create(btnOk, NULL);
+	btnMenu->setName("buttonMenu");
+	btnMenu->setName("btnMenu");
+	btnOk->setPosition(Vec2(0, -250));
+	shopLayer->addChild(btnMenu);
+	shopLayer->addChild(popup);
+}
+void Shop::removeNoMoneyPopup()
+{
+	shopLayer->removeChildByName("noMoneyPopup");
+	shopLayer->removeChildByName("btnMenu");
 }
