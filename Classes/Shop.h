@@ -26,6 +26,10 @@ private:
 	Node* shopLayer;
 	Sprite* boughtHeroSprite;
 	static const std::string hero_names[7];
+	Label* moneyLabel;
+	std::string generateMoneyStringFromInt(int money);
 	int money = 0;
+	int costsOfHeroes[7] = { 0, 100, 100, 100, 100, 100, 100 };
+	void addMoneyStatusToShopLayer();
 };
 #endif

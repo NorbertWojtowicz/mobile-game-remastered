@@ -12,6 +12,7 @@ Shop* Shop::createShopLayer()
 	//this->shopLayer->setPosition(Vec2(114, 750));
 	shop->shopIconsLayer->addChild(menu, 1);
 	shop->addSignToLayer();
+	shop->addMoneyStatusToShopLayer();
 	return shop;
 }
 void Shop::addSignToLayer()
@@ -90,6 +91,10 @@ void Shop::closeShop()
 void Shop::buyHero()
 {
 	removePreviousHero();
+	money -= costsOfHeroes[numberOfPage];
+	std::string moneyStr = generateMoneyStringFromInt(money);
+	moneyLabel->setString(moneyStr);
+	UserDefault::getInstance()->setIntegerForKey("money", money);
 	boughtHeroSprite = Sprite::create("heroes/" + hero_names[numberOfPage] + "/bodySprite.png");
 	boughtHeroSprite->setTag(1212);
 	boughtHeroSprite->setPosition(Vec2(320, 920));
@@ -101,4 +106,18 @@ void Shop::removePreviousHero()
 {
 	if (boughtHeroSprite)
 		Director::getInstance()->getRunningScene()->removeChild(boughtHeroSprite);
+}
+void Shop::addMoneyStatusToShopLayer()
+{
+	std::string moneyStr = generateMoneyStringFromInt(money);
+	moneyLabel = Label::createWithTTF(moneyStr, "fonts/Marker Felt.ttf", 40.0f);
+	moneyLabel->setPosition(Vec2(80, 1070));
+	moneyLabel->setTextColor(Color4B::BLACK);
+	shopIconsLayer->addChild(moneyLabel);
+}
+std::string Shop::generateMoneyStringFromInt(int money)
+{
+	std::stringstream ss;
+	ss << money << "  X";
+	return ss.str();
 }
