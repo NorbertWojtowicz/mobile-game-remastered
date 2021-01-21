@@ -2,7 +2,7 @@
 #define __SHOP_H__
 
 #include "cocos2d.h"
-#include "GameScene.h"
+//#include "GameScene.h"
 #include <iostream>
 #include <string>
 USING_NS_CC;
@@ -26,7 +26,6 @@ private:
 	Node* shopLayer;
 	Sprite* boughtHeroSprite;
 	static const std::string hero_names[7];
+	int money = 0;
 };
-
-
 #endif

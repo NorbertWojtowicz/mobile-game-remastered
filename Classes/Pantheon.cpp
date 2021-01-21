@@ -16,6 +16,7 @@ Pantheon::Pantheon()
 	this->firstSpellFrameDuration = 0.08f;
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
+	this->numberOfArtefact = 4;
 }
 void Pantheon::castFirstSpell()
 {

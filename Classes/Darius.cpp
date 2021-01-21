@@ -16,6 +16,7 @@ Darius::Darius()
 	this->firstSpellFrameDuration = 0.2f;
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
+	this->numberOfArtefact = 0;
 }
 void Darius::castFirstSpell()
 {

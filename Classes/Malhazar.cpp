@@ -16,6 +16,7 @@ Malhazar::Malhazar()
 	this->firstSpellFrameDuration = 0.1f;
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
+	this->numberOfArtefact = 6;
 }
 void Malhazar::castFirstSpell()
 {

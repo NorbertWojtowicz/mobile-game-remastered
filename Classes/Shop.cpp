@@ -1,4 +1,5 @@
 #include "Shop.h"
+#include <sstream>
 
 Shop* Shop::createShopLayer()
 {
@@ -7,6 +8,7 @@ Shop* Shop::createShopLayer()
 	Menu* menu = Menu::create();
 	menu->setPosition(Vec2(114, 750));
 	menu->addChild(table);
+	shop->money = UserDefault::getInstance()->getIntegerForKey("money");
 	//this->shopLayer->setPosition(Vec2(114, 750));
 	shop->shopIconsLayer->addChild(menu, 1);
 	shop->addSignToLayer();

@@ -16,6 +16,7 @@ Karthus::Karthus()
 	this->firstSpellFrameDuration = 0.125f;
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
+	this->numberOfArtefact = 0;
 }
 void Karthus::castFirstSpell()
 {

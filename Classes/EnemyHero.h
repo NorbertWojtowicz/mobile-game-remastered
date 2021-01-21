@@ -18,7 +18,6 @@ public:
 	void setName(std::string name);
 	std::string getName();
 	void updateAllyHeroHpBar(short health);
-	void finishBattleWithWin();
 	void finishBattleWithLose();
 	void initAllyHero(AllyHero* hero);
 	void setSprite(std::string nameOfHero);
@@ -29,6 +28,7 @@ public:
 	Label* hpLabel;
 	AllyHero* oponent;
 	ui::LoadingBar* hpBar;
+	short numberOfArtefact;
 protected:
 	std::string name;
 	float firstSpellTimer, firstSpellFrameDuration,const firstSpellCooldownConst, walkFrameDuration;

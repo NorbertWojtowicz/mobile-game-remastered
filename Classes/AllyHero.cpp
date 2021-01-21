@@ -133,4 +133,21 @@ void AllyHero::finishBattleWithWin()
 {
 	auto scene = GameScene::createScene();
 	Director::getInstance()->replaceScene(scene);
+	std::stringstream ss;
+	ss << oponent->numberOfArtefact;
+	std::string num = ss.str();
+	auto baner = Sprite::create("artefacts/a" + num + "R.png");
+	baner->setName("artifactPopup");
+	baner->setPosition(Vec2(320, 550));
+	scene->addChild(baner);
+	auto btnOk = MenuItemImage::create("buttons/okBtn.png", "buttons/pressedOkBtn.png", CC_CALLBACK_0(AllyHero::removePopupsFromScene, this, scene));
+	auto btnMenu = Menu::create(btnOk, NULL);
+	btnMenu->setName("buttonMenu");
+	btnOk->setPosition(Vec2(0, -300));
+	scene->addChild(btnMenu);
+}
+void AllyHero::removePopupsFromScene(Scene* scene)
+{
+	scene->removeChildByName("artifactPopup");
+	scene->removeChildByName("buttonMenu");
 }
