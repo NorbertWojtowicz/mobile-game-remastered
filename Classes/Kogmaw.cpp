@@ -17,6 +17,7 @@ Kogmaw::Kogmaw()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 	this->numberOfArtefact = 5;
+	this->numberOfLevel = 8;
 }
 void Kogmaw::castFirstSpell()
 {

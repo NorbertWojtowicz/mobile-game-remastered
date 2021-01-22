@@ -32,7 +32,7 @@ public:
 	void initEnemyHero(EnemyHero* oponent);
 	void removePopupsFromScene(Scene* scene);
 	void checkIfYuumi(Scene* scene);
-	void updateMoneyLabelOnScene(Scene* scene, std::string moneyStr);
+	void unlockLevel(int numberOfLevel);
 	Animate* firstSpellAnimate, * secondSpellAnimate,
 		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;

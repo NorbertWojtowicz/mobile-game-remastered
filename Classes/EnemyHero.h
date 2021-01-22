@@ -28,7 +28,7 @@ public:
 	Label* hpLabel;
 	AllyHero* oponent;
 	ui::LoadingBar* hpBar;
-	short numberOfArtefact;
+	short numberOfArtefact, numberOfLevel;
 protected:
 	std::string name;
 	float firstSpellTimer, firstSpellFrameDuration,const firstSpellCooldownConst, walkFrameDuration;

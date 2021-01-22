@@ -17,6 +17,7 @@ Yuumi::Yuumi()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 	this->numberOfArtefact = 10;
+	this->numberOfLevel = 11;
 }
 void Yuumi::castFirstSpell()
 {
