@@ -16,13 +16,12 @@ void ArtifactView::initScrollView()
 	scrollViewBackground->setPosition(Vec2(320, 1460));
 	scrollView = ui::ScrollView::create();
 	scrollView->setPosition(Vec2(0, 0));
-	//scrollView->setBounceEnabled(1);
 	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.13);
 	scrollView->setContentSize(scrollViewBackground->getContentSize());
 	scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
 	scrollView->setScrollBarEnabled(0);
-	//scrollView->jumpToBottom();
 	scrollView->addChild(scrollViewBackground);
+	addArtifactInscription();
 	addArtifactsToScrollView();
 }
 void ArtifactView::addArtifactsToScrollView()
@@ -65,4 +64,10 @@ void ArtifactView::checkArtifactStatuses()
 		std::string artifactStatus = UserDefault::getInstance()->getStringForKey(artifactKey.c_str());
 		artifactLocations[i] = "artefacts/a" + num + artifactStatus + ".png";
 	}
+}
+void ArtifactView::addArtifactInscription()
+{
+	auto inscriptionSprite = Sprite::create("artefacts/artefactInscription.png");
+	inscriptionSprite->setPosition(Vec2(320, 1730));
+	scrollView->addChild(inscriptionSprite);
 }

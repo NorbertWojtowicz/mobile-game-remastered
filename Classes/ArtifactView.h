@@ -14,6 +14,7 @@ public:
 	void initScrollView();
 	void addArtifactsToScrollView();
 	void checkArtifactStatuses();
+	void addArtifactInscription();
 	std::string artifactLocations[7];
 	std::string artifactStatuses[7];
 };
