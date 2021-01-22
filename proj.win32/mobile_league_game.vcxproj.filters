@@ -28,25 +28,19 @@
     <ClCompile Include="G:\mobile_league_game\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\BrandLevel.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Brand.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Ryze.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\EnemyHero.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\AllyHero.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ArtifactView.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Ashe.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Garen.cpp">
+    <ClCompile Include="..\Classes\Brand.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BrandLevel.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Cassiopeia.cpp">
@@ -55,43 +49,49 @@
     <ClCompile Include="..\Classes\Darius.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Twisted_Fate.cpp">
+    <ClCompile Include="..\Classes\Elise.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Taliyah.cpp">
+    <ClCompile Include="..\Classes\EnemyHero.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Karthus.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Pantheon.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Lucian.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Kogmaw.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Malhazar.cpp">
+    <ClCompile Include="..\Classes\Garen.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Irelia.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Yuumi.cpp">
+    <ClCompile Include="..\Classes\Kaisa.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Elise.cpp">
+    <ClCompile Include="..\Classes\Karthus.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Katarina.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Kaisa.cpp">
+    <ClCompile Include="..\Classes\Kogmaw.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\ArtifactView.cpp">
+    <ClCompile Include="..\Classes\Lucian.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Malhazar.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Pantheon.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Ryze.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Taliyah.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Twisted_Fate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Yuumi.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -132,6 +132,78 @@
     <ClInclude Include="G:\mobile_league_game\Resources\HelloWorld.png">
       <Filter>Resources</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a0R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1clear.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a2.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a2R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a2clear.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a3.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a3R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a3clear.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a4.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a4R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a4clear.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a5.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a5R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a5clear.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a6.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a6R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a6clear.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a7.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a7R.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a7clear.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\chest.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\artifactBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\firstSceneBG.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
@@ -156,10 +228,16 @@
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\lArrow.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\okBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\playBtn.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedBuyBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedOkBtn.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedPlayBtn.png">
@@ -174,14 +252,560 @@
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\rArrow.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\health.png">
+      <Filter>Resources\combatScene</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\healthBar.png">
+      <Filter>Resources\combatScene</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\hud.png">
+      <Filter>Resources\combatScene</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\brandSpell1.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\brandSpellAnimate.zip">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze0.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze1.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze2.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze3.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze4.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze5.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze6.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze7.png">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryzeSecondSpellAnimate.zip">
+      <Filter>Resources\combatScene\spells</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\asheFace.png">
+      <Filter>Resources\heroes\ashe</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\bodySprite.png">
+      <Filter>Resources\heroes\ashe</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\bodySpriteProfile.png">
+      <Filter>Resources\heroes\ashe</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\bodySpriteSmaller.png">
+      <Filter>Resources\heroes\ashe</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\ashe\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellAnimate.png">
+      <Filter>Resources\heroes\ashe\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellCooldown.plist">
+      <Filter>Resources\heroes\ashe\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellCooldown.png">
+      <Filter>Resources\heroes\ashe\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheSpell1.png">
+      <Filter>Resources\heroes\ashe\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellAnimate.plist">
+      <Filter>Resources\heroes\ashe\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellAnimate.png">
+      <Filter>Resources\heroes\ashe\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellCooldown.plist">
+      <Filter>Resources\heroes\ashe\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellCooldown.png">
+      <Filter>Resources\heroes\ashe\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSpell2.png">
+      <Filter>Resources\heroes\ashe\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\brand</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandFirstSpellAnimate.png">
+      <Filter>Resources\heroes\brand</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandSprite.png">
+      <Filter>Resources\heroes\brand</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandWalkAnimate.plist">
+      <Filter>Resources\heroes\brand</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandWalkAnimate.png">
+      <Filter>Resources\heroes\brand</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\cassiopeia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaFirstSpellAnimate.png">
+      <Filter>Resources\heroes\cassiopeia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaSprite.png">
+      <Filter>Resources\heroes\cassiopeia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaWalkAnimate.plist">
+      <Filter>Resources\heroes\cassiopeia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaWalkAnimate.png">
+      <Filter>Resources\heroes\cassiopeia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\darius</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusFirstSpellAnimate.png">
+      <Filter>Resources\heroes\darius</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusSprite.png">
+      <Filter>Resources\heroes\darius</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusWalkAnimate.plist">
+      <Filter>Resources\heroes\darius</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusWalkAnimate.png">
+      <Filter>Resources\heroes\darius</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\bodySprite (1).png">
+      <Filter>Resources\heroes\elise</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\bodySprite.png">
+      <Filter>Resources\heroes\elise</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\eliseFace.png">
+      <Filter>Resources\heroes\elise</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\elise\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellAnimate.png">
+      <Filter>Resources\heroes\elise\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellCooldown.plist">
+      <Filter>Resources\heroes\elise\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellCooldown.png">
+      <Filter>Resources\heroes\elise\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseSpell1.png">
+      <Filter>Resources\heroes\elise\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellAnimate.plist">
+      <Filter>Resources\heroes\elise\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellAnimate.png">
+      <Filter>Resources\heroes\elise\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellCooldown.plist">
+      <Filter>Resources\heroes\elise\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellCooldown.png">
+      <Filter>Resources\heroes\elise\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSpell2.png">
+      <Filter>Resources\heroes\elise\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walk\elise1.png">
+      <Filter>Resources\heroes\elise\walk</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walk\elise2.png">
+      <Filter>Resources\heroes\elise\walk</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walk\elise3.png">
+      <Filter>Resources\heroes\elise\walk</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walkAnimate.zip">
+      <Filter>Resources\heroes\elise</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\bodySprite (1).png">
+      <Filter>Resources\heroes\garen</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\bodySprite (2).png">
+      <Filter>Resources\heroes\garen</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\bodySprite.png">
+      <Filter>Resources\heroes\garen</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\dcpzlh3-644e6fa2-9f6b-479a-9e00-99a2f8480110.png">
+      <Filter>Resources\heroes\garen</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\garenFace.png">
+      <Filter>Resources\heroes\garen</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\garen\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellAnimate.png">
+      <Filter>Resources\heroes\garen\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellCooldown.plist">
+      <Filter>Resources\heroes\garen\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellCooldown.png">
+      <Filter>Resources\heroes\garen\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenSpell1.png">
+      <Filter>Resources\heroes\garen\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellAnimate.plist">
+      <Filter>Resources\heroes\garen\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellAnimate.png">
+      <Filter>Resources\heroes\garen\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellCooldown.plist">
+      <Filter>Resources\heroes\garen\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellCooldown.png">
+      <Filter>Resources\heroes\garen\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSpell2.png">
+      <Filter>Resources\heroes\garen\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenspellTwoCooldown.zip">
+      <Filter>Resources\heroes\garen\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\spellTwo.zip">
+      <Filter>Resources\heroes\garen\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\irelia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaFirstSpellAnimate.png">
+      <Filter>Resources\heroes\irelia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaSprite.png">
+      <Filter>Resources\heroes\irelia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaWalkAnimate.plist">
+      <Filter>Resources\heroes\irelia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaWalkAnimate.png">
+      <Filter>Resources\heroes\irelia</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\bodySprite.png">
+      <Filter>Resources\heroes\kaisa</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\kaisaFace.png">
+      <Filter>Resources\heroes\kaisa</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\kaisa\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellAnimate.png">
+      <Filter>Resources\heroes\kaisa\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellCooldown.plist">
+      <Filter>Resources\heroes\kaisa\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellCooldown.png">
+      <Filter>Resources\heroes\kaisa\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaSpell1.png">
+      <Filter>Resources\heroes\kaisa\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellAnimate.plist">
+      <Filter>Resources\heroes\kaisa\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellAnimate.png">
+      <Filter>Resources\heroes\kaisa\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellCooldown.plist">
+      <Filter>Resources\heroes\kaisa\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellCooldown.png">
+      <Filter>Resources\heroes\kaisa\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSpell2.png">
+      <Filter>Resources\heroes\kaisa\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\karthus</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusFirstSpellAnimate.png">
+      <Filter>Resources\heroes\karthus</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusSprite.png">
+      <Filter>Resources\heroes\karthus</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusWalkAnimate.plist">
+      <Filter>Resources\heroes\karthus</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusWalkAnimate.png">
+      <Filter>Resources\heroes\karthus</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\bodySprite.png">
+      <Filter>Resources\heroes\katarina</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\katarinaFace.png">
+      <Filter>Resources\heroes\katarina</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\katarina\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellAnimate.png">
+      <Filter>Resources\heroes\katarina\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellCooldown.plist">
+      <Filter>Resources\heroes\katarina\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellCooldown.png">
+      <Filter>Resources\heroes\katarina\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaSpell1.png">
+      <Filter>Resources\heroes\katarina\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellAnimate.plist">
+      <Filter>Resources\heroes\katarina\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellAnimate.png">
+      <Filter>Resources\heroes\katarina\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellCooldown.plist">
+      <Filter>Resources\heroes\katarina\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellCooldown.png">
+      <Filter>Resources\heroes\katarina\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSpell2.png">
+      <Filter>Resources\heroes\katarina\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\kogmaw</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawFirstSpellAnimate.png">
+      <Filter>Resources\heroes\kogmaw</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawSprite.png">
+      <Filter>Resources\heroes\kogmaw</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawWalkAnimate.plist">
+      <Filter>Resources\heroes\kogmaw</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawWalkAnimate.png">
+      <Filter>Resources\heroes\kogmaw</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\lucian</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianFirstSpellAnimate.png">
+      <Filter>Resources\heroes\lucian</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianSprite.png">
+      <Filter>Resources\heroes\lucian</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianWalkAnimate.plist">
+      <Filter>Resources\heroes\lucian</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianWalkAnimate.png">
+      <Filter>Resources\heroes\lucian</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\malhazar</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarFirstSpellAnimate.png">
+      <Filter>Resources\heroes\malhazar</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarSprite.png">
+      <Filter>Resources\heroes\malhazar</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarWalkAnimate.plist">
+      <Filter>Resources\heroes\malhazar</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarWalkAnimate.png">
+      <Filter>Resources\heroes\malhazar</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\pantheon</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonFirstSpellAnimate.png">
+      <Filter>Resources\heroes\pantheon</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonSprite.png">
+      <Filter>Resources\heroes\pantheon</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonWalkAnimate.plist">
+      <Filter>Resources\heroes\pantheon</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonWalkAnimate.png">
+      <Filter>Resources\heroes\pantheon</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\bodySprite.png">
+      <Filter>Resources\heroes\ryze</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\ryzeFace.png">
+      <Filter>Resources\heroes\ryze</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\ryze\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellAnimate.png">
+      <Filter>Resources\heroes\ryze\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellCooldown.plist">
+      <Filter>Resources\heroes\ryze\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellCooldown.png">
+      <Filter>Resources\heroes\ryze\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeSpell1.png">
+      <Filter>Resources\heroes\ryze\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellAnimate.plist">
+      <Filter>Resources\heroes\ryze\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellAnimate.png">
+      <Filter>Resources\heroes\ryze\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellCooldown.plist">
+      <Filter>Resources\heroes\ryze\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellCooldown.png">
+      <Filter>Resources\heroes\ryze\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSpell2.png">
+      <Filter>Resources\heroes\ryze\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\taliyah</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahFirstSpellAnimate.png">
+      <Filter>Resources\heroes\taliyah</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahSprite.png">
+      <Filter>Resources\heroes\taliyah</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahWalkAnimate.plist">
+      <Filter>Resources\heroes\taliyah</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahWalkAnimate.png">
+      <Filter>Resources\heroes\taliyah</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\bodySprite.png">
+      <Filter>Resources\heroes\twisted_fate</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card1.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card2.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card3.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf1.plist">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf1.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf2.plist">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf2.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf3.plist">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf3.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellAnimate.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellCooldown.plist">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellCooldown.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateSpell1.png">
+      <Filter>Resources\heroes\twisted_fate\spells\first</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate1.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate2.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate3.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate4.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate5.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate6.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellAnimate.plist">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellAnimate.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellCooldown.plist">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellCooldown.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSpell2.png">
+      <Filter>Resources\heroes\twisted_fate\spells\second</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\twisted_fateFace.png">
+      <Filter>Resources\heroes\twisted_fate</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiFirstSpellAnimate.plist">
+      <Filter>Resources\heroes\yuumi</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiFirstSpellAnimate.png">
+      <Filter>Resources\heroes\yuumi</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiSprite.png">
+      <Filter>Resources\heroes\yuumi</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiWalkAnimate.plist">
+      <Filter>Resources\heroes\yuumi</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiWalkAnimate.png">
+      <Filter>Resources\heroes\yuumi</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\other\sign.png">
       <Filter>Resources\other</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\popups\lost.png">
+      <Filter>Resources\popups</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\popups\popup.png">
+      <Filter>Resources\popups</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
@@ -193,6 +817,9 @@
       <Filter>Resources\shop</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\shop\hex.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\ryze.png">
       <Filter>Resources\shop</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\shop\shop.png">
@@ -222,25 +849,46 @@
     <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel1.png">
       <Filter>Resources\worldMap</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\BrandLevel.h">
-      <Filter>Source Files\Classes</Filter>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel10.png">
+      <Filter>Resources\worldMap</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Brand.h">
-      <Filter>Source Files\Classes</Filter>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel2.png">
+      <Filter>Resources\worldMap</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Ryze.h">
-      <Filter>Source Files\Classes</Filter>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel3.png">
+      <Filter>Resources\worldMap</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\EnemyHero.h">
-      <Filter>Source Files\Classes</Filter>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel4.png">
+      <Filter>Resources\worldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel5.png">
+      <Filter>Resources\worldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel6.png">
+      <Filter>Resources\worldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel7.png">
+      <Filter>Resources\worldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel8.png">
+      <Filter>Resources\worldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel9.png">
+      <Filter>Resources\worldMap</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AllyHero.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ArtifactView.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Ashe.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Garen.h">
+    <ClInclude Include="..\Classes\Brand.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BrandLevel.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Cassiopeia.h">
@@ -249,43 +897,49 @@
     <ClInclude Include="..\Classes\Darius.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Twisted_Fate.h">
+    <ClInclude Include="..\Classes\Elise.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Taliyah.h">
+    <ClInclude Include="..\Classes\EnemyHero.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Karthus.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Pantheon.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Lucian.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Kogmaw.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Malhazar.h">
+    <ClInclude Include="..\Classes\Garen.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Irelia.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Yuumi.h">
+    <ClInclude Include="..\Classes\Kaisa.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Elise.h">
+    <ClInclude Include="..\Classes\Karthus.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Katarina.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Kaisa.h">
+    <ClInclude Include="..\Classes\Kogmaw.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\ArtifactView.h">
+    <ClInclude Include="..\Classes\Lucian.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Malhazar.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Pantheon.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Ryze.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Taliyah.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Twisted_Fate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Yuumi.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -301,17 +955,152 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{4695303D-4962-3079-B931-0A893B635D98}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\artefacts">
+      <UniqueIdentifier>{0D38EB98-F236-3A06-9527-947AAB96FC6F}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Resources\backgrounds">
       <UniqueIdentifier>{059583A3-E3D5-30E2-9329-1914311E2F15}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\buttons">
       <UniqueIdentifier>{28BDEF70-52E8-3C51-B503-F898E26B0D7F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\combatScene">
+      <UniqueIdentifier>{4F92B374-989D-3179-9876-CB547783BC7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\combatScene\spells">
+      <UniqueIdentifier>{2DB2C8E3-56F6-38C2-B300-FCF673257B9D}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Resources\fonts">
       <UniqueIdentifier>{5C52A526-F73C-32FA-A44A-8A41F7B1653B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\heroes">
+      <UniqueIdentifier>{DA63A070-43C2-320B-9169-FA93F23374DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ashe">
+      <UniqueIdentifier>{8049E90E-F808-3CE7-9BEE-86D2EA839109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ashe\spells">
+      <UniqueIdentifier>{05EC2E41-A5F0-3B76-84FB-7B9C8E75C027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ashe\spells\first">
+      <UniqueIdentifier>{66E22FE2-2F7E-3D6B-8B10-8345B7EDF2C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ashe\spells\second">
+      <UniqueIdentifier>{17DAA843-36DD-3824-817B-8EF27ED26472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\brand">
+      <UniqueIdentifier>{E9E9351F-A921-3E85-944A-791EC9BDF4CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\cassiopeia">
+      <UniqueIdentifier>{F3A7A18F-E639-3495-9FE9-388D434875EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\darius">
+      <UniqueIdentifier>{E94E8577-39EF-3C49-A01A-E5C55391BF69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\elise">
+      <UniqueIdentifier>{C3B92E1C-A43D-32E0-808C-C61D0C26797E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\elise\spells">
+      <UniqueIdentifier>{4C2213EF-163E-350B-9A0A-3E2BD29724A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\elise\spells\first">
+      <UniqueIdentifier>{83AD99A5-0F08-3F7D-81A0-764822927BB1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\elise\spells\second">
+      <UniqueIdentifier>{5A1C638D-D7FF-3087-93FA-98D93D7718C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\elise\walk">
+      <UniqueIdentifier>{0AB97C87-9DBD-3548-B2EE-65CD850A9E7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\garen">
+      <UniqueIdentifier>{691B975E-1357-3555-B66D-2C13ADC067A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\garen\spells">
+      <UniqueIdentifier>{30CBA8C4-F9B3-3A0A-BFDB-3465B7BBA16D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\garen\spells\first">
+      <UniqueIdentifier>{055CA7B3-1373-3DE9-B57E-A5042D2C618D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\garen\spells\second">
+      <UniqueIdentifier>{0FF1E007-0B55-343E-B75C-BDB9AA52A05A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\irelia">
+      <UniqueIdentifier>{2EDB2A14-3BFD-3696-A32D-3C4BA9471521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\kaisa">
+      <UniqueIdentifier>{06B64FD1-3423-3779-85D1-57A59EEB6E55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\kaisa\spells">
+      <UniqueIdentifier>{B0C9F656-1A40-345E-BCCE-266C14A3B9B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\kaisa\spells\first">
+      <UniqueIdentifier>{146615AF-B6C2-3667-8963-F057E94C85C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\kaisa\spells\second">
+      <UniqueIdentifier>{A58378F0-6202-399B-83AB-371A4672BB5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\karthus">
+      <UniqueIdentifier>{73CE53DB-DA75-3B88-A479-E976382DB28A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\katarina">
+      <UniqueIdentifier>{03F03703-B604-3729-9550-F0C03A472739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\katarina\spells">
+      <UniqueIdentifier>{B8A12F3A-31F5-3A6A-B68F-8A25EB13663E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\katarina\spells\first">
+      <UniqueIdentifier>{14C5FAE8-060E-3611-84AB-11F3E3EAAFCA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\katarina\spells\second">
+      <UniqueIdentifier>{B972C324-66B6-3CA1-B42B-5CED70A023E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\kogmaw">
+      <UniqueIdentifier>{3C0A980B-9892-3050-A1EF-339E43B596C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\lucian">
+      <UniqueIdentifier>{BADDB103-D304-38D1-AD2F-616908DD6E0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\malhazar">
+      <UniqueIdentifier>{1E7CA480-2C1E-3595-AEA5-F54BBBC3C1A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\pantheon">
+      <UniqueIdentifier>{CA256139-1759-3247-B761-0D4029571DCC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ryze">
+      <UniqueIdentifier>{5DF9BA6B-7F8C-337A-9FD3-C987FF943435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ryze\spells">
+      <UniqueIdentifier>{38187D83-1F3D-32E6-A220-DC8D93483B41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ryze\spells\first">
+      <UniqueIdentifier>{D86B4E0D-E668-3994-B3D6-F508628AA1CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\ryze\spells\second">
+      <UniqueIdentifier>{02D250E5-2974-3125-A984-A5954F8CFAAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\taliyah">
+      <UniqueIdentifier>{C1DC1C15-F0AA-3704-A254-1F0D97CA3382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\twisted_fate">
+      <UniqueIdentifier>{2B4DCE2D-69E2-3DAF-9315-716D65743AD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\twisted_fate\spells">
+      <UniqueIdentifier>{29FB7E15-2534-34AF-8570-09E3DF124534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\twisted_fate\spells\first">
+      <UniqueIdentifier>{CBE15605-FB0B-312B-8520-309054C5ED8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\twisted_fate\spells\second">
+      <UniqueIdentifier>{77173863-F495-36F4-B433-6A7266EE30B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\heroes\yuumi">
+      <UniqueIdentifier>{CC3BC805-58B3-3889-85E0-A0F1FA171FF5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Resources\other">
       <UniqueIdentifier>{12E92920-4DBE-3347-81D3-009D96D12BC3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\popups">
+      <UniqueIdentifier>{76720CB0-883C-3EFD-AF93-673E5DB77227}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res">
       <UniqueIdentifier>{7F01C039-C2E8-36C8-B343-5BF85158B5E7}</UniqueIdentifier>
