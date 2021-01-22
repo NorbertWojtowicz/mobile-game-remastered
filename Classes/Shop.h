@@ -27,6 +27,7 @@ private:
 	Sprite* boughtHeroSprite;
 	static const std::string shop_products[3][7];
 	Label* moneyLabel;
+	MenuItemImage* buyButton;
 	std::string generateMoneyStringFromInt(int money);
 	int money = 0;
 	int costsOfProducts[3][7] = { { 0, 100, 100, 100, 100, 100, 100 }, {350, 550, 750, 950}, {350, 800, 950} };
@@ -37,5 +38,6 @@ private:
 	void buyItem();
 	void removeNoMoneyPopup();
 	bool isOwned();
+	void pickOwnedHero();
 };
 #endif

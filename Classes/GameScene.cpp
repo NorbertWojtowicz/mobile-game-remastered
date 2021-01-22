@@ -23,6 +23,8 @@ bool GameScene::init()
 	this->addChild(background);
 	background->setTag(211);
 
+	addPickedHero();
+
 	//adding shop
 	Shop *shop = Shop::createShopLayer();
 	this->addChild(shop->shopIconsLayer);
@@ -46,4 +48,15 @@ void GameScene::runArtifactView()
 {
 	auto scene = ArtifactView::createScene();
 	Director::getInstance()->replaceScene(scene);
+}
+void GameScene::addPickedHero()
+{
+	int numberOfHero = UserDefault::getInstance()->getIntegerForKey("allyHeroId");
+	if (numberOfHero == 0)
+		return;
+	auto heroStr = heroes[numberOfHero + 1];
+	auto heroSprite = Sprite::create("heroes/" + heroStr + "/bodySprite.png");
+	heroSprite->setTag(1212);
+	heroSprite->setPosition(Vec2(320, 920));
+	this->addChild(heroSprite);
 }

@@ -59,6 +59,18 @@ void Shop::turnPageToRight()
 		return;
 	numberOfPage++;
 	changeShopPage(numberOfPage);
+	if (isOwned())
+	{
+		buyButton->setNormalImage(Sprite::create("buttons/pickBtn.png"));
+		buyButton->setDisabledImage(Sprite::create("buttons/pickBtn.png"));
+		buyButton->setCallback(CC_CALLBACK_0(Shop::pickOwnedHero, this));
+	}
+	else
+	{
+		buyButton->setNormalImage(Sprite::create("buttons/buyBtn.png"));
+		buyButton->setDisabledImage(Sprite::create("buttons/buyBtn.png"));
+		buyButton->setCallback(CC_CALLBACK_0(Shop::buyHero, this));
+	}
 }
 void Shop::turnPageToLeft()
 {
@@ -66,11 +78,23 @@ void Shop::turnPageToLeft()
 		return;
 	numberOfPage--;
 	changeShopPage(numberOfPage);
+	if (isOwned())
+	{
+		buyButton->setNormalImage(Sprite::create("buttons/pickBtn.png"));
+		buyButton->setDisabledImage(Sprite::create("buttons/pickBtn.png"));
+		buyButton->setCallback(CC_CALLBACK_0(Shop::pickOwnedHero, this));
+	}
+	else
+	{
+		buyButton->setNormalImage(Sprite::create("buttons/buyBtn.png"));
+		buyButton->setDisabledImage(Sprite::create("buttons/buyBtn.png"));
+		buyButton->setCallback(CC_CALLBACK_0(Shop::buyHero, this));
+	}
 }
 std::string const Shop::shop_products[3][7] = { { "ryze", "ashe" ,"garen", "twisted_fate", "elise", "katarina", "kaisa" }, {"2x", "3x", "4x", "5x"}, {"book", "talisman", "sword"} };
 void Shop::addButtons()
 {
-	MenuItemImage* buyButton = MenuItemImage::create("buttons/buyBtn.png", "buttons/pressedBuyBtn.png", CC_CALLBACK_0(Shop::buyHero, this));
+	buyButton = MenuItemImage::create("buttons/buyBtn.png", "buttons/pressedBuyBtn.png", CC_CALLBACK_0(Shop::buyHero, this));
 	buyButton->setPosition(Vec2(320, 200));
 	MenuItemImage* crossButton = MenuItemImage::create("buttons/cross.png", "buttons/cross.png", CC_CALLBACK_0(Shop::closeShop, this));
 	crossButton->setPosition(Vec2(520, 880));
@@ -96,7 +120,7 @@ void Shop::closeShop()
 }
 void Shop::buyHero()
 {
-	if (isOwned())
+	if ((isOwned()) && (numberOfCategory != 0))
 	{
 		closeShop();
 		return;
@@ -130,6 +154,7 @@ void Shop::removePreviousHero()
 {
 	if (boughtHeroSprite)
 		Director::getInstance()->getRunningScene()->removeChild(boughtHeroSprite);
+	Director::getInstance()->getRunningScene()->getChildByName("gameNode")->removeChildByTag(1212);
 }
 void Shop::addMoneyStatusToShopLayer()
 {
@@ -194,4 +219,14 @@ bool Shop::isOwned()
 		return true;
 	else
 		return false;
+}
+void Shop::pickOwnedHero()
+{
+	removePreviousHero();
+	boughtHeroSprite = Sprite::create("heroes/" + shop_products[numberOfCategory][numberOfPage] + "/bodySprite.png");
+	boughtHeroSprite->setTag(1212);
+	boughtHeroSprite->setPosition(Vec2(320, 920));
+	Director::getInstance()->getRunningScene()->addChild(boughtHeroSprite);
+	UserDefault::getInstance()->setIntegerForKey("allyHeroId", numberOfPage);
+	closeShop();
 }
