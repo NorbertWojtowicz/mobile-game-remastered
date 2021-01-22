@@ -12,7 +12,6 @@ Shop* Shop::createShopLayer()
 	//this->shopLayer->setPosition(Vec2(114, 750));
 	shop->shopIconsLayer->addChild(menu, 1);
 	shop->addSignToLayer();
-	shop->addMoneyStatusToShopLayer();
 	return shop;
 }
 void Shop::addSignToLayer()
@@ -25,8 +24,9 @@ void Shop::addShopMenuToLayer()
 {
 	shopLayer = Node::create();
 	numberOfPage = 0;
+	numberOfCategory = 0;
 	cocos2d::log("numberOfPage: %d", numberOfPage);
-	std::string heroString = hero_names[numberOfPage];
+	std::string heroString = shop_products[numberOfCategory][numberOfPage];
 	auto runningScene = Director::getInstance()->getRunningScene();
 	MenuItemSprite* background = MenuItemImage::create("shop/" + heroString + ".png", "shop/" + heroString + ".png");
 	background->setTag(20);
@@ -38,14 +38,14 @@ void Shop::addShopMenuToLayer()
 	shopMenu->addChild(background, -1);
 	shopMenu->setTag(21);
 	shopLayer->addChild(shopMenu);
+	addMoneyStatusToShopLayer();
 	addButtons();
 	runningScene->addChild(shopLayer);
 }
 void Shop::changeShopPage(int numberOfPage)
 {
 	shopMenu->removeChildByTag(20);
-	cocos2d::log("%d", numberOfPage);
-	std::string heroString = hero_names[numberOfPage];
+	std::string heroString = shop_products[numberOfCategory][numberOfPage];
 	MenuItemSprite* background = MenuItemImage::create("shop/" + heroString + ".png", "shop/" + heroString + ".png");
 	background->setTag(20);
 	background->setEnabled(0);
@@ -54,10 +54,9 @@ void Shop::changeShopPage(int numberOfPage)
 }
 void Shop::turnPageToRight()
 {
-	if (numberOfPage == 6)
+	if ((numberOfPage == 6) || ((numberOfPage == 3) && (numberOfCategory == 1)))
 		return;
 	numberOfPage++;
-	cocos2d::log("numberOfPage incremented in turnPageToRigth function: %d", this->numberOfPage);
 	changeShopPage(numberOfPage);
 }
 void Shop::turnPageToLeft()
@@ -65,10 +64,9 @@ void Shop::turnPageToLeft()
 	if (numberOfPage == 0)
 		return;
 	numberOfPage--;
-	cocos2d::log("numberOfPage decremented in turnPageToRigth function: %d", this->numberOfPage);
 	changeShopPage(numberOfPage);
 }
-std::string const Shop::hero_names[7] = { "ryze", "ashe" ,"garen", "twisted_fate", "elise", "katarina", "kaisa" };
+std::string const Shop::shop_products[2][7] = { { "ryze", "ashe" ,"garen", "twisted_fate", "elise", "katarina", "kaisa" }, {"2x", "3x", "4x", "5x"} };
 void Shop::addButtons()
 {
 	MenuItemImage* buyButton = MenuItemImage::create("buttons/buyBtn.png", "buttons/pressedBuyBtn.png", CC_CALLBACK_0(Shop::buyHero, this));
@@ -79,6 +77,9 @@ void Shop::addButtons()
 	rightArrow->setPosition(Vec2(540, 630));
 	MenuItemImage* leftArrow = MenuItemImage::create("buttons/lArrow.png", "buttons/pressedlArrow.png", CC_CALLBACK_0(Shop::turnPageToLeft, this));
 	leftArrow->setPosition(Vec2(100, 630));
+	MenuItemImage* mltBtn = MenuItemImage::create("buttons/mltBtn.png", "buttons/mltBtn.png", CC_CALLBACK_0(Shop::changeCategory, this, 1));
+	mltBtn->setPosition(Vec2(120, 985));
+	shopMenu->addChild(mltBtn);
 	shopMenu->addChild(buyButton);
 	shopMenu->addChild(crossButton);
 	shopMenu->addChild(rightArrow);
@@ -87,21 +88,28 @@ void Shop::addButtons()
 void Shop::closeShop()
 {
 	shopMenu->removeAllChildren();
+	shopLayer->removeChildByName("moneyLabel");
 }
 void Shop::buyHero()
 {
 	removePreviousHero();
-	if (money < costsOfHeroes[numberOfPage])
+	if (money < costsOfProducts[numberOfCategory][numberOfPage])
 	{
 		addNoMoneyPopup();
 		closeShop();
 		return;
 	}
-	money -= costsOfHeroes[numberOfPage];
+	money -= costsOfProducts[numberOfCategory][numberOfPage];
 	std::string moneyStr = generateMoneyStringFromInt(money);
 	moneyLabel->setString(moneyStr);
 	UserDefault::getInstance()->setIntegerForKey("money", money);
-	boughtHeroSprite = Sprite::create("heroes/" + hero_names[numberOfPage] + "/bodySprite.png");
+	if (numberOfCategory == 1)
+	{
+		buyMultiplier();
+		closeShop();
+		return;
+	}
+	boughtHeroSprite = Sprite::create("heroes/" + shop_products[numberOfCategory][numberOfPage] + "/bodySprite.png");
 	boughtHeroSprite->setTag(1212);
 	boughtHeroSprite->setPosition(Vec2(320, 920));
 	Director::getInstance()->getRunningScene()->addChild(boughtHeroSprite);
@@ -115,16 +123,18 @@ void Shop::removePreviousHero()
 }
 void Shop::addMoneyStatusToShopLayer()
 {
+	money = UserDefault::getInstance()->getIntegerForKey("money");
 	std::string moneyStr = generateMoneyStringFromInt(money);
 	moneyLabel = Label::createWithTTF(moneyStr, "fonts/Marker Felt.ttf", 40.0f);
-	moneyLabel->setPosition(Vec2(80, 1070));
+	moneyLabel->setPosition(Vec2(100, 880));
+	moneyLabel->setName("moneyLabel");
 	moneyLabel->setTextColor(Color4B::BLACK);
-	shopIconsLayer->addChild(moneyLabel);
+	shopLayer->addChild(moneyLabel);
 }
 std::string Shop::generateMoneyStringFromInt(int money)
 {
 	std::stringstream ss;
-	ss << money << "  X";
+	ss << money << " X";
 	return ss.str();
 }
 void Shop::addNoMoneyPopup()
@@ -144,4 +154,23 @@ void Shop::removeNoMoneyPopup()
 {
 	shopLayer->removeChildByName("noMoneyPopup");
 	shopLayer->removeChildByName("btnMenu");
+}
+void Shop::changeCategory(int numberOfCategory)
+{
+	this->numberOfCategory = numberOfCategory;
+	this->numberOfPage = -1;
+	turnPageToRight();
+}
+void Shop::buyMultiplier()
+{
+	int multiplier;
+	if (numberOfPage == 0)
+		multiplier = 2;
+	else if (numberOfPage == 1)
+		multiplier = 3;
+	else if (numberOfPage == 2)
+		multiplier = 4;
+	else if (numberOfPage == 3)
+		multiplier = 5;
+	UserDefault::getInstance()->setIntegerForKey("multiplier", multiplier);
 }
