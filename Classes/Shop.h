@@ -14,7 +14,7 @@ public:
 private:
 	void addSignToLayer();
 	void addShopMenuToLayer();
-	int numberOfPage;
+	int numberOfPage, numberOfCategory;
 	void turnPageToRight();
 	void turnPageToLeft();
 	void addButtons();
@@ -25,13 +25,15 @@ private:
 	void closeShop();
 	Node* shopLayer;
 	Sprite* boughtHeroSprite;
-	static const std::string hero_names[7];
+	static const std::string shop_products[2][7];
 	Label* moneyLabel;
 	std::string generateMoneyStringFromInt(int money);
 	int money = 0;
-	int costsOfHeroes[7] = { 0, 100, 100, 100, 100, 100, 100 };
+	int costsOfProducts[2][7] = { { 0, 100, 100, 100, 100, 100, 100 }, {350, 550, 750, 950} };
 	void addMoneyStatusToShopLayer();
 	void addNoMoneyPopup();
+	void changeCategory(int numberOfCategory);
+	void buyMultiplier();
 	void removeNoMoneyPopup();
 };
 #endif
