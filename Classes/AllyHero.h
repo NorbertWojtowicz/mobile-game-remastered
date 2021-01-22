@@ -31,6 +31,8 @@ public:
 	void updateEnemyHeroHpBar(short health);
 	void initEnemyHero(EnemyHero* oponent);
 	void removePopupsFromScene(Scene* scene);
+	void checkIfYuumi(Scene* scene);
+	void updateMoneyLabelOnScene(Scene* scene, std::string moneyStr);
 	Animate* firstSpellAnimate, * secondSpellAnimate,
 		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;

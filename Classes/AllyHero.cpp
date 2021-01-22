@@ -1,5 +1,6 @@
 #include "AllyHero.h"
 #include "GameScene.h"
+#include <time.h>
 void AllyHero::setName(std::string name)
 {
 	this->name = name;
@@ -132,6 +133,7 @@ void AllyHero::dealDamageToEnemyHero(short dmg)
 void AllyHero::finishBattleWithWin()
 {
 	auto scene = GameScene::createScene();
+	checkIfYuumi(scene);
 	Director::getInstance()->replaceScene(scene);
 	std::stringstream ss;
 	ss << oponent->numberOfArtefact;
@@ -150,4 +152,27 @@ void AllyHero::removePopupsFromScene(Scene* scene)
 {
 	scene->removeChildByName("artifactPopup");
 	scene->removeChildByName("buttonMenu");
+	if (oponent->numberOfArtefact == 10)
+		scene->removeChildByName("moneyLabel");
+}
+void AllyHero::checkIfYuumi(Scene* scene)
+{
+	if (oponent->numberOfArtefact == 10)
+	{
+		int multiplier = UserDefault::getInstance()->getIntegerForKey("multiplier");
+		if (multiplier == 0)
+			multiplier = 1;
+		srand(time(NULL));
+		int moneyPrize = rand() % 20 + 20;
+		moneyPrize *= multiplier;
+		std::stringstream ss;
+		ss << moneyPrize;
+		int money = UserDefault::getInstance()->getIntegerForKey("money");
+		money += moneyPrize;
+		UserDefault::getInstance()->setIntegerForKey("money", money);
+		auto moneyLabel = Label::createWithTTF("Your prize: " + ss.str(), "fonts/Marker Felt.ttf", 40.0f);
+		moneyLabel->setPosition(Vec2(320, 550));
+		moneyLabel->setName("moneyLabel");
+		scene->addChild(moneyLabel, 2);
+	}
 }
