@@ -40,8 +40,7 @@ void WorldMap::initScrollView()
 	scrollViewBackground->setPosition(Vec2(320, 1345));
 	scrollView = ui::ScrollView::create();
 	scrollView->setPosition(Vec2(0, 0));
-	scrollView->setBounceEnabled(1);
-	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.56);
+	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.58);
 	scrollView->setContentSize(scrollViewBackground->getContentSize());
 	scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
 	scrollView->setScrollBarEnabled(0);
@@ -51,31 +50,35 @@ void WorldMap::initScrollView()
 }
 void WorldMap::addIslandsToScrollView()
 {
+	auto basePosition = -155;
 	allyId = UserDefault::getInstance()->getIntegerForKey("allyHeroId");
-	MenuItemImage* level1 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 0, allyId));
-	level1->setPosition(Vec2(-80, -390));
-	MenuItemImage* level2 = MenuItemImage::create("worldMap/islandLevel2.png", "worldMap/islandLevel2.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 1, allyId));
-	level2->setPosition(Vec2(0, -155));
-	MenuItemImage* level3 = MenuItemImage::create("worldMap/islandLevel3.png", "worldMap/islandLevel3.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 2, allyId));
-	level3->setPosition(Vec2(0, 120));
-	MenuItemImage* level4 = MenuItemImage::create("worldMap/islandLevel4.png", "worldMap/islandLevel4.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 3, allyId));
-	level4->setPosition(Vec2(0, 380));
-	MenuItemImage* level5 = MenuItemImage::create("worldMap/islandLevel5.png", "worldMap/islandLevel5.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 4, allyId));
-	level5->setPosition(Vec2(0, 630));
-	MenuItemImage* level6 = MenuItemImage::create("worldMap/islandLevel6.png", "worldMap/islandLevel6.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 5, allyId));
-	level6->setPosition(Vec2(0, 910));
-	MenuItemImage* level7 = MenuItemImage::create("worldMap/islandLevel7.png", "worldMap/islandLevel7.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 6, allyId));
-	level7->setPosition(Vec2(0, 1180));
-	MenuItemImage* level8 = MenuItemImage::create("worldMap/islandLevel8.png", "worldMap/islandLevel8.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 7, allyId));
-	level8->setPosition(Vec2(0, 1450));
-	MenuItemImage* level9 = MenuItemImage::create("worldMap/islandLevel9.png", "worldMap/islandLevel9.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 8, allyId));
-	level9->setPosition(Vec2(0, 1720));
-	MenuItemImage* level10 = MenuItemImage::create("worldMap/islandLevel10.png", "worldMap/islandLevel10.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 9, allyId));
-	level10->setPosition(Vec2(0, 1960));
-	MenuItemImage* level11 = MenuItemImage::create("worldMap/islandLevel1.png", "worldMap/islandLevel1.png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, 10, allyId));
-	level11->setPosition(Vec2(80, -390));
-	Menu* menu = Menu::create(level1, level2, level3, level4, level5, level6, level7, level8, level9, level10, level11, NULL);
-	scrollView->addChild(menu, 1);
+	levelsMenu = Menu::create();
+	for (int i = 1; i < 12; i++)
+	{
+		auto num = StringUtils::format("%d", i);
+		if (i == 11)
+			num = StringUtils::format("%d", 1);
+		levels.push_back(MenuItemImage::create("worldMap/islandLevel" + num + ".png", "worldMap/islandLevel" + num + ".png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, i - 1, allyId)));
+		if (i == 1)
+			levels[i - 1]->setPosition(Vec2(-80, -390));
+		else if (i == 11)
+			levels[i - 1]->setPosition(Vec2(80, -390));
+		else
+		{
+			levels[i - 1]->setPosition(0, basePosition);
+			basePosition += 265;
+		}
+		levelsMenu->addChild(levels[i - 1]);
+		std::string key = "lvl" + num + "Unlocked";
+		if ((UserDefault::getInstance()->getBoolForKey(key.c_str()) != true) && (((i!=1)&&(i!=11))))
+		{
+			levels[i - 1]->setEnabled(0);
+			auto padlockSprite = Sprite::create("other/padlock.png");
+			padlockSprite->setPosition(Vec2(320, levels[i - 1]->getPositionY() + 590));
+			scrollView->addChild(padlockSprite, 2);
+		}
+	}
+	scrollView->addChild(levelsMenu, 1);
 }
 void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
 {
