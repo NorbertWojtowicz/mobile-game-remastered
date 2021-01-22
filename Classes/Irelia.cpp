@@ -17,6 +17,7 @@ Irelia::Irelia()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 	this->numberOfArtefact = 7;
+	this->numberOfLevel = 10;
 }
 void Irelia::castFirstSpell()
 {

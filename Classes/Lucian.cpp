@@ -17,6 +17,7 @@ Lucian::Lucian()
 	this->walkFrameDuration = 0.4f;
 	this->walkNumberOfFrames = 3;
 	this->numberOfArtefact = 0;
+	this->numberOfLevel = 7;
 }
 void Lucian::castFirstSpell()
 {

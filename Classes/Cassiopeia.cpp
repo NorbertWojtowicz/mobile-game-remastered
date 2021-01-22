@@ -16,7 +16,8 @@ Cassiopeia::Cassiopeia()
 	this->firstSpellFrameDuration = 0.2f;
 	this->walkFrameDuration = 0.2f;
 	this->walkNumberOfFrames = 7;
-	this->numberOfArtefact = 22;
+	this->numberOfArtefact = 2;
+	this->numberOfLevel = 2;
 }
 void Cassiopeia::castFirstSpell()
 {

@@ -17,6 +17,7 @@ Taliyah::Taliyah()
 	this->walkFrameDuration = 0.3f;
 	this->walkNumberOfFrames = 3;
 	this->numberOfArtefact = 3;
+	this->numberOfLevel = 4;
 }
 void Taliyah::castFirstSpell()
 {

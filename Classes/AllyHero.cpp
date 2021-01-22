@@ -147,6 +147,7 @@ void AllyHero::finishBattleWithWin()
 	btnMenu->setName("buttonMenu");
 	btnOk->setPosition(Vec2(0, -300));
 	scene->addChild(btnMenu);
+	unlockLevel(oponent->numberOfLevel + 1);
 }
 void AllyHero::removePopupsFromScene(Scene* scene)
 {
@@ -175,4 +176,11 @@ void AllyHero::checkIfYuumi(Scene* scene)
 		moneyLabel->setName("moneyLabel");
 		scene->addChild(moneyLabel, 2);
 	}
+}
+void AllyHero::unlockLevel(int numberOfLevel)
+{
+	std::stringstream ss;
+	ss << numberOfLevel;
+	std::string key = "lvl" + ss.str() + "Unlocked";
+	UserDefault::getInstance()->setBoolForKey(key.c_str(), true);
 }
