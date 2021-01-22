@@ -33,6 +33,7 @@ public:
 	void removePopupsFromScene(Scene* scene);
 	void checkIfYuumi(Scene* scene);
 	void unlockLevel(int numberOfLevel);
+	void unlockArtifact(int numberOfArtifact);
 	Animate* firstSpellAnimate, * secondSpellAnimate,
 		   * firstSpellCooldownAnimate, * secondSpellCooldownAnimate;
 	Menu* spellsMenu;
