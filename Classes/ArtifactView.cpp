@@ -16,8 +16,8 @@ void ArtifactView::initScrollView()
 	scrollViewBackground->setPosition(Vec2(320, 1460));
 	scrollView = ui::ScrollView::create();
 	scrollView->setPosition(Vec2(0, 0));
-	scrollView->setBounceEnabled(1);
-	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.46);
+	//scrollView->setBounceEnabled(1);
+	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.13);
 	scrollView->setContentSize(scrollViewBackground->getContentSize());
 	scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
 	scrollView->setScrollBarEnabled(0);
@@ -34,14 +34,13 @@ void ArtifactView::addArtifactsToScrollView()
 		int x = (i % 2 == 0) ? 160 : 480;
 		int y;
 		if (i < 2)
-			y = 3200;
+			y = 1400;
 		else if ((i > 1) && (i <= 3))
-			y = 3600;
+			y = 1000;
 		else if ((i > 3) && (i <= 5))
-			y = 4000;
+			y = 600;
 		else if (i > 5)
-			y = 4400;
-		cocos2d::log(artifactLocations[i].c_str());
+			y = 200;
 		auto artifactSprite = Sprite::create(artifactLocations[i]);
 		artifactSprite->setPosition(Vec2(x, y));
 		scrollView->addChild(artifactSprite);

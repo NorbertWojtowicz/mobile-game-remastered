@@ -148,6 +148,7 @@ void AllyHero::finishBattleWithWin()
 	btnOk->setPosition(Vec2(0, -300));
 	scene->addChild(btnMenu);
 	unlockLevel(oponent->numberOfLevel + 1);
+	unlockArtifact(oponent->numberOfArtefact);
 }
 void AllyHero::removePopupsFromScene(Scene* scene)
 {
@@ -183,4 +184,11 @@ void AllyHero::unlockLevel(int numberOfLevel)
 	ss << numberOfLevel;
 	std::string key = "lvl" + ss.str() + "Unlocked";
 	UserDefault::getInstance()->setBoolForKey(key.c_str(), true);
+}
+void AllyHero::unlockArtifact(int numberOfArtifact)
+{
+	std::stringstream ss;
+	ss << numberOfArtifact;
+	std::string key = "artifact" + ss.str();
+	UserDefault::getInstance()->setStringForKey(key.c_str(), "clear");
 }
