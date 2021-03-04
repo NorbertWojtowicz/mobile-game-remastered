@@ -17,5 +17,6 @@ public:
 	void addArtifactInscription();
 	std::string artifactLocations[7];
 	std::string artifactStatuses[7];
+	void closeScene();
 };
 #endif

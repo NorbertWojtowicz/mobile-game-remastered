@@ -52,7 +52,7 @@ void GameScene::runArtifactView()
 void GameScene::addPickedHero()
 {
 	int numberOfHero = UserDefault::getInstance()->getIntegerForKey("allyHeroId");
-	if (numberOfHero == 0)
+	if ((numberOfHero == 0) && (UserDefault::getInstance()->getIntegerForKey("ryze") != 1))
 		return;
 	auto heroStr = heroes[numberOfHero + 1];
 	auto heroSprite = Sprite::create("heroes/" + heroStr + "/bodySprite.png");

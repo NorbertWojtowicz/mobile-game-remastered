@@ -30,7 +30,7 @@ public:
 	void addHud();
 	void addHeroSpells(std::string nameOfHero);
 	void updateSpellsCooldown(float dt);
-	//hp bars
+	// Hp bars
 	void addAllyHeroHpBar();
 	void addEnemyHeroHpBar();
 	void addAllyHeroHpBorder();
@@ -46,12 +46,16 @@ public:
 	void updateAllyHeroFirstSpellCooldown(float dt);
 	void updateEnemyHeroFirstSpellCooldown(float dt);
 
-	//end level
+	// Finish level
 	void finishLevel();
 	void finishBattleWithWin();
 	void finishBattleWithLose();
+
+	// Popups
 	void showWinPopUp();
 	void showLosePopUp();
+
+	// Destroy scene
 	void prepareSceneToBeDeleted();
 	void stopRunningActions();
 

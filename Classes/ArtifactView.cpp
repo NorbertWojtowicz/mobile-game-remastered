@@ -1,5 +1,6 @@
 #include "ArtifactView.h"
 #include <sstream>
+#include "GameScene.h"
 bool ArtifactView::init()
 {
 	if (!Node::init())
@@ -14,8 +15,12 @@ void ArtifactView::initScrollView()
 {
 	auto scrollViewBackground = Sprite::create("backgrounds/artifactBg.png");
 	scrollViewBackground->setPosition(Vec2(320, 1460));
+	auto closeBtn = MenuItemImage::create("buttons/cross.png", "buttons/cross.png", CC_CALLBACK_0(ArtifactView::closeScene, this));
+	closeBtn->setPosition(Vec2(240, 1250));
+	auto menu = Menu::create(closeBtn, NULL);
 	scrollView = ui::ScrollView::create();
 	scrollView->setPosition(Vec2(0, 0));
+	scrollView->addChild(menu, 2);
 	scrollView->setInnerContainerSize(scrollViewBackground->getBoundingBox().size * 1.13);
 	scrollView->setContentSize(scrollViewBackground->getContentSize());
 	scrollView->setDirection(ui::ScrollView::Direction::VERTICAL);
@@ -70,4 +75,10 @@ void ArtifactView::addArtifactInscription()
 	auto inscriptionSprite = Sprite::create("artefacts/artefactInscription.png");
 	inscriptionSprite->setPosition(Vec2(320, 1730));
 	scrollView->addChild(inscriptionSprite);
+}
+void ArtifactView::closeScene()
+{
+	this->removeAllChildren();
+	auto scene = GameScene::createScene();
+	Director::getInstance()->pushScene(scene);
 }

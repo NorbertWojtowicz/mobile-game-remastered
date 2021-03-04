@@ -24,6 +24,8 @@ public:
 	map_Ally mapAlly;
 	void prepareEnemyMap();
 	void prepareAllyMap();
+	void addCloseButton();
+	void closeScene();
 	std::vector<MenuItemImage*> levels;
 private:
 	void addIslandsToScrollView();
