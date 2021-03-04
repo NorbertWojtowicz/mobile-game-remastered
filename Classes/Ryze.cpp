@@ -3,9 +3,12 @@
 Ryze::Ryze()
 {
 	setName("ryze");
-	this->health = 10;
-	this->constHealth = 10;
+	this->health = 12;
+	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->constHealth = 12;
+	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
 	this->strength = 2;
+	this->strength += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
 	this->timeToDealDamageInFirstSpell = 1.95f;
 	this->timeToDealDamageInSecondSpell = 0.8f;
 	this->firstSpellNumberOfFrames = 16;
@@ -40,7 +43,7 @@ void Ryze::castSecondSpell()
 	sceneNode->addChild(sprite, 3);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	sprite->runAction(attackSequence);
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength * 2));
 	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, this));
 	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	sceneNode->runAction(damageSequence);

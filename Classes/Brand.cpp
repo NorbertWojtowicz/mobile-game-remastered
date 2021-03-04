@@ -4,9 +4,12 @@ Brand::Brand()
 {
 	this->setName("brand");
 	this->setSprite("brand");
-	this->strength = 2;
-	this->health = 10;
-	this->constHealth = 10;
+	this->strength = 1;
+	this->strength += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
+	this->health = 20;
+	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->constHealth = 20;
+	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
 	this->defaultPosition = Vec2(310, 545);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

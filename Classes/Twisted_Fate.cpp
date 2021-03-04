@@ -3,9 +3,12 @@
 Twisted_Fate::Twisted_Fate()
 {
 	setName("twisted_fate");
-	this->constHealth = 10;
-	this->health = 10;
-	this->strength = 4;
+	this->health = 9;
+	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->constHealth = 9;
+	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->strength = 3;
+	this->strength += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
 	this->timeToDealDamageInFirstSpell = 0.8f;
 	this->timeToDealDamageInSecondSpell = 1.5f;
 	this->firstSpellNumberOfFrames = 2;
@@ -69,13 +72,13 @@ void Twisted_Fate::dealDamageWithCard(short num)
 	switch (num)
 	{
 	case 1:
-		dmg = 5;
+		dmg = strength - 1;
 		break;
 	case 2:
-		dmg = 10;
+		dmg = strength;
 		break;
 	case 3:
-		dmg = 5;
+		dmg = strength - 1;
 		break;
 	}
 	runCardAnimate(cardNum);

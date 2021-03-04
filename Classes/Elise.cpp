@@ -2,9 +2,12 @@
 Elise::Elise()
 {
 	this->setName("elise");
-	this->health = 10;
-	this->constHealth = 10;
+	this->health = 13;
+	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->constHealth = 13;
+	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
 	this->strength = 4;
+	this->strength += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
 	this->timeToDealDamageInFirstSpell = 1.65f;
 	this->timeToDealDamageInSecondSpell = 1.8f;
 	this->firstSpellNumberOfFrames = 13;
@@ -39,7 +42,7 @@ void Elise::castSecondSpell()
 	sceneNode->addChild(sword, 3);
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	sword->runAction(attackSequence);
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength * 2));
 	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, this));
 	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	sceneNode->runAction(damageSequence);

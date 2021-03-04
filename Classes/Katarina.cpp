@@ -3,9 +3,12 @@
 Katarina::Katarina()
 {
 	this->setName("katarina");
-	this->health = 10;
-	this->constHealth = 10;
-	this->strength = 1;
+	this->health = 15;
+	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->constHealth = 15;
+	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->strength = 2;
+	this->strength += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
 	this->timeToDealDamageInFirstSpell = 1.05f;
 	this->timeToDealDamageInSecondSpell = 0.21f;
 	this->firstSpellNumberOfFrames = 7;
