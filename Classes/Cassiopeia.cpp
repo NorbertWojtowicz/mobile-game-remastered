@@ -3,9 +3,9 @@ Cassiopeia::Cassiopeia()
 {
 	this->setName("cassiopeia");
 	this->setSprite(name);
-	this->strength = 6;
-	this->health = 15;
-	this->constHealth = 15;
+	this->strength = 2;
+	this->health = 17;
+	this->constHealth = 17;
 	this->defaultPosition = Vec2(260, 400);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

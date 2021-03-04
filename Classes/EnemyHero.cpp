@@ -34,7 +34,6 @@ void EnemyHero::updateFirstSpellTime(float dt)
 	cocos2d::log("Actual time2 is: %d", firstSpellCooldown);
 	if (firstSpellCooldown <= 0)
 	{
-		//castFirstSpell();
 		firstSpellCooldown = firstSpellCooldownConst + firstSpellAnimate->getDuration();
 	}
 }
@@ -85,4 +84,22 @@ void EnemyHero::finishBattleWithLose()
 {
 	auto scene = GameScene::createScene();
 	Director::getInstance()->replaceScene(scene);
+	addLosePopupToScene(scene);
+}
+void EnemyHero::addLosePopupToScene(Scene* scene)
+{
+	auto popupSprite = Sprite::create("popups/lost.png");
+	popupSprite->setPosition(Vec2(320, 550));
+	scene->addChild(popupSprite);
+	auto okBtn = MenuItemImage::create("buttons/okBtn.png", "buttons/pressedOkBtn.png", CC_CALLBACK_0(EnemyHero::removeLosePopupFromScene, this, scene));
+	okBtn->setPosition(Vec2(0, -300));
+	auto menu = Menu::create(okBtn, NULL);
+	menu->setName("menu");
+	popupSprite->setName("popup");
+	scene->addChild(menu);
+}
+void EnemyHero::removeLosePopupFromScene(Scene* scene)
+{
+	scene->removeChildByName("popup");
+	scene->removeChildByName("menu");
 }

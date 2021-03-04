@@ -47,6 +47,7 @@ void WorldMap::initScrollView()
 	scrollView->jumpToBottom();
 	scrollView->addChild(scrollViewBackground);
 	addIslandsToScrollView();
+	addCloseButton();
 }
 void WorldMap::addIslandsToScrollView()
 {
@@ -116,4 +117,17 @@ void WorldMap::prepareAllyMap()
 	mapAlly["Elise"] = &createAllyHeroInstance<Elise>;
 	mapAlly["Katarina"] = &createAllyHeroInstance<Katarina>;
 	mapAlly["Kaisa"] = &createAllyHeroInstance<Kaisa>;
+}
+void WorldMap::addCloseButton()
+{
+	auto closeBtn = MenuItemImage::create("buttons/cross.png", "buttons/cross.png", CC_CALLBACK_0(WorldMap::closeScene, this));
+	closeBtn->setPosition(Vec2(270, 500));
+	auto menu = Menu::create(closeBtn, NULL);
+	this->addChild(menu, 2);
+}
+void WorldMap::closeScene()
+{
+	this->removeAllChildren();
+	auto scene = GameScene::createScene();
+	Director::getInstance()->pushScene(scene);
 }

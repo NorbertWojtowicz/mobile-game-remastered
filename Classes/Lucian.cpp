@@ -3,9 +3,9 @@ Lucian::Lucian()
 {
 	this->setName("lucian");
 	this->setSprite(name);
-	this->strength = 1;
-	this->health = 20;
-	this->constHealth = 20;
+	this->strength = 4;
+	this->health = 18;
+	this->constHealth = 18;
 	this->defaultPosition = Vec2(200, 400);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

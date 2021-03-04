@@ -25,15 +25,19 @@ private:
 	void closeShop();
 	Node* shopLayer;
 	Sprite* boughtHeroSprite;
-	static const std::string shop_products[2][7];
+	static const std::string shop_products[3][7];
 	Label* moneyLabel;
+	MenuItemImage* buyButton;
 	std::string generateMoneyStringFromInt(int money);
 	int money = 0;
-	int costsOfProducts[2][7] = { { 0, 100, 100, 100, 100, 100, 100 }, {350, 550, 750, 950} };
+	int costsOfProducts[3][7] = { { 0, 1000, 2250, 2500, 3000, 3500, 4000 }, {1000, 2250, 3000, 4000}, {1500, 2500, 2500} };
 	void addMoneyStatusToShopLayer();
-	void addNoMoneyPopup();
 	void changeCategory(int numberOfCategory);
 	void buyMultiplier();
+	void buyItem();
 	void removeNoMoneyPopup();
+	bool isOwned();
+	void pickOwnedHero();
+	void addPopup(std::string path);
 };
 #endif

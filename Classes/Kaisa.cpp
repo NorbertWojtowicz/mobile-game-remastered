@@ -2,9 +2,12 @@
 Kaisa::Kaisa()
 {
 	this->setName("kaisa");
-	this->health = 10;
-	this->constHealth = 10;
-	this->strength = 1;
+	this->health = 17;
+	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->constHealth = 17;
+	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->strength = 3;
+	this->strength += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
 	this->timeToDealDamageInFirstSpell = 0.48f;
 	this->timeToDealDamageInSecondSpell = 0.5f;
 	this->firstSpellNumberOfFrames = 8;

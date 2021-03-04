@@ -3,9 +3,9 @@ Irelia::Irelia()
 {
 	this->setName("irelia");
 	this->setSprite(name);
-	this->strength = 1;
-	this->health = 20;
-	this->constHealth = 20;
+	this->strength = 3;
+	this->health = 40;
+	this->constHealth = 40;
 	this->defaultPosition = Vec2(260, 500);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

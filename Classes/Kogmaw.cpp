@@ -4,8 +4,8 @@ Kogmaw::Kogmaw()
 	this->setName("kogmaw");
 	this->setSprite(name);
 	this->strength = 2;
-	this->health = 20;
-	this->constHealth = 20;
+	this->health = 50;
+	this->constHealth = 50;
 	this->defaultPosition = Vec2(190, 400);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

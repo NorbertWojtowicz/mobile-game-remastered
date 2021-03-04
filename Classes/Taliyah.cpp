@@ -3,7 +3,7 @@ Taliyah::Taliyah()
 {
 	this->setName("taLiyah");
 	this->setSprite(name);
-	this->strength = 1;
+	this->strength = 2;
 	this->health = 20;
 	this->constHealth = 20;
 	this->defaultPosition = Vec2(190, 450);

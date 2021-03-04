@@ -34,5 +34,7 @@ protected:
 	float firstSpellTimer, firstSpellFrameDuration,const firstSpellCooldownConst, walkFrameDuration;
 	short firstSpellNumberOfFrames, walkNumberOfFrames;
 	Vec2 defaultPosition;
+	void addLosePopupToScene(Scene* scene);
+	void removeLosePopupFromScene(Scene* scene);
 };
 #endif

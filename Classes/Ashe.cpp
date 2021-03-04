@@ -3,9 +3,12 @@
 Ashe::Ashe()
 {
 	this->setName("ashe");
-	this->constHealth = 10;
-	this->health = 10;
+	this->constHealth = 8;
+	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+	this->health = 8;
+	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
 	this->strength = 3;
+	this->strength += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
 	this->timeToDealDamageInFirstSpell = 1.95f;
 	this->timeToDealDamageInSecondSpell = 2.25f;
 	this->firstSpellNumberOfFrames = 12;
@@ -42,7 +45,7 @@ void Ashe::castSecondSpell()
 	auto attackSequence = Sequence::create(secondSpellAnimate, RemoveSelf::create(), nullptr);
 	arrow->runAction(attackSequence);
 	arrow->runAction(arrowMove);
-	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength));
+	auto damageCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::dealDamageToEnemyHero, this, strength * 3));
 	auto cooldownCallFunc = CallFunc::create(CC_CALLBACK_0(AllyHero::runSecondSpellCooldown, this));
 	auto damageSequence = Sequence::create(cooldownCallFunc, DelayTime::create(timeToDealDamageInSecondSpell), damageCallFunc, nullptr);
 	sceneNode->runAction(damageSequence);

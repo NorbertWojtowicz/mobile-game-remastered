@@ -3,9 +3,9 @@ Darius::Darius()
 {
 	this->setName("darius");
 	this->setSprite(name);
-	this->strength = 6;
-	this->health = 20;
-	this->constHealth = 20;
+	this->strength = 3;
+	this->health = 30;
+	this->constHealth = 30;
 	this->defaultPosition = Vec2(290, 450);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

@@ -3,9 +3,9 @@ Pantheon::Pantheon()
 {
 	this->setName("pantheon");
 	this->setSprite(name);
-	this->strength = 9;
-	this->health = 20;
-	this->constHealth = 20;
+	this->strength = 7;
+	this->health = 30;
+	this->constHealth = 30;
 	this->defaultPosition = Vec2(200, 500);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;

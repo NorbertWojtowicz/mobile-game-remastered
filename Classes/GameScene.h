@@ -17,5 +17,7 @@ public:
 	CREATE_FUNC(GameScene);
 	void addArtifactChest();
 	void runArtifactView();
+	void addPickedHero();
+	std::string heroes[8] = {"", "ryze", "ashe" ,"garen", "twisted_fate", "elise", "katarina", "kaisa" };
 };
 #endif

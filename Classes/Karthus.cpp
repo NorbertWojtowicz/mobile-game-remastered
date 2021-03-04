@@ -3,9 +3,9 @@ Karthus::Karthus()
 {
 	this->setName("karthus");
 	this->setSprite(name);
-	this->strength = 9;
-	this->health = 20;
-	this->constHealth = 20;
+	this->strength = 8;
+	this->health = 15;
+	this->constHealth = 15;
 	this->defaultPosition = Vec2(180, 500);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;
