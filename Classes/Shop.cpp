@@ -126,7 +126,8 @@ void Shop::buyHero()
 		closeShop();
 		return;
 	}
-	removePreviousHero();
+	if(numberOfCategory == 0)
+		removePreviousHero();
 	if (money < costsOfProducts[numberOfCategory][numberOfPage])
 	{
 		addPopup("popups/noMoneyPopup.png");
@@ -207,33 +208,29 @@ void Shop::changeCategory(int numberOfCategory)
 }
 void Shop::buyMultiplier()
 {
-	int multiplier;
-	if (numberOfPage == 0)
-		multiplier = 2;
-	else if (numberOfPage == 1)
-		multiplier = 3;
-	else if (numberOfPage == 2)
-		multiplier = 4;
-	else if (numberOfPage == 3)
-		multiplier = 5;
+	int multiplier = numberOfPage + 2;
 	UserDefault::getInstance()->setIntegerForKey("multiplier", multiplier);
 }
 void Shop::buyItem()
 {
-	int num;
+	int attack = 0, health = 0;
 	if (numberOfPage == 0)
 	{
-		num = 1;
+		attack = 1;
 	}
 	else if (numberOfPage == 1)
 	{
-		num = 5;
-		num += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
-		UserDefault::getInstance()->setIntegerForKey("additionalHealth", num);
+		health = 5;
+		health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
+		UserDefault::getInstance()->setIntegerForKey("additionalHealth", health);
 	}
 	else if (numberOfPage == 2)
-		num = 3;
-	num += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
+		attack = 2;
+	if (attack > 0)
+	{
+		attack += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
+		UserDefault::getInstance()->setIntegerForKey("additionalAttack", attack);
+	}
 }
 bool Shop::isOwned()
 {
