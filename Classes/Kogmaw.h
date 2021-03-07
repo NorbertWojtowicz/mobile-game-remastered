@@ -5,6 +5,7 @@ class Kogmaw : public EnemyHero
 {
 public:
 	Kogmaw();
+private:
 	void castFirstSpell();
 };
 #endif

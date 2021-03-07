@@ -1,6 +1,5 @@
 #include "WorldMap.h"
 #include "BrandLevel.h"
-#include "Brand.h"
 #include "Ashe.h"
 #include "Garen.h"
 #include "Cassiopeia.h"

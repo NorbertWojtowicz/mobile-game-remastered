@@ -6,6 +6,7 @@ class Kaisa : public AllyHero
 {
 public:
 	Kaisa();
+private:
 	virtual void castFirstSpell();
 	virtual void castSecondSpell();
 	DelayTime* delay(float timeDelay);

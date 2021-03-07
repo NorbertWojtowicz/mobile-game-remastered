@@ -10,7 +10,7 @@ Brand::Brand()
 	this->health += UserDefault::getInstance()->getIntegerForKey("additionalHealth");
 	this->constHealth = 20;
 	this->constHealth += UserDefault::getInstance()->getIntegerForKey("additionalAttack");
-	this->defaultPosition = Vec2(310, 545);
+	this->defaultPosition = Vec2(310, 550);
 	sprite->setPosition(defaultPosition);
 	this->firstSpellCooldown = 5.0;
 	this->firstSpellCooldownConst = 5.0;

@@ -8,6 +8,7 @@ class Ryze : public AllyHero
 {
 public:
 	Ryze::Ryze();
+private:
 	void castFirstSpell();
 	void castSecondSpell();
 };

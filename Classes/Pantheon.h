@@ -5,6 +5,7 @@ class Pantheon : public EnemyHero
 {
 public:
 	Pantheon();
+private:
 	void castFirstSpell();
 };
 #endif

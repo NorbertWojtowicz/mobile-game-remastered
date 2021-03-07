@@ -5,6 +5,7 @@ class Karthus : public EnemyHero
 {
 public:
 	Karthus();
+private:
 	void castFirstSpell();
 };
 #endif

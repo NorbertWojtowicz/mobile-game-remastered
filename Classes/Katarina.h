@@ -6,8 +6,9 @@ class Katarina : public AllyHero
 {
 public:
 	Katarina();
+private:
 	virtual void castFirstSpell();
 	virtual void castSecondSpell();
 };
 
-#endif // !__GAREN_H__
+#endif // !__KATARINA_H__

@@ -5,6 +5,7 @@ class Irelia : public EnemyHero
 {
 public:
 	Irelia();
+private:
 	void castFirstSpell();
 };
 #endif

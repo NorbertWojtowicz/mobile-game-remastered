@@ -10,7 +10,6 @@ std::string EnemyHero::getName()
 }
 void EnemyHero::setSprite(std::string nameOfHero)
 {
-	//TBD fill filePath correctly
 	sprite = Sprite::create("heroes/" + nameOfHero + "/" + nameOfHero + "Sprite.png");
 	sprite->setPosition(Vec2(320, 570));
 }

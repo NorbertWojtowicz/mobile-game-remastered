@@ -7,6 +7,7 @@ class Ashe : public AllyHero
 {
 public:
 	Ashe();
+private:
 	void castFirstSpell();
 	void castSecondSpell();
 };

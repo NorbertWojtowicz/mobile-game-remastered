@@ -5,6 +5,7 @@ class Lucian : public EnemyHero
 {
 public:
 	Lucian();
+private:
 	void castFirstSpell();
 };
 #endif

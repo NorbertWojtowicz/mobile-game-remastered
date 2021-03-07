@@ -1,11 +1,8 @@
-#pragma once
 #ifndef __TELEPORT_H__
 #define __TELEPORT_H__
 
 #include "cocos2d.h"
-//#include "GameScene.h"
 #include <string>
-#include <vector>
 
 USING_NS_CC;
 

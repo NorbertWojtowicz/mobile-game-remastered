@@ -6,8 +6,9 @@ class Elise : public AllyHero
 {
 public:
 	Elise();
+private:
 	virtual void castFirstSpell();
 	virtual void castSecondSpell();
 };
 
-#endif // !__GAREN_H__
+#endif // !__ELISE_H__

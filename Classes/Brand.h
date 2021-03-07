@@ -9,6 +9,7 @@ class Brand : public EnemyHero
 {
 public:
 	Brand();
+private:
 	void castFirstSpell();
 };
 #endif

@@ -10,14 +10,15 @@ USING_NS_CC;
 class GameScene : public cocos2d::Node
 {
 public:
-	Size visibleSize = Director::getInstance()->getVisibleSize();
-	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	static Scene* createScene();
-	virtual bool init();
+private:
 	CREATE_FUNC(GameScene);
 	void addArtifactChest();
 	void runArtifactView();
 	void addPickedHero();
-	std::string heroes[8] = {"", "ryze", "ashe" ,"garen", "twisted_fate", "elise", "katarina", "kaisa" };
+	std::string heroes[8] = { "", "ryze", "ashe" ,"garen", "twisted_fate", "elise", "katarina", "kaisa" };
+	virtual bool init();
+	Size visibleSize = Director::getInstance()->getVisibleSize();
+	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 };
 #endif

@@ -5,6 +5,7 @@ class Twisted_Fate : public AllyHero
 {
 public:
 	Twisted_Fate();
+private:
 	void castFirstSpell();
 	void castSecondSpell();
 	void changeCard();

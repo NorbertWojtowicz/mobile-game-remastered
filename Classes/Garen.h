@@ -6,6 +6,7 @@ class Garen : public AllyHero
 {
 public:
 	Garen();
+private:
 	virtual void castFirstSpell();
 	virtual void castSecondSpell();
 };

@@ -9,10 +9,11 @@ USING_NS_CC;
 class AllyHero
 {
 public:
+	std::string getName();
+	void initEnemyHero(EnemyHero* oponent);
 	std::string name;
 	short health, strength, const constHealth;
 	void setName(std::string name);
-	std::string getName();
 	void initFirstSpell();
 	virtual void castFirstSpell() = 0;
 	void initSecondSpell();
@@ -29,7 +30,6 @@ public:
 	void addSecondSpellCooldownSpriteToRunningScene();
 	void turnOffSpells();
 	void updateEnemyHeroHpBar(short health);
-	void initEnemyHero(EnemyHero* oponent);
 	void removePopupsFromScene(Scene* scene);
 	void checkIfYuumi(Scene* scene);
 	void unlockLevel(int numberOfLevel);

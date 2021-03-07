@@ -241,6 +241,8 @@ bool Shop::isOwned()
 }
 void Shop::pickOwnedHero()
 {
+	if (numberOfCategory != 0)
+		return;
 	removePreviousHero();
 	boughtHeroSprite = Sprite::create("heroes/" + shop_products[numberOfCategory][numberOfPage] + "/bodySprite.png");
 	boughtHeroSprite->setTag(1212);

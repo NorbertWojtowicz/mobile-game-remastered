@@ -12,9 +12,15 @@ USING_NS_CC;
 class WorldMap : public cocos2d::Node
 {
 public:
+	static Scene* createScene();
+private:
+	void addIslandsToScrollView();
+	short allyId, enemyId;
+	Menu* levelsMenu;
+	std::string alliesTab[7] = { "Ryze", "Ashe", "Garen", "Twisted_Fate", "Elise", "Katarina", "Kaisa" };
+	std::string enemiesTab[11] = { "Brand", "Cassiopeia", "Darius", "Taliyah", "Karthus" , "Pantheon", "Lucian", "Kogmaw", "Malhazar", "Irelia", "Yuumi" };
 	CREATE_FUNC(WorldMap);
 	virtual bool init();
-	static Scene* createScene();
 	ui::ScrollView* scrollView;
 	void initScrollView();
 	void startLevelWithHeroesId(short enemyId, short allyId);
@@ -27,11 +33,5 @@ public:
 	void addCloseButton();
 	void closeScene();
 	std::vector<MenuItemImage*> levels;
-private:
-	void addIslandsToScrollView();
-	short allyId, enemyId;
-	Menu* levelsMenu;
-	std::string alliesTab[7] = { "Ryze", "Ashe", "Garen", "Twisted_Fate", "Elise", "Katarina", "Kaisa" };
-	std::string enemiesTab[11] = { "Brand", "Cassiopeia", "Darius", "Taliyah", "Karthus" , "Pantheon", "Lucian", "Kogmaw", "Malhazar", "Irelia", "Yuumi" };
 };
 #endif

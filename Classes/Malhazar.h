@@ -5,6 +5,7 @@ class Malhazar : public EnemyHero
 {
 public:
 	Malhazar();
+private:
 	void castFirstSpell();
 };
 #endif

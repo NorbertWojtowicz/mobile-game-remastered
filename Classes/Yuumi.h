@@ -5,6 +5,7 @@ class Yuumi : public EnemyHero
 {
 public:
 	Yuumi();
+private:
 	void castFirstSpell();
 };
 #endif

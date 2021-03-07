@@ -5,6 +5,7 @@ class Taliyah : public EnemyHero
 {
 public:
 	Taliyah();
+private:
 	void castFirstSpell();
 };
 #endif

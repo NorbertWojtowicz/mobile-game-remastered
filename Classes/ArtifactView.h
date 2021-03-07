@@ -7,16 +7,16 @@ USING_NS_CC;
 class ArtifactView : public Node
 {
 public:
+	static Scene* createScene();
+private:
 	CREATE_FUNC(ArtifactView);
 	virtual bool init();
-	static Scene* createScene();
 	ui::ScrollView* scrollView;
 	void initScrollView();
 	void addArtifactsToScrollView();
 	void checkArtifactStatuses();
 	void addArtifactInscription();
 	std::string artifactLocations[7];
-	std::string artifactStatuses[7];
 	void closeScene();
 };
 #endif
