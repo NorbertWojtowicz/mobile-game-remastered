@@ -49,7 +49,8 @@ BrandLevel* BrandLevel::create(EnemyHero* enemy, AllyHero* ally)
 }
 void BrandLevel::addEssentialElements()
 {
-	addBackground("backgrounds/firstSceneBG.png");
+	//firstSceneBG.png
+	addBackground("backgrounds/" + enemyHero->getName() + "Bg.png");
 	addAllyHeroHpBar();
 	addEnemyHeroHpBar();
 	addHeroFace(allyHero->getName());
@@ -58,7 +59,7 @@ void BrandLevel::addEssentialElements()
 void BrandLevel::addBackground(std::string backgroundFilePath)
 {
 	auto background = Sprite::create(backgroundFilePath);
-	background->setPosition(Vec2(320, 650));
+	background->setPosition(Vec2(320, 568));
 	addChild(background);
 }
 void BrandLevel::addHeroFace(std::string nameOfHero)
@@ -91,7 +92,6 @@ void BrandLevel::updateSpellsCooldown(float dt)
 {
 	updateEnemyHeroFirstSpellCooldown(dt);
 }
-//TBD
 void BrandLevel::addAllyHeroHpBar()
 {
 	addAllyHeroHpBorder();
@@ -174,50 +174,7 @@ void BrandLevel::updateEnemyHeroFirstSpellCooldown(float dt)
 		enemyHero->firstSpellCooldown = 5.0 + enemyHero->firstSpellAnimate->getDuration();
 	}
 }
-void BrandLevel::finishBattleWithWin()
-{
-	stopRunningActions();
-	showWinPopUp();
-}
-void BrandLevel::finishBattleWithLose()
-{
-	stopRunningActions();
-	finishLevel();
-}
-void BrandLevel::finishLevel()
-{
-	auto scene = GameScene::createScene();
-	Director::getInstance()->replaceScene(scene);
-}
-void BrandLevel::showWinPopUp()
-{
-	auto spritePopup = Sprite::create("popups/popup.png");
-	spritePopup->setPosition(Vec2(320, 630));
-	this->addChild(spritePopup, 4);
-	auto okBtn = MenuItemImage::create("buttons/okBtn.png", "buttons/pressedOkBtn.png", CC_CALLBACK_0(BrandLevel::returnToGameScene, this));
-	okBtn->setPosition(Vec2(0, -200));
-	auto menu = Menu::create(okBtn, NULL);
-	this->addChild(menu, 4);
-}
-void BrandLevel::showLosePopUp()
-{
 
-}
-void BrandLevel::stopRunningActions()
-{
-	this->stopAllActions();
-	this->unscheduleAllCallbacks();
-}
-void BrandLevel::prepareSceneToBeDeleted()
-{
-	this->removeAllChildrenWithCleanup(true);
-}
-void BrandLevel::returnToGameScene()
-{
-	prepareSceneToBeDeleted();
-	auto scene = GameScene::createScene();
-	Director::getInstance()->replaceScene(scene);
-}
 
 
 

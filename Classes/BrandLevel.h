@@ -12,24 +12,8 @@ USING_NS_CC;
 class BrandLevel : public cocos2d::Node
 {
 public:
-	BrandLevel(EnemyHero* enemy, AllyHero *ally);
-	~BrandLevel() {};
-	//static BrandLevel createLevelWithEnemyAndAllyHero(EnemyHero* enemy, Ryze* ally);
 	static Scene* createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally);
-	virtual bool init();
-	static BrandLevel* create(EnemyHero* enemy, AllyHero* ally);
-	//static Scene* createScene();
-	EnemyHero* enemyHero;
-	AllyHero* allyHero;
-	short allyHeroHealth, enemyHeroHealth;
-	ui::LoadingBar* allyHeroHpBar, *enemyHeroHpBar;
-	void addEssentialElements();
-	void initHeroesHealth();
-	void addBackground(std::string backgroundFilePath);
-	void addHeroFace(std::string nameOfHero);
-	void addHud();
-	void addHeroSpells(std::string nameOfHero);
-	void updateSpellsCooldown(float dt);
+private:
 	// Hp bars
 	void addAllyHeroHpBar();
 	void addEnemyHeroHpBar();
@@ -39,27 +23,38 @@ public:
 	void addEnemyHeroHpLoadingBar();
 	void addAllyHeroHpLabel();
 	void addEnemyHeroHpLabel();
+	void initHeroesHealth();
+	short allyHeroHealth, enemyHeroHealth;
+	ui::LoadingBar* allyHeroHpBar, * enemyHeroHpBar;
 
+	// Spells
 	void castFirstAllyHeroSpell();
 	void castFirstEnemyHeroSpell();
 	void castSecondAllyHeroSpell();
+	void addHeroSpells(std::string nameOfHero);
+
+	// Spells Cooldowns
 	void updateAllyHeroFirstSpellCooldown(float dt);
 	void updateEnemyHeroFirstSpellCooldown(float dt);
+	void updateSpellsCooldown(float dt);
 
-	// Finish level
-	void finishLevel();
-	void finishBattleWithWin();
-	void finishBattleWithLose();
+	// Heroes
+	EnemyHero* enemyHero;
+	AllyHero* allyHero;
 
-	// Popups
-	void showWinPopUp();
-	void showLosePopUp();
+	// Initial
+	void addEssentialElements();
+	void addBackground(std::string backgroundFilePath);
+	void addHeroFace(std::string nameOfHero);
+	void addHud();
+	virtual bool init();
 
-	// Destroy scene
-	void prepareSceneToBeDeleted();
-	void stopRunningActions();
+	// Constructors
+	BrandLevel(EnemyHero* enemy, AllyHero* ally);
+	static BrandLevel* create(EnemyHero* enemy, AllyHero* ally);
 
-	void returnToGameScene();
+	// Deconstructor
+	~BrandLevel() {};
 
 };
 #endif

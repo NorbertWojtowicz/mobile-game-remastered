@@ -10,9 +10,6 @@
     <ClCompile Include="G:\mobile_league_game\Classes\GameScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="G:\mobile_league_game\Classes\Hero.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
     <ClCompile Include="G:\mobile_league_game\Classes\Shop.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
@@ -105,9 +102,6 @@
     <ClInclude Include="G:\mobile_league_game\Classes\GameScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Classes\Hero.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Classes\Shop.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
@@ -136,6 +130,9 @@
       <Filter>Resources\artefacts</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a10R.png">
       <Filter>Resources\artefacts</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1R.png">
@@ -198,6 +195,9 @@
     <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a7clear.png">
       <Filter>Resources\artefacts</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\artefactInscription.png">
+      <Filter>Resources\artefacts</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\artefacts\chest.png">
       <Filter>Resources\artefacts</Filter>
     </ClInclude>
@@ -219,16 +219,34 @@
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\worldMapBG.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\bodySprite (1).png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\buyBtn.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\cross.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\crossBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\heroesBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\itemsBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\lArrow.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\mltBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\okBtn.png">
+      <Filter>Resources\buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pickBtn.png">
       <Filter>Resources\buttons</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\playBtn.png">
@@ -304,12 +322,6 @@
       <Filter>Resources\heroes\ashe</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\bodySprite.png">
-      <Filter>Resources\heroes\ashe</Filter>
-    </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\bodySpriteProfile.png">
-      <Filter>Resources\heroes\ashe</Filter>
-    </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\bodySpriteSmaller.png">
       <Filter>Resources\heroes\ashe</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellAnimate.plist">
@@ -798,10 +810,19 @@
     <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiWalkAnimate.png">
       <Filter>Resources\heroes\yuumi</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\other\padlock.png">
+      <Filter>Resources\other</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\other\sign.png">
       <Filter>Resources\other</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\popups\lost.png">
+      <Filter>Resources\popups</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\popups\noMoneyPopup.png">
+      <Filter>Resources\popups</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\popups\ownedPopup.png">
       <Filter>Resources\popups</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\popups\popup.png">
@@ -810,7 +831,25 @@
     <ClInclude Include="G:\mobile_league_game\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\2x.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\3x.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\4x.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\5x.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\shop\ashe.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\book.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\elise.png">
       <Filter>Resources\shop</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\shop\garen.png">
@@ -819,10 +858,22 @@
     <ClInclude Include="G:\mobile_league_game\Resources\shop\hex.png">
       <Filter>Resources\shop</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\kaisa.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\katarina.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\shop\ryze.png">
       <Filter>Resources\shop</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\shop\shop.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\sword.png">
+      <Filter>Resources\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\shop\talisman.png">
       <Filter>Resources\shop</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\shop\twisted_fate.png">
