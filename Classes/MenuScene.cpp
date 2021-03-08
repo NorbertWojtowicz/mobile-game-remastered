@@ -1,22 +1,22 @@
-#include "HelloWorldScene.h"
+#include "MenuScene.h"
 #include "GameScene.h"
 
 USING_NS_CC;
 
-Scene* HelloWorld::createScene()
+Scene* MenuScene::createScene()
 {
-    return HelloWorld::create();
+    return MenuScene::create();
 }
 
 // Print useful error message instead of segfaulting when files are not there.
 static void problemLoading(const char* filename)
 {
     printf("Error while loading: %s\n", filename);
-    printf("Depending on how you compiled you might have to add 'Resources/' in front of filenames in HelloWorldScene.cpp\n");
+    printf("Depending on how you compiled you might have to add 'Resources/' in front of filenames in MenuScene.cpp\n");
 }
 
 // on "init" you need to initialize your instance
-bool HelloWorld::init()
+bool MenuScene::init()
 {
     //////////////////////////////
     // 1. super init first
@@ -36,7 +36,7 @@ bool HelloWorld::init()
     auto playItem = MenuItemImage::create(
                                            "buttons/playBtn.png",
                                            "buttons/pressedPlayBtn.png",
-                                           CC_CALLBACK_1(HelloWorld::switchToGameScene, this));
+                                           CC_CALLBACK_1(MenuScene::switchToGameScene, this));
 
     if (playItem == nullptr ||
         playItem->getContentSize().width <= 0 ||
@@ -91,7 +91,7 @@ bool HelloWorld::init()
     return true;
 }
 
-void HelloWorld::switchToGameScene(Ref* pSender)
+void MenuScene::switchToGameScene(Ref* pSender)
 {
     auto scene = GameScene::createScene();
     Director::getInstance()->replaceScene(scene);
