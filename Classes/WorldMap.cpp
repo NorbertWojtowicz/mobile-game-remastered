@@ -57,7 +57,7 @@ void WorldMap::addIslandsToScrollView()
 	{
 		auto num = StringUtils::format("%d", i);
 		if (i == 11)
-			num = StringUtils::format("%d", 1);
+			num = StringUtils::format("%d", 0);
 		levels.push_back(MenuItemImage::create("worldMap/islandLevel" + num + ".png", "worldMap/islandLevel" + num + ".png", CC_CALLBACK_0(WorldMap::startLevelWithHeroesId, this, i - 1, allyId)));
 		if (i == 1)
 			levels[i - 1]->setPosition(Vec2(-80, -390));

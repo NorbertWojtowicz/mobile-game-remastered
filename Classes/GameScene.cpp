@@ -33,21 +33,10 @@ bool GameScene::init()
 	Teleport teleport = Teleport::createWithIcon();
 	this->addChild(teleport.nodeWithIcon);
 	
-	this->addArtifactChest();
+	ArtifactView* artifactView = ArtifactView::createWithChest();
+	this->addChild(artifactView->node);
 
 	return true;
-}
-void GameScene::addArtifactChest()
-{
-	auto chest = MenuItemImage::create("artefacts/chest.png", "artefacts/chest.png", CC_CALLBACK_0(GameScene::runArtifactView, this));
-	auto chestMenu = Menu::create(chest, NULL);
-	chest->setPosition(Vec2(-230, -200));
-	this->addChild(chestMenu);
-}
-void GameScene::runArtifactView()
-{
-	auto scene = ArtifactView::createScene();
-	Director::getInstance()->replaceScene(scene);
 }
 void GameScene::addPickedHero()
 {

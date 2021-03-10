@@ -76,9 +76,39 @@ void ArtifactView::addArtifactInscription()
 	inscriptionSprite->setPosition(Vec2(320, 1730));
 	scrollView->addChild(inscriptionSprite);
 }
+void ArtifactView::createNode()
+{
+	addChestToNode();
+	addSignToNode();
+}
+void ArtifactView::addChestToNode()
+{
+	auto chest = MenuItemImage::create("artefacts/chest.png", "artefacts/chest.png", CC_CALLBACK_0(ArtifactView::runArtifactView, this));
+	auto chestMenu = Menu::create(chest, NULL);
+	this->node->addChild(chestMenu);
+	chestMenu->setPosition(Vec2(320, 220));
+}
+void ArtifactView::addSignToNode()
+{
+	auto sign = Sprite::create("other/sign2.png");
+	node->addChild(sign);
+	sign->setPosition(Vec2(320, 400));
+}
+void ArtifactView::runArtifactView()
+{
+	auto scene = ArtifactView::createScene();
+	Director::getInstance()->pushScene(scene);
+}
+ArtifactView* ArtifactView::createWithChest()
+{
+	ArtifactView* artifactView = new ArtifactView();
+	artifactView->addChestToNode();
+	artifactView->addSignToNode();
+	return artifactView;
+}
 void ArtifactView::closeScene()
 {
 	this->removeAllChildren();
 	auto scene = GameScene::createScene();
-	Director::getInstance()->pushScene(scene);
+	Director::getInstance()->replaceScene(scene);
 }

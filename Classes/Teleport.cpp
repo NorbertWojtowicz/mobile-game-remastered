@@ -5,6 +5,7 @@ Teleport Teleport::createWithIcon()
 {
 	Teleport tp = Teleport();
 	tp.buildTeleportIconNode();
+	tp.addSignToNode();
 	return tp;
 }
 Animate* Teleport::createTeleportAnimate()
@@ -26,15 +27,21 @@ void Teleport::buildTeleportIconNode()
 	this->nodeWithIcon = Node::create();
 	MenuItemImage* teleportIconButton = MenuItemImage::create("teleport/0.png", "teleport/1.png", CC_CALLBACK_0(Teleport::openMap, this));
 	auto teleportIconSpriteForAnimation = Sprite::create("teleport/0.png");
-	teleportIconSpriteForAnimation->setPosition(Vec2(535, 270));
+	teleportIconSpriteForAnimation->setPosition(Vec2(535, 200));
 	teleportIconSpriteForAnimation->setScale(0.7);
-	teleportIconButton->setPosition(Vec2(215, -300));
+	teleportIconButton->setPosition(Vec2(215, -370));
 	teleportIconButton->setScale(0.7);
 	Menu* teleportIconMenu = Menu::create(teleportIconButton, NULL);
 	this->nodeWithIcon->addChild(teleportIconMenu, 1);
 	this->nodeWithIcon->addChild(teleportIconSpriteForAnimation, 0);
 	teleportIconMenu->setOpacity(0);
 	teleportIconSpriteForAnimation->runAction(RepeatForever::create(this->createTeleportAnimate()));
+}
+void Teleport::addSignToNode()
+{
+	auto sign = Sprite::create("other/sign3.png");
+	nodeWithIcon->addChild(sign);
+	sign->setPosition(Vec2(535, 400));
 }
 void Teleport::openMap()
 {

@@ -6,7 +6,7 @@ Shop* Shop::createShopLayer()
 	Shop *shop = new Shop();
 	MenuItemImage* table = MenuItemImage::create("shop/shop.png", "shop/shop.png", CC_CALLBACK_0(Shop::addShopMenuToLayer, shop));
 	Menu* menu = Menu::create();
-	menu->setPosition(Vec2(114, 750));
+	menu->setPosition(Vec2(114, 220));
 	menu->addChild(table);
 	shop->money = UserDefault::getInstance()->getIntegerForKey("money");
 	shop->shopIconsLayer->addChild(menu, 1);
@@ -16,7 +16,7 @@ Shop* Shop::createShopLayer()
 void Shop::addSignToLayer()
 {
 	Sprite* sign = Sprite::create("other/sign.png");
-	sign->setPosition(Vec2(114, 900));
+	sign->setPosition(Vec2(114, 400));
 	this->shopIconsLayer->addChild(sign);
 }
 void Shop::addShopMenuToLayer()

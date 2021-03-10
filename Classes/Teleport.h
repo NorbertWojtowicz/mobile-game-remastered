@@ -16,6 +16,7 @@ private:
 	void openMap();
 	void buildTeleportIconNode();
 	void pushWorldMapScene();
+	void addSignToNode();
 };
 
 #endif

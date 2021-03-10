@@ -8,8 +8,11 @@ class ArtifactView : public Node
 {
 public:
 	static Scene* createScene();
+	static ArtifactView* createWithChest();
+	Node* node = Node::create();
 private:
 	CREATE_FUNC(ArtifactView);
+	ArtifactView() {};
 	virtual bool init();
 	ui::ScrollView* scrollView;
 	void initScrollView();
@@ -18,5 +21,9 @@ private:
 	void addArtifactInscription();
 	std::string artifactLocations[7];
 	void closeScene();
+	void createNode();
+	void runArtifactView();
+	void addChestToNode();
+	void addSignToNode();
 };
 #endif
