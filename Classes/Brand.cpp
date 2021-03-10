@@ -1,5 +1,5 @@
 #include "Brand.h"
-#include "BrandLevel.h"
+#include "LevelScene.h"
 Brand::Brand()
 {
 	this->setName("brand");

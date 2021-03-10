@@ -805,7 +805,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\Classes\ArtifactView.h" />
     <ClInclude Include="..\Classes\Ashe.h" />
     <ClInclude Include="..\Classes\Brand.h" />
-    <ClInclude Include="..\Classes\BrandLevel.h" />
+    <ClInclude Include="..\Classes\LevelScene.h" />
     <ClInclude Include="..\Classes\Cassiopeia.h" />
     <ClInclude Include="..\Classes\Darius.h" />
     <ClInclude Include="..\Classes\Elise.h" />
@@ -835,7 +835,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\Classes\ArtifactView.cpp" />
     <ClCompile Include="..\Classes\Ashe.cpp" />
     <ClCompile Include="..\Classes\Brand.cpp" />
-    <ClCompile Include="..\Classes\BrandLevel.cpp" />
+    <ClCompile Include="..\Classes\LevelScene.cpp" />
     <ClCompile Include="..\Classes\Cassiopeia.cpp" />
     <ClCompile Include="..\Classes\Darius.cpp" />
     <ClCompile Include="..\Classes\Elise.cpp" />

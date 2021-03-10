@@ -9,7 +9,7 @@
 #include "EnemyHero.h"
 #include "GameScene.h"
 USING_NS_CC;
-class BrandLevel : public cocos2d::Node
+class LevelScene : public cocos2d::Node
 {
 public:
 	static Scene* createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally);
@@ -50,11 +50,11 @@ private:
 	virtual bool init();
 
 	// Constructors
-	BrandLevel(EnemyHero* enemy, AllyHero* ally);
-	static BrandLevel* create(EnemyHero* enemy, AllyHero* ally);
+	LevelScene(EnemyHero* enemy, AllyHero* ally);
+	static LevelScene* create(EnemyHero* enemy, AllyHero* ally);
 
 	// Deconstructor
-	~BrandLevel() {};
+	~LevelScene() {};
 
 };
 #endif

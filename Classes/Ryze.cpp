@@ -1,5 +1,5 @@
 #include "Ryze.h"
-#include "BrandLevel.h"
+#include "LevelScene.h"
 Ryze::Ryze()
 {
 	setName("ryze");

@@ -1,5 +1,5 @@
 #include "EnemyHero.h"
-#include "BrandLevel.h"
+#include "LevelScene.h"
 void EnemyHero::setName(std::string name)
 {
 	this->name = name;

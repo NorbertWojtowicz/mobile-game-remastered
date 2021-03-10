@@ -1,12 +1,12 @@
-#include <BrandLevel.h>
-BrandLevel::BrandLevel(EnemyHero* enemy, AllyHero* ally)
+#include <LevelScene.h>
+LevelScene::LevelScene(EnemyHero* enemy, AllyHero* ally)
 {
 	this->allyHero = ally;
 	this->enemyHero = enemy;
 	this->enemyHero->initAllyHero(this->allyHero);
 	this->allyHero->initEnemyHero(this->enemyHero);
 }
-bool BrandLevel::init()
+bool LevelScene::init()
 {
 	if (!Node::init())
 	{
@@ -17,25 +17,25 @@ bool BrandLevel::init()
 	this->addChild(enemyHero->sprite, 2);
 	this->enemyHero->sprite->setName("heroSprite");
 	this->enemyHero->runWalkAnimate();
-	this->schedule(SEL_SCHEDULE(&BrandLevel::updateSpellsCooldown), 0.1);
+	this->schedule(SEL_SCHEDULE(&LevelScene::updateSpellsCooldown), 0.1);
 	return true;
 }
-void BrandLevel::initHeroesHealth()
+void LevelScene::initHeroesHealth()
 {
 	allyHeroHealth = allyHero->health;
 	enemyHeroHealth = enemyHero->health;
 }
-Scene* BrandLevel::createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally)
+Scene* LevelScene::createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally)
 {
 	auto scene = Scene::create();
-	auto node = BrandLevel::create(enemy, ally);
+	auto node = LevelScene::create(enemy, ally);
 	scene->addChild(node);
 	node->setName("levelNode");
 	return scene;
 }
-BrandLevel* BrandLevel::create(EnemyHero* enemy, AllyHero* ally)
+LevelScene* LevelScene::create(EnemyHero* enemy, AllyHero* ally)
 {
-	auto scene = new BrandLevel(enemy, ally);
+	auto scene = new LevelScene(enemy, ally);
 	if (scene && scene->init())
 	{
 		scene->autorelease();
@@ -47,7 +47,7 @@ BrandLevel* BrandLevel::create(EnemyHero* enemy, AllyHero* ally)
 		return nullptr;
 	}
 }
-void BrandLevel::addEssentialElements()
+void LevelScene::addEssentialElements()
 {
 	//firstSceneBG.png
 	addBackground("backgrounds/" + enemyHero->getName() + "Bg.png");
@@ -56,30 +56,30 @@ void BrandLevel::addEssentialElements()
 	addHeroFace(allyHero->getName());
 	addHud();
 }
-void BrandLevel::addBackground(std::string backgroundFilePath)
+void LevelScene::addBackground(std::string backgroundFilePath)
 {
 	auto background = Sprite::create(backgroundFilePath);
 	background->setPosition(Vec2(320, 568));
 	addChild(background);
 }
-void BrandLevel::addHeroFace(std::string nameOfHero)
+void LevelScene::addHeroFace(std::string nameOfHero)
 {
 	auto heroFace = Sprite::create("heroes/" + nameOfHero + "/" + nameOfHero + "Face.png");
 	heroFace->setPosition(Vec2(61, 132));
 	addChild(heroFace);
 }
-void BrandLevel::addHud()
+void LevelScene::addHud()
 {
 	auto hud = Sprite::create("combatScene/hud.png");
 	hud->setPosition(Vec2(320, 128));
 	addChild(hud);
 	addHeroSpells(allyHero->getName());
 }
-void BrandLevel::addHeroSpells(std::string nameOfHero)
+void LevelScene::addHeroSpells(std::string nameOfHero)
 {
-	allyHero->spellOneIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", "heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(BrandLevel::castFirstAllyHeroSpell, this));
+	allyHero->spellOneIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", "heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(LevelScene::castFirstAllyHeroSpell, this));
 	//TBD correct filepath
-	allyHero->spellTwoIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", "heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", CC_CALLBACK_0(BrandLevel::castSecondAllyHeroSpell, this));
+	allyHero->spellTwoIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", "heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", CC_CALLBACK_0(LevelScene::castSecondAllyHeroSpell, this));
 	allyHero->spellOneIcon->setPosition(Vec2(-30, -436));
 	allyHero->spellTwoIcon->setPosition(Vec2(+150, -436));
 	allyHero->spellsMenu = Menu::create();
@@ -88,42 +88,42 @@ void BrandLevel::addHeroSpells(std::string nameOfHero)
 	addChild(allyHero->spellsMenu);
 }
 
-void BrandLevel::updateSpellsCooldown(float dt)
+void LevelScene::updateSpellsCooldown(float dt)
 {
 	updateEnemyHeroFirstSpellCooldown(dt);
 }
-void BrandLevel::addAllyHeroHpBar()
+void LevelScene::addAllyHeroHpBar()
 {
 	addAllyHeroHpBorder();
 	addAllyHeroHpLoadingBar();
 	addAllyHeroHpLabel();
 }
-void BrandLevel::addEnemyHeroHpBar()
+void LevelScene::addEnemyHeroHpBar()
 {
 	addEnemyHeroHpBorder();
 	addEnemyHeroHpLoadingBar();
 	addEnemyHeroHpLabel();
 }
-void BrandLevel::addAllyHeroHpBorder()
+void LevelScene::addAllyHeroHpBorder()
 {
 	auto healthBarBorder = Sprite::create("combatScene/healthBar.png");
 	healthBarBorder->setPosition(Vec2(360, 35));
 	this->addChild(healthBarBorder, 2);
 }
-void BrandLevel::addEnemyHeroHpBorder()
+void LevelScene::addEnemyHeroHpBorder()
 {
 	auto healthBarBorder = Sprite::create("combatScene/healthBar.png");
 	healthBarBorder->setPosition(Vec2(320, 920));
 	this->addChild(healthBarBorder, 2);
 }
-void BrandLevel::addAllyHeroHpLoadingBar()
+void LevelScene::addAllyHeroHpLoadingBar()
 {
 	allyHero->hpBar = ui::LoadingBar::create("combatScene/health.png");
 	allyHero->hpBar->setPosition(Vec2(360, 35));
 	allyHero->hpBar->setPercent(100);
 	this->addChild(allyHero->hpBar, 2);
 }
-void BrandLevel::addEnemyHeroHpLoadingBar()
+void LevelScene::addEnemyHeroHpLoadingBar()
 {
 	enemyHero->hpBar = ui::LoadingBar::create("combatScene/health.png");
 	enemyHero->hpBar->setPosition(Vec2(320, 920));
@@ -131,7 +131,7 @@ void BrandLevel::addEnemyHeroHpLoadingBar()
 	enemyHero->hpBar->setName("enemyHpBar");
 	this->addChild(enemyHero->hpBar, 2);
 }
-void BrandLevel::addAllyHeroHpLabel()
+void LevelScene::addAllyHeroHpLabel()
 {
 	std::stringstream ss;
 	ss << allyHeroHealth << "/" << allyHeroHealth;
@@ -140,7 +140,7 @@ void BrandLevel::addAllyHeroHpLabel()
 	allyHero->hpLabel->setTextColor(Color4B::WHITE);
 	this->addChild(allyHero->hpLabel, 3);
 }
-void BrandLevel::addEnemyHeroHpLabel()
+void LevelScene::addEnemyHeroHpLabel()
 {
 	std::stringstream ss;
 	ss << enemyHeroHealth << "/" << enemyHeroHealth;
@@ -149,23 +149,23 @@ void BrandLevel::addEnemyHeroHpLabel()
 	enemyHero->hpLabel->setTextColor(Color4B::BLACK);
 	this->addChild(enemyHero->hpLabel, 3);
 }
-void BrandLevel::castFirstAllyHeroSpell()
+void LevelScene::castFirstAllyHeroSpell()
 {
 	allyHero->castFirstSpell();
 }
-void BrandLevel::castSecondAllyHeroSpell()
+void LevelScene::castSecondAllyHeroSpell()
 {
 	allyHero->castSecondSpell();
 }
-void BrandLevel::castFirstEnemyHeroSpell()
+void LevelScene::castFirstEnemyHeroSpell()
 {
 	enemyHero->castFirstSpell();
 }
-void BrandLevel::updateAllyHeroFirstSpellCooldown(float dt)
+void LevelScene::updateAllyHeroFirstSpellCooldown(float dt)
 {
 
 }
-void BrandLevel::updateEnemyHeroFirstSpellCooldown(float dt)
+void LevelScene::updateEnemyHeroFirstSpellCooldown(float dt)
 {
 	enemyHero->firstSpellCooldown -= dt;
 	if (enemyHero->firstSpellCooldown <= 0)

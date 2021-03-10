@@ -1,5 +1,5 @@
 #include "WorldMap.h"
-#include "BrandLevel.h"
+#include "LevelScene.h"
 #include "Ashe.h"
 #include "Garen.h"
 #include "Cassiopeia.h"
@@ -86,7 +86,7 @@ void WorldMap::startLevelWithHeroesId(short enemyId, short allyId)
 	prepareAllyMap();
 	auto enemy = mapEnemy[enemiesTab[enemyId]]();
 	auto ally = mapAlly[alliesTab[allyId]]();
-	auto scene = BrandLevel::createSceneWithEnemyAndAllyHero(enemy, ally);
+	auto scene = LevelScene::createSceneWithEnemyAndAllyHero(enemy, ally);
 	Director::getInstance()->replaceScene(scene);
 }
 template <typename T>
