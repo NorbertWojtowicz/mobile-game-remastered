@@ -4,6 +4,9 @@
     <ClCompile Include="G:\mobile_league_game\Classes\AppDelegate.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\MenuScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="G:\mobile_league_game\Classes\GameScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
@@ -16,84 +19,84 @@
     <ClCompile Include="G:\mobile_league_game\Classes\WorldMap.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\AllyHero.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\ArtifactView.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Ashe.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Brand.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Cassiopeia.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Darius.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Elise.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\EnemyHero.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Garen.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Irelia.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Kaisa.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Karthus.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Katarina.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Kogmaw.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\LevelScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Lucian.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Malhazar.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Pantheon.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Ryze.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Taliyah.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Twisted_Fate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\mobile_league_game\Classes\Yuumi.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="G:\mobile_league_game\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="G:\mobile_league_game\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\AllyHero.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\ArtifactView.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Ashe.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Brand.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Cassiopeia.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Darius.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Elise.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\EnemyHero.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Garen.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Irelia.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Kaisa.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Karthus.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Katarina.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Kogmaw.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Lucian.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Malhazar.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Pantheon.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Ryze.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Taliyah.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Twisted_Fate.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Yuumi.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\MenuScene.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\LevelScene.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\MenuScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Classes\GameScene.h">
@@ -106,6 +109,72 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Classes\WorldMap.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\AllyHero.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\ArtifactView.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Ashe.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Brand.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Cassiopeia.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Darius.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Elise.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\EnemyHero.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Garen.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Irelia.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Kaisa.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Karthus.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Katarina.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Kogmaw.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\LevelScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Lucian.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Malhazar.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Pantheon.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Ryze.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Taliyah.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Twisted_Fate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Classes\Yuumi.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\proj.win32\main.h">
@@ -201,19 +270,52 @@
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\artifactBg.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\firstSceneBG.png">
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\brandBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\cassiopeiaBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\dariusBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\ireliaBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\karthusBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\kogmawBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\lucianBg.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\mainBG.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\menuBG.png">
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\malhazarBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\oldBG.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\pantheonBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\startBg.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\taliyahBg.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\tloGGra1440x2776.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\worldMapBG.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\yuumiBg.png">
       <Filter>Resources\backgrounds</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\buttons\bodySprite (1).png">
@@ -447,16 +549,7 @@
     <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walkAnimate.zip">
       <Filter>Resources\heroes\elise</Filter>
     </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\bodySprite (1).png">
-      <Filter>Resources\heroes\garen</Filter>
-    </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\bodySprite (2).png">
-      <Filter>Resources\heroes\garen</Filter>
-    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\bodySprite.png">
-      <Filter>Resources\heroes\garen</Filter>
-    </ClInclude>
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\dcpzlh3-644e6fa2-9f6b-479a-9e00-99a2f8480110.png">
       <Filter>Resources\heroes\garen</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\garenFace.png">
@@ -813,10 +906,19 @@
     <ClInclude Include="G:\mobile_league_game\Resources\other\sign.png">
       <Filter>Resources\other</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\other\sign2.png">
+      <Filter>Resources\other</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\other\sign3.png">
+      <Filter>Resources\other</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\popups\lost.png">
       <Filter>Resources\popups</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\popups\noMoneyPopup.png">
+      <Filter>Resources\popups</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\popups\oldLost.png">
       <Filter>Resources\popups</Filter>
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\popups\ownedPopup.png">
@@ -894,6 +996,9 @@
     <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp3.png">
       <Filter>Resources\teleport</Filter>
     </ClInclude>
+    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel0.png">
+      <Filter>Resources\worldMap</Filter>
+    </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel1.png">
       <Filter>Resources\worldMap</Filter>
     </ClInclude>
@@ -923,75 +1028,6 @@
     </ClInclude>
     <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel9.png">
       <Filter>Resources\worldMap</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\AllyHero.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\ArtifactView.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Ashe.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Brand.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Cassiopeia.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Darius.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Elise.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\EnemyHero.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Garen.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Irelia.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Kaisa.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Karthus.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Katarina.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Kogmaw.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Lucian.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Malhazar.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Pantheon.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Ryze.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Taliyah.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Twisted_Fate.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Yuumi.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\MenuScene.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\LevelScene.h">
-      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

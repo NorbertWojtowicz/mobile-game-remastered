@@ -16,23 +16,25 @@ bool GameScene::init()
 	{
 		return false;
 	}
-	//adding background
+	// Adding Background
 	Sprite* background = Sprite::create("backgrounds/mainBG.png");
 	background->setPosition(Vec2(visibleSize.width / 2 + origin.x,
 								 visibleSize.height / 2 + origin.y));
 	this->addChild(background);
 	background->setTag(211);
 
+	//Adding already picked hero
 	addPickedHero();
 
-	//adding shop
+	// Adding Shop
 	Shop *shop = Shop::createShopLayer();
 	this->addChild(shop->shopIconsLayer);
 
-	//adding teleport
+	// Adding Teleport
 	Teleport teleport = Teleport::createWithIcon();
 	this->addChild(teleport.nodeWithIcon);
 	
+	// Adding ArtifactView
 	ArtifactView* artifactView = ArtifactView::createWithChest();
 	this->addChild(artifactView->node);
 

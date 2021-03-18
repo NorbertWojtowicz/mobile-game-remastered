@@ -31,7 +31,6 @@ void ArtifactView::initScrollView()
 }
 void ArtifactView::addArtifactsToScrollView()
 {
-	std::string h = UserDefault::getInstance()->getStringForKey("chuj");
 	checkArtifactStatuses();
 	for (int i = 0; i < 7; i++)
 	{

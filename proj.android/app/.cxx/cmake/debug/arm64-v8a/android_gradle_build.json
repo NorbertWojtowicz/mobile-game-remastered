@@ -5797,7 +5797,7 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "G:\\mobile_league_game\\Classes\\HelloWorldScene.cpp",
+          "src": "G:\\mobile_league_game\\Classes\\MenuScene.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
@@ -5827,6 +5827,116 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "G:\\mobile_league_game\\Classes\\AllyHero.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\ArtifactView.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Ashe.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Brand.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Cassiopeia.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Darius.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Elise.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\EnemyHero.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Garen.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Irelia.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Kaisa.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Karthus.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Katarina.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Kogmaw.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\LevelScene.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Lucian.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Malhazar.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Pantheon.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Ryze.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Taliyah.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Twisted_Fate.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Yuumi.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "G:\\mobile_league_game\\proj.android\\app\\jni\\hellocpp\\main.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
@@ -5838,7 +5948,7 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "header": "G:\\mobile_league_game\\Classes\\HelloWorldScene.h",
+          "header": "G:\\mobile_league_game\\Classes\\MenuScene.h",
           "workingDirectoryOrdinal": 0
         },
         {
@@ -5860,17 +5970,101 @@
         {
           "header": "G:\\mobile_league_game\\Classes\\WorldMap.h",
           "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\AllyHero.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\ArtifactView.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Ashe.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Brand.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Cassiopeia.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Darius.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Elise.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\EnemyHero.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Garen.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Irelia.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Kaisa.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Karthus.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Katarina.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Kogmaw.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\LevelScene.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Lucian.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Malhazar.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Pantheon.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Ryze.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Taliyah.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Twisted_Fate.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Yuumi.h",
+          "workingDirectoryOrdinal": 0
         }
       ],
       "output": "G:\\mobile_league_game\\proj.android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libMyGame.so",
       "runtimeFiles": [
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\engine\\cocos\\platform\\libcpp_android_spec.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libcocos2d.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libexternal.a",
         "G:\\mobile_league_game\\cocos2d\\external\\Box2D\\prebuilt\\android\\arm64-v8a\\libbox2d.a",
         "G:\\mobile_league_game\\cocos2d\\external\\chipmunk\\prebuilt\\android\\arm64-v8a\\libchipmunk.a",
         "G:\\mobile_league_game\\cocos2d\\external\\freetype2\\prebuilt\\android\\arm64-v8a\\libfreetype.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_recast.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\arm64-v8a\\libLinearMath.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\arm64-v8a\\libBulletDynamics.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\arm64-v8a\\libBulletCollision.a",
@@ -5883,21 +6077,9 @@
         "G:\\mobile_league_game\\cocos2d\\external\\openssl\\prebuilt\\android\\arm64-v8a\\libssl.a",
         "G:\\mobile_league_game\\cocos2d\\external\\openssl\\prebuilt\\android\\arm64-v8a\\libcrypto.a",
         "G:\\mobile_league_game\\cocos2d\\external\\uv\\prebuilt\\android\\arm64-v8a\\libuv_a.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_tinyxml2.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_xxhash.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_xxtea.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_clipper.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_edtaa3func.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_convertUTF.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_poly2tri.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_md5.a",
         "G:\\mobile_league_game\\cocos2d\\external\\curl\\prebuilt\\android\\arm64-v8a\\libcurl.a",
         "G:\\mobile_league_game\\cocos2d\\external\\png\\prebuilt\\android\\arm64-v8a\\libpng.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\engine\\external\\android-specific\\cpufeatures\\libext_cpufeatures.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_pvmp3dec.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_tremolo.a",
-        "G:\\mobile_league_game\\cocos2d\\external\\zlib\\prebuilt\\android\\arm64-v8a\\libz.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\lib\\libext_unzip.a"
+        "G:\\mobile_league_game\\cocos2d\\external\\zlib\\prebuilt\\android\\arm64-v8a\\libz.a"
       ]
     },
     "external-Debug-arm64-v8a": {

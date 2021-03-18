@@ -12,11 +12,19 @@ bool LevelScene::init()
 	{
 		return false;
 	}
+
+	// Initialize health of selected heroes
 	this->initHeroesHealth();
+
+	// Add hero hp bars and hud
 	this->addEssentialElements();
 	this->addChild(enemyHero->sprite, 2);
 	this->enemyHero->sprite->setName("heroSprite");
+
+	// EnemyHero Animate
 	this->enemyHero->runWalkAnimate();
+
+	// Updating Spells Colldown - Interval 0.1s
 	this->schedule(SEL_SCHEDULE(&LevelScene::updateSpellsCooldown), 0.1);
 	return true;
 }
@@ -49,7 +57,6 @@ LevelScene* LevelScene::create(EnemyHero* enemy, AllyHero* ally)
 }
 void LevelScene::addEssentialElements()
 {
-	//firstSceneBG.png
 	addBackground("backgrounds/" + enemyHero->getName() + "Bg.png");
 	addAllyHeroHpBar();
 	addEnemyHeroHpBar();
@@ -78,7 +85,6 @@ void LevelScene::addHud()
 void LevelScene::addHeroSpells(std::string nameOfHero)
 {
 	allyHero->spellOneIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", "heroes/" + nameOfHero + "/spells/first/" + nameOfHero + "Spell1.png", CC_CALLBACK_0(LevelScene::castFirstAllyHeroSpell, this));
-	//TBD correct filepath
 	allyHero->spellTwoIcon = MenuItemImage::create("heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", "heroes/" + nameOfHero + "/spells/second/" + nameOfHero + "Spell2.png", CC_CALLBACK_0(LevelScene::castSecondAllyHeroSpell, this));
 	allyHero->spellOneIcon->setPosition(Vec2(-30, -436));
 	allyHero->spellTwoIcon->setPosition(Vec2(+150, -436));
@@ -160,10 +166,6 @@ void LevelScene::castSecondAllyHeroSpell()
 void LevelScene::castFirstEnemyHeroSpell()
 {
 	enemyHero->castFirstSpell();
-}
-void LevelScene::updateAllyHeroFirstSpellCooldown(float dt)
-{
-
 }
 void LevelScene::updateEnemyHeroFirstSpellCooldown(float dt)
 {

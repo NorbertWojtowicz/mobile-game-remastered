@@ -7,7 +7,7 @@ USING_NS_CC;
 class Ryze : public AllyHero
 {
 public:
-	Ryze::Ryze();
+	Ryze();
 private:
 	void castFirstSpell();
 	void castSecondSpell();

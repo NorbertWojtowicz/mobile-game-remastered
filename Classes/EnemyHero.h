@@ -14,7 +14,8 @@ public:
 	void updateAllyHeroHpBar(short health);
 	void initAllyHero(AllyHero* hero);
 	ui::LoadingBar* hpBar;
-	short numberOfArtefact, numberOfLevel, health, const constHealth;
+	short numberOfArtefact, numberOfLevel, health;
+	short constHealth;
 	float firstSpellCooldown;
 	Label* hpLabel;
 	Sprite* sprite;
@@ -24,7 +25,8 @@ public:
 protected:
 	short strength;
 	std::string name;
-	float firstSpellTimer, firstSpellFrameDuration,const firstSpellCooldownConst, walkFrameDuration;
+	float firstSpellTimer, firstSpellFrameDuration, walkFrameDuration;
+    float firstSpellCooldownConst;
 	short firstSpellNumberOfFrames, walkNumberOfFrames;
 	Vec2 defaultPosition;
 	void addLosePopupToScene(Scene* scene);

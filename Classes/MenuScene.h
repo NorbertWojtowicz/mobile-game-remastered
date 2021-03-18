@@ -10,7 +10,7 @@ public:
 
     virtual bool init();
     
-    // implement the "static create()" method manually
+    // implement the "static create()" method
     CREATE_FUNC(MenuScene);
 
     void switchToGameScene(Ref* pSender);

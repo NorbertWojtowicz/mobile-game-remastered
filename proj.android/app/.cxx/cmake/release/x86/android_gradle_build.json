@@ -501,7 +501,7 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "G:\\mobile_league_game\\Classes\\HelloWorldScene.cpp",
+          "src": "G:\\mobile_league_game\\Classes\\MenuScene.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
@@ -531,6 +531,116 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "G:\\mobile_league_game\\Classes\\AllyHero.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\ArtifactView.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Ashe.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Brand.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Cassiopeia.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Darius.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Elise.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\EnemyHero.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Garen.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Irelia.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Kaisa.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Karthus.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Katarina.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Kogmaw.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\LevelScene.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Lucian.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Malhazar.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Pantheon.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Ryze.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Taliyah.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Twisted_Fate.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "G:\\mobile_league_game\\Classes\\Yuumi.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "G:\\mobile_league_game\\proj.android\\app\\jni\\hellocpp\\main.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
@@ -542,7 +652,7 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "header": "G:\\mobile_league_game\\Classes\\HelloWorldScene.h",
+          "header": "G:\\mobile_league_game\\Classes\\MenuScene.h",
           "workingDirectoryOrdinal": 0
         },
         {
@@ -563,6 +673,94 @@
         },
         {
           "header": "G:\\mobile_league_game\\Classes\\WorldMap.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\AllyHero.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\ArtifactView.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Ashe.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Brand.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Cassiopeia.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Darius.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Elise.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\EnemyHero.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Garen.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Irelia.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Kaisa.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Karthus.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Katarina.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Kogmaw.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\LevelScene.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Lucian.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Malhazar.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Pantheon.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Ryze.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Taliyah.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Twisted_Fate.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "G:\\mobile_league_game\\Classes\\Yuumi.h",
           "workingDirectoryOrdinal": 0
         }
       ],

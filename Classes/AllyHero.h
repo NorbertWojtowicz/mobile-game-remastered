@@ -12,7 +12,8 @@ public:
 	std::string getName();
 	void initEnemyHero(EnemyHero* oponent);
 	std::string name;
-	short health, strength, const constHealth;
+	short health, strength;
+	short constHealth;
 	void setName(std::string name);
 	void initFirstSpell();
 	virtual void castFirstSpell() = 0;

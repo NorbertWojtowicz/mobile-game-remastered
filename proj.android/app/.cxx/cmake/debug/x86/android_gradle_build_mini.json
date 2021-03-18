@@ -112,18 +112,18 @@
       "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_clipper.a",
       "runtimeFiles": []
     },
-    "ext_convertUTF-Debug-x86": {
-      "artifactName": "ext_convertUTF",
-      "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\" ext_convertUTF",
-      "abi": "x86",
-      "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_convertUTF.a",
-      "runtimeFiles": []
-    },
     "ext_xxhash-Debug-x86": {
       "artifactName": "ext_xxhash",
       "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\" ext_xxhash",
       "abi": "x86",
       "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_xxhash.a",
+      "runtimeFiles": []
+    },
+    "ext_convertUTF-Debug-x86": {
+      "artifactName": "ext_convertUTF",
+      "buildCommand": "G:\\androidstudioSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\" ext_convertUTF",
+      "abi": "x86",
+      "output": "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_convertUTF.a",
       "runtimeFiles": []
     },
     "ext_xxtea-Debug-x86": {
@@ -174,13 +174,9 @@
       "abi": "x86",
       "output": "G:\\mobile_league_game\\proj.android\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libMyGame.so",
       "runtimeFiles": [
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\engine\\cocos\\platform\\libcpp_android_spec.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libcocos2d.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libexternal.a",
         "G:\\mobile_league_game\\cocos2d\\external\\Box2D\\prebuilt\\android\\x86\\libbox2d.a",
         "G:\\mobile_league_game\\cocos2d\\external\\chipmunk\\prebuilt\\android\\x86\\libchipmunk.a",
         "G:\\mobile_league_game\\cocos2d\\external\\freetype2\\prebuilt\\android\\x86\\libfreetype.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_recast.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libLinearMath.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libBulletDynamics.a",
         "G:\\mobile_league_game\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libBulletCollision.a",
@@ -193,21 +189,9 @@
         "G:\\mobile_league_game\\cocos2d\\external\\openssl\\prebuilt\\android\\x86\\libssl.a",
         "G:\\mobile_league_game\\cocos2d\\external\\openssl\\prebuilt\\android\\x86\\libcrypto.a",
         "G:\\mobile_league_game\\cocos2d\\external\\uv\\prebuilt\\android\\x86\\libuv_a.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_tinyxml2.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_xxhash.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_xxtea.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_clipper.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_edtaa3func.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_convertUTF.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_poly2tri.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_md5.a",
         "G:\\mobile_league_game\\cocos2d\\external\\curl\\prebuilt\\android\\x86\\libcurl.a",
         "G:\\mobile_league_game\\cocos2d\\external\\png\\prebuilt\\android\\x86\\libpng.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\engine\\external\\android-specific\\cpufeatures\\libext_cpufeatures.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_pvmp3dec.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_tremolo.a",
-        "G:\\mobile_league_game\\cocos2d\\external\\zlib\\prebuilt\\android\\x86\\libz.a",
-        "G:\\mobile_league_game\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_unzip.a"
+        "G:\\mobile_league_game\\cocos2d\\external\\zlib\\prebuilt\\android\\x86\\libz.a"
       ]
     }
   }

@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>ryzeCooldown0.png</key>
+			<key>ryzeCooldown4.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,258},{128,128}}</string>
@@ -18,7 +18,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown1.png</key>
+			<key>ryzeCooldown3.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{129,0},{128,128}}</string>
@@ -46,7 +46,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown3.png</key>
+			<key>ryzeCooldown1.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,129},{128,128}}</string>
@@ -60,7 +60,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown4.png</key>
+			<key>ryzeCooldown0.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,0},{128,128}}</string>

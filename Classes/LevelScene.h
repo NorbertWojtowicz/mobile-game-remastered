@@ -12,6 +12,7 @@ USING_NS_CC;
 class LevelScene : public cocos2d::Node
 {
 public:
+	// Static fabric method
 	static Scene* createSceneWithEnemyAndAllyHero(EnemyHero* enemy, AllyHero* ally);
 private:
 	// Hp bars
@@ -34,7 +35,6 @@ private:
 	void addHeroSpells(std::string nameOfHero);
 
 	// Spells Cooldowns
-	void updateAllyHeroFirstSpellCooldown(float dt);
 	void updateEnemyHeroFirstSpellCooldown(float dt);
 	void updateSpellsCooldown(float dt);
 

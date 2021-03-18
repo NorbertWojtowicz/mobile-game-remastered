@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>ryzeCooldown0.png</key>
+			<key>ryzeCooldown9.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,516},{128,128}}</string>
@@ -18,7 +18,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown1.png</key>
+			<key>ryzeCooldown8.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{129,129},{128,128}}</string>
@@ -32,7 +32,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown2.png</key>
+			<key>ryzeCooldown7.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{129,0},{128,128}}</string>
@@ -46,7 +46,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown3.png</key>
+			<key>ryzeCooldown6.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,774},{128,128}}</string>
@@ -60,7 +60,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown4.png</key>
+			<key>ryzeCooldown5.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,645},{128,128}}</string>
@@ -74,7 +74,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown5.png</key>
+			<key>ryzeCooldown4.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{129,258},{128,128}}</string>
@@ -88,7 +88,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown6.png</key>
+			<key>ryzeCooldown3.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,387},{128,128}}</string>
@@ -102,7 +102,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown7.png</key>
+			<key>ryzeCooldown2.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,258},{128,128}}</string>
@@ -116,7 +116,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown8.png</key>
+			<key>ryzeCooldown1.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,129},{128,128}}</string>
@@ -130,7 +130,7 @@
 				<string>{128,128}</string>
 			</dict>
 
-			<key>ryzeCooldown9.png</key>
+			<key>ryzeCooldown0.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,0},{128,128}}</string>
