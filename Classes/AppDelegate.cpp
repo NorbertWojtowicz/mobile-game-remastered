@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "MenuScene.h"
+#include "Scenes/MenuScene/MenuScene.h"
 
 // #define USE_AUDIO_ENGINE 1
 
