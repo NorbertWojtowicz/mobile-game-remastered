@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E7A0826D-99F4-3A01-8125-CADE56FFE458}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{1BBBB5C4-40E2-3836-8BF9-35B337776808}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>win32</Platform>
     <ProjectName>mobile_league_game</ProjectName>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">G:\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\newG\mobile_league_game\proj.win32\bin\mobile_league_game\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">mobile_league_game.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">mobile_league_game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">G:\mobile_league_game\proj.win32\bin\mobile_league_game\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\newG\mobile_league_game\proj.win32\bin\mobile_league_game\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">mobile_league_game.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">mobile_league_game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">G:\mobile_league_game\proj.win32\bin\mobile_league_game\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\newG\mobile_league_game\proj.win32\bin\mobile_league_game\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">mobile_league_game.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">mobile_league_game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">G:\mobile_league_game\proj.win32\bin\mobile_league_game\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\newG\mobile_league_game\proj.win32\bin\mobile_league_game\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">mobile_league_game.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">mobile_league_game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -99,15 +99,15 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -118,7 +118,7 @@
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -127,7 +127,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -136,7 +136,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -145,7 +145,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -154,7 +154,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -163,7 +163,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -172,7 +172,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -181,7 +181,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -190,7 +190,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -199,7 +199,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -208,7 +208,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -217,7 +217,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -226,7 +226,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -241,8 +241,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/mobile_league_game/proj.win32/Debug/mobile_league_game.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/mobile_league_game.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/newG/mobile_league_game/proj.win32/Debug/mobile_league_game.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Debug/mobile_league_game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -251,7 +251,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -262,17 +262,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -283,7 +283,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -292,7 +292,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -301,7 +301,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -310,7 +310,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -319,7 +319,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -328,7 +328,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -337,7 +337,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -346,7 +346,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -355,7 +355,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -364,7 +364,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -373,7 +373,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -382,7 +382,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -391,7 +391,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -406,8 +406,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/mobile_league_game/proj.win32/Release/mobile_league_game.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/mobile_league_game/proj.win32/bin/mobile_league_game/Release/mobile_league_game.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/newG/mobile_league_game/proj.win32/Release/mobile_league_game.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/Release/mobile_league_game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -416,7 +416,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -427,17 +427,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -448,7 +448,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -457,7 +457,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -466,7 +466,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -475,7 +475,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -484,7 +484,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -493,7 +493,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -502,7 +502,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -511,7 +511,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -520,7 +520,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -529,7 +529,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -538,7 +538,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -547,7 +547,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -556,7 +556,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -571,8 +571,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/mobile_league_game/proj.win32/MinSizeRel/mobile_league_game.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/mobile_league_game.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/newG/mobile_league_game/proj.win32/MinSizeRel/mobile_league_game.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/MinSizeRel/mobile_league_game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -581,7 +581,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -593,15 +593,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>G:\mobile_league_game\Classes;G:\mobile_league_game\cocos2d\cocos\audio\include;G:\mobile_league_game\cocos2d;G:\mobile_league_game\cocos2d\cocos;G:\mobile_league_game\cocos2d\extensions;G:\mobile_league_game\cocos2d\cocos\platform;G:\mobile_league_game\cocos2d\cocos\editor-support;G:\mobile_league_game\cocos2d\cocos\base;G:\mobile_league_game\cocos2d\cocos\platform\win32;G:\mobile_league_game\cocos2d\external\recast\..;G:\mobile_league_game\cocos2d\external\tinyxml2\.;G:\mobile_league_game\cocos2d\external\xxhash\.;G:\mobile_league_game\cocos2d\external\xxtea\.;G:\mobile_league_game\cocos2d\external\clipper\.;G:\mobile_league_game\cocos2d\external\edtaa3func\.;G:\mobile_league_game\cocos2d\external\ConvertUTF\.;G:\mobile_league_game\cocos2d\external\poly2tri\..;G:\mobile_league_game\cocos2d\external\md5\..;G:\mobile_league_game\cocos2d\external\unzip\.;G:\mobile_league_game\cocos2d\external\Box2D\include;G:\mobile_league_game\cocos2d\external\chipmunk\include;G:\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;G:\mobile_league_game\cocos2d\external\bullet\include;G:\mobile_league_game\cocos2d\external\bullet\include\bullet;G:\mobile_league_game\cocos2d\external\jpeg\include\win32;G:\mobile_league_game\cocos2d\external\openssl\include\win32;G:\mobile_league_game\cocos2d\external\uv\include;G:\mobile_league_game\cocos2d\external\webp\include\win32;G:\mobile_league_game\cocos2d\external\websockets\include\win32;G:\mobile_league_game\cocos2d\external\curl\include\win32;G:\mobile_league_game\cocos2d\external\png\include\win32;G:\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;G:\mobile_league_game\cocos2d\external\win32-specific\icon\include;G:\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;G:\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;G:\mobile_league_game\cocos2d\external\glfw3\include\win32;G:\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\newG\mobile_league_game\Classes;D:\newG\mobile_league_game\cocos2d\cocos\audio\include;D:\newG\mobile_league_game\cocos2d;D:\newG\mobile_league_game\cocos2d\cocos;D:\newG\mobile_league_game\cocos2d\extensions;D:\newG\mobile_league_game\cocos2d\cocos\platform;D:\newG\mobile_league_game\cocos2d\cocos\editor-support;D:\newG\mobile_league_game\cocos2d\cocos\base;D:\newG\mobile_league_game\cocos2d\cocos\platform\win32;D:\newG\mobile_league_game\cocos2d\external\recast\..;D:\newG\mobile_league_game\cocos2d\external\tinyxml2\.;D:\newG\mobile_league_game\cocos2d\external\xxhash\.;D:\newG\mobile_league_game\cocos2d\external\xxtea\.;D:\newG\mobile_league_game\cocos2d\external\clipper\.;D:\newG\mobile_league_game\cocos2d\external\edtaa3func\.;D:\newG\mobile_league_game\cocos2d\external\ConvertUTF\.;D:\newG\mobile_league_game\cocos2d\external\poly2tri\..;D:\newG\mobile_league_game\cocos2d\external\md5\..;D:\newG\mobile_league_game\cocos2d\external\unzip\.;D:\newG\mobile_league_game\cocos2d\external\Box2D\include;D:\newG\mobile_league_game\cocos2d\external\chipmunk\include;D:\newG\mobile_league_game\cocos2d\external\freetype2\include\win32\freetype2;D:\newG\mobile_league_game\cocos2d\external\bullet\include;D:\newG\mobile_league_game\cocos2d\external\bullet\include\bullet;D:\newG\mobile_league_game\cocos2d\external\jpeg\include\win32;D:\newG\mobile_league_game\cocos2d\external\openssl\include\win32;D:\newG\mobile_league_game\cocos2d\external\uv\include;D:\newG\mobile_league_game\cocos2d\external\webp\include\win32;D:\newG\mobile_league_game\cocos2d\external\websockets\include\win32;D:\newG\mobile_league_game\cocos2d\external\curl\include\win32;D:\newG\mobile_league_game\cocos2d\external\png\include\win32;D:\newG\mobile_league_game\cocos2d\external\win32-specific\gles\include\OGLES;D:\newG\mobile_league_game\cocos2d\external\win32-specific\icon\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\MP3Decoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OggDecoder\include;D:\newG\mobile_league_game\cocos2d\external\win32-specific\OpenalSoft\include;D:\newG\mobile_league_game\cocos2d\external\glfw3\include\win32;D:\newG\mobile_league_game\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -612,7 +612,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -621,7 +621,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -630,7 +630,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/uv/prebuilt/win32/uv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -639,7 +639,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/websockets/prebuilt/win32/websockets.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -648,7 +648,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/curl/prebuilt/win32/libcurl.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -657,7 +657,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -666,7 +666,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -675,7 +675,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -684,7 +684,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -693,7 +693,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -702,7 +702,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -711,7 +711,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -720,7 +720,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/newG/mobile_league_game/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -735,8 +735,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/mobile_league_game/proj.win32/RelWithDebInfo/mobile_league_game.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/mobile_league_game.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/newG/mobile_league_game/proj.win32/RelWithDebInfo/mobile_league_game.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/RelWithDebInfo/mobile_league_game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -744,11 +744,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="G:\mobile_league_game\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\newG\mobile_league_game\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -756,12 +756,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -769,12 +769,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -782,12 +782,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -795,415 +795,403 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="G:\mobile_league_game\Classes\AppDelegate.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\MenuScene.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\GameScene.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Shop.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Teleport.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\WorldMap.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\AllyHero.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\ArtifactView.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Ashe.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Brand.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Cassiopeia.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Darius.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Elise.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\EnemyHero.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Garen.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Irelia.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Kaisa.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Karthus.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Katarina.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Kogmaw.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\LevelScene.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Lucian.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Malhazar.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Pantheon.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Ryze.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Taliyah.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Twisted_Fate.h" />
-    <ClInclude Include="G:\mobile_league_game\Classes\Yuumi.h" />
-    <ClInclude Include="G:\mobile_league_game\proj.win32\main.h" />
-    <ClInclude Include="G:\mobile_league_game\proj.win32\resource.h" />
-    <ClCompile Include="G:\mobile_league_game\Classes\AppDelegate.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\MenuScene.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\GameScene.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Shop.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Teleport.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\WorldMap.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\AllyHero.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\ArtifactView.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Ashe.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Brand.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Cassiopeia.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Darius.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Elise.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\EnemyHero.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Garen.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Irelia.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Kaisa.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Karthus.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Katarina.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Kogmaw.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\LevelScene.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Lucian.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Malhazar.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Pantheon.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Ryze.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Taliyah.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Twisted_Fate.cpp" />
-    <ClCompile Include="G:\mobile_league_game\Classes\Yuumi.cpp" />
-    <ClCompile Include="G:\mobile_league_game\proj.win32\main.cpp" />
-    <ResourceCompile Include="G:\mobile_league_game\proj.win32\game.rc" />
-    <ClInclude Include="G:\mobile_league_game\Resources\CloseNormal.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\CloseSelected.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\HelloWorld.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a0R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a10R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a1clear.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a2R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a2clear.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a3R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a3clear.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a4.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a4R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a4clear.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a5.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a5R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a5clear.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a6.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a6R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a6clear.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a7.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a7R.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\a7clear.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\artefactInscription.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\artefacts\chest.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\artifactBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\brandBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\cassiopeiaBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\dariusBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\ireliaBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\karthusBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\kogmawBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\lucianBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\mainBG.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\malhazarBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\oldBG.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\pantheonBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\startBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\taliyahBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\tloGGra1440x2776.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\worldMapBG.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\backgrounds\yuumiBg.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\bodySprite (1).png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\buyBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\cross.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\crossBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\heroesBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\itemsBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\lArrow.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\mltBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\okBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pickBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\playBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedBuyBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedOkBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedPlayBtn.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedlArrow.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\pressedrArrow.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\buttons\rArrow.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\health.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\healthBar.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\hud.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\brandSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\brandSpellAnimate.zip" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze0.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze4.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze5.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze6.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryze7.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\combatScene\spells\ryzeSecondSpellAnimate.zip" />
-    <ClInclude Include="G:\mobile_league_game\Resources\fonts\Marker Felt.ttf" />
-    <ClInclude Include="G:\mobile_league_game\Resources\fonts\arial.ttf" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\asheFace.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\bodySprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\first\asheSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ashe\spells\second\asheSpell2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\brand\brandWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\darius\dariusWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\bodySprite (1).png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\bodySprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\eliseFace.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\first\eliseSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\spells\second\eliseSpell2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walk\elise1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walk\elise2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walk\elise3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\elise\walkAnimate.zip" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\bodySprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\garenFace.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\first\garenSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenSpell2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\garenspellTwoCooldown.zip" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\garen\spells\second\spellTwo.zip" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\irelia\ireliaWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\bodySprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\kaisaFace.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSpell2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\karthus\karthusWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\bodySprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\katarinaFace.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSpell2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\kogmaw\kogmawWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\lucian\lucianWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\malhazar\malhazarWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\pantheon\pantheonWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\bodySprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\ryzeFace.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSpell2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\taliyah\taLiyahWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\bodySprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf1.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf2.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf3.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateSpell1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate4.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate5.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate6.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellCooldown.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellCooldown.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSpell2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\twisted_fate\twisted_fateFace.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiFirstSpellAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiFirstSpellAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiSprite.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiWalkAnimate.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\heroes\yuumi\yuumiWalkAnimate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\other\padlock.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\other\sign.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\other\sign2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\other\sign3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\popups\lost.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\popups\noMoneyPopup.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\popups\oldLost.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\popups\ownedPopup.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\popups\popup.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\res\.gitkeep" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\2x.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\3x.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\4x.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\5x.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\ashe.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\book.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\elise.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\garen.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\hex.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\kaisa.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\katarina.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\ryze.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\shop.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\sword.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\talisman.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\shop\twisted_fate.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp.plist" />
-    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp0.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\teleport\tp3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel0.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel1.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel10.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel2.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel3.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel4.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel5.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel6.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel7.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel8.png" />
-    <ClInclude Include="G:\mobile_league_game\Resources\worldMap\islandLevel9.png" />
-    <ClCompile Include="G:\mobile_league_game\cocos2d\cocos\precheader.cpp" />
+    <ClInclude Include="..\Classes\AllyHeroes\AllyHero.h" />
+    <ClInclude Include="..\Classes\AllyHeroes\Ashe\Ashe.h" />
+    <ClInclude Include="..\Classes\AllyHeroes\Elise\Elise.h" />
+    <ClInclude Include="..\Classes\AllyHeroes\Garen\Garen.h" />
+    <ClInclude Include="..\Classes\AllyHeroes\Kaisa\Kaisa.h" />
+    <ClInclude Include="..\Classes\AllyHeroes\Katarina\Katarina.h" />
+    <ClInclude Include="..\Classes\AllyHeroes\Ryze\Ryze.h" />
+    <ClInclude Include="..\Classes\AllyHeroes\Twisted_Fate\Twisted_Fate.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Brand\Brand.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Cassiopeia\Cassiopeia.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Darius\Darius.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\EnemyHero.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Irelia\Irelia.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Karthus\Karthus.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Kogmaw\Kogmaw.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Lucian\Lucian.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Malhazar\Malhazar.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Pantheon\Pantheon.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Taliyah\Taliyah.h" />
+    <ClInclude Include="..\Classes\EnemyHeroes\Yuumi\Yuumi.h" />
+    <ClInclude Include="..\Classes\Objects\Shop\Shop.h" />
+    <ClInclude Include="..\Classes\Objects\Teleport\Teleport.h" />
+    <ClInclude Include="..\Classes\Scenes\ArtifactView\ArtifactView.h" />
+    <ClInclude Include="..\Classes\Scenes\GameScene\GameScene.h" />
+    <ClInclude Include="..\Classes\Scenes\LevelScene\LevelScene.h" />
+    <ClInclude Include="..\Classes\Scenes\MenuScene\MenuScene.h" />
+    <ClInclude Include="..\Classes\Scenes\WorldMap\WorldMap.h" />
+    <ClInclude Include="D:\newG\mobile_league_game\proj.win32\main.h" />
+    <ClInclude Include="D:\newG\mobile_league_game\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\AllyHeroes\AllyHero.cpp" />
+    <ClCompile Include="..\Classes\AllyHeroes\Ashe\Ashe.cpp" />
+    <ClCompile Include="..\Classes\AllyHeroes\Elise\Elise.cpp" />
+    <ClCompile Include="..\Classes\AllyHeroes\Garen\Garen.cpp" />
+    <ClCompile Include="..\Classes\AllyHeroes\Kaisa\Kaisa.cpp" />
+    <ClCompile Include="..\Classes\AllyHeroes\Katarina\Katarina.cpp" />
+    <ClCompile Include="..\Classes\AllyHeroes\Ryze\Ryze.cpp" />
+    <ClCompile Include="..\Classes\AllyHeroes\Twisted_Fate\Twisted_Fate.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Brand\Brand.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Cassiopeia\Cassiopeia.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Darius\Darius.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\EnemyHero.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Irelia\Irelia.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Karthus\Karthus.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Kogmaw\Kogmaw.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Lucian\Lucian.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Malhazar\Malhazar.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Pantheon\Pantheon.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Taliyah\Taliyah.cpp" />
+    <ClCompile Include="..\Classes\EnemyHeroes\Yuumi\Yuumi.cpp" />
+    <ClCompile Include="..\Classes\Objects\Shop\Shop.cpp" />
+    <ClCompile Include="..\Classes\Objects\Teleport\Teleport.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ArtifactView\ArtifactView.cpp" />
+    <ClCompile Include="..\Classes\Scenes\GameScene\GameScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\LevelScene\LevelScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MenuScene\MenuScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\WorldMap\WorldMap.cpp" />
+    <ClCompile Include="D:\newG\mobile_league_game\proj.win32\main.cpp" />
+    <ResourceCompile Include="D:\newG\mobile_league_game\proj.win32\game.rc" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\CloseNormal.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\CloseSelected.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\HelloWorld.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a0R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a10R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a1R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a1clear.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a2R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a2clear.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a3R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a3clear.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a4.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a4R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a4clear.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a5.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a5R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a5clear.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a6.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a6R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a6clear.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a7.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a7R.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\a7clear.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\artefactInscription.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\artefacts\chest.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\backgrounds\artifactBg.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\backgrounds\firstSceneBG.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\backgrounds\mainBG.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\backgrounds\menuBG.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\backgrounds\tloGGra1440x2776.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\backgrounds\worldMapBG.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\bodySprite (1).png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\buyBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\cross.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\crossBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\heroesBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\itemsBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\lArrow.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\mltBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\okBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\pickBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\playBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\pressedBuyBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\pressedOkBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\pressedPlayBtn.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\pressedlArrow.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\pressedrArrow.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\buttons\rArrow.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\health.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\healthBar.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\hud.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\brandSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\brandSpellAnimate.zip" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze0.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze4.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze5.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze6.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryze7.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\combatScene\spells\ryzeSecondSpellAnimate.zip" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\fonts\arial.ttf" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\asheFace.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\bodySprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\first\asheFirstSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\first\asheSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\second\asheSecondSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ashe\spells\second\asheSpell2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\brand\brandFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\brand\brandFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\brand\brandSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\brand\brandWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\brand\brandWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\cassiopeia\cassiopeiaWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\darius\dariusFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\darius\dariusFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\darius\dariusSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\darius\dariusWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\darius\dariusWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\bodySprite (1).png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\bodySprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\eliseFace.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\first\eliseFirstSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\first\eliseSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\second\eliseSecondSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\spells\second\eliseSpell2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\walk\elise1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\walk\elise2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\walk\elise3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\elise\walkAnimate.zip" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\bodySprite (1).png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\bodySprite (2).png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\bodySprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\dcpzlh3-644e6fa2-9f6b-479a-9e00-99a2f8480110.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\garenFace.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\first\garenFirstSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\first\garenSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\second\garenSecondSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\second\garenSpell2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\second\garenspellTwoCooldown.zip" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\garen\spells\second\spellTwo.zip" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\irelia\ireliaFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\irelia\ireliaFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\irelia\ireliaSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\irelia\ireliaWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\irelia\ireliaWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\bodySprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\kaisaFace.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaFirstSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\first\kaisaSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSecondSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kaisa\spells\second\kaisaSpell2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\karthus\karthusFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\karthus\karthusFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\karthus\karthusSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\karthus\karthusWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\karthus\karthusWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\bodySprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\katarinaFace.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaFirstSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\first\katarinaSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSecondSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\katarina\spells\second\katarinaSpell2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kogmaw\kogmawFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kogmaw\kogmawFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kogmaw\kogmawSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kogmaw\kogmawWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\kogmaw\kogmawWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\lucian\lucianFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\lucian\lucianFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\lucian\lucianSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\lucian\lucianWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\lucian\lucianWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\malhazar\malhazarFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\malhazar\malhazarFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\malhazar\malhazarSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\malhazar\malhazarWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\malhazar\malhazarWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\pantheon\pantheonFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\pantheon\pantheonFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\pantheon\pantheonSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\pantheon\pantheonWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\pantheon\pantheonWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\bodySprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\ryzeFace.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeFirstSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\first\ryzeSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSecondSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\ryze\spells\second\ryzeSpell2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\taliyah\taLiyahFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\taliyah\taLiyahFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\taliyah\taLiyahSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\taliyah\taLiyahWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\taliyah\taLiyahWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\bodySprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\card3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf1.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf2.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf3.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\tf3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateFirstSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\first\twisted_fateSpell1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate4.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate5.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fate6.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellCooldown.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSecondSpellCooldown.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\spells\second\twisted_fateSpell2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\twisted_fate\twisted_fateFace.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\yuumi\yuumiFirstSpellAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\yuumi\yuumiFirstSpellAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\yuumi\yuumiSprite.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\yuumi\yuumiWalkAnimate.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\heroes\yuumi\yuumiWalkAnimate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\other\padlock.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\other\sign.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\popups\lost.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\popups\noMoneyPopup.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\popups\ownedPopup.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\popups\popup.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\res\.gitkeep" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\2x.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\3x.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\4x.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\5x.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\ashe.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\book.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\elise.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\garen.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\hex.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\kaisa.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\katarina.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\ryze.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\shop.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\sword.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\talisman.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\shop\twisted_fate.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\teleport\0.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\teleport\1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\teleport\tp.plist" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\teleport\tp.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\teleport\tp2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\teleport\tp3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel1.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel10.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel2.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel3.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel4.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel5.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel6.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel7.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel8.png" />
+    <ClInclude Include="D:\newG\mobile_league_game\Resources\worldMap\islandLevel9.png" />
+    <ClCompile Include="D:\newG\mobile_league_game\cocos2d\cocos\precheader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\ZERO_CHECK.vcxproj">
-      <Project>{0FAAA00D-98F2-3A85-A977-04CFE5BD23EE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{B0727CCE-9B84-3E00-B4BD-3A183E7C7B9E}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\SYNC_RESOURCE-mobile_league_game.vcxproj">
-      <Project>{BD84191E-327F-339F-98B3-F0B524FB0A45}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\SYNC_RESOURCE-mobile_league_game.vcxproj">
+      <Project>{5B4E0285-4BEC-385C-936B-A0C44531FCBC}</Project>
       <Name>SYNC_RESOURCE-mobile_league_game</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\cocos\core\cocos2d.vcxproj">
-      <Project>{2AAFC183-F323-33D0-942C-59F38F15C66A}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{080DCF91-104A-3865-A293-73EB565FECF7}</Project>
       <Name>cocos2d</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
-      <Project>{F77D142E-DD03-3701-911F-C9AA2E7EFACE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{16AB2569-E5A3-392F-8A0D-6358173F623A}</Project>
       <Name>ext_clipper</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
-      <Project>{D1E25216-E6DE-32AD-987D-9C88E892EE3F}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{653C3527-821D-3809-BE1B-FABB4ABC4438}</Project>
       <Name>ext_convertUTF</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
-      <Project>{36E9F9C2-5B4E-3F16-9C64-6918D3BCBC00}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{A8F164EC-35F4-304F-A09C-271B657C46D7}</Project>
       <Name>ext_edtaa3func</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\md5\ext_md5.vcxproj">
-      <Project>{B048C0CC-524E-3568-8E2F-347CD10E62E6}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{F3B573EA-1445-35FB-8638-B5A18B20E77D}</Project>
       <Name>ext_md5</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
-      <Project>{E925FA26-C2D9-3562-AA8E-D259FB7A20BD}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{8C8B6A95-5BD5-3441-962D-AAF6166FCB63}</Project>
       <Name>ext_poly2tri</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\recast\ext_recast.vcxproj">
-      <Project>{55583AD6-BFDE-3D2A-8546-8626A3469A9C}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{7FA6085E-7A94-3F5C-BCD6-FB8B7456FDF4}</Project>
       <Name>ext_recast</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
-      <Project>{D1716B57-EFB8-3E9B-8A03-8D1F39E75CC4}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{3FAD0806-C76E-30C5-A4C0-93E99915B78F}</Project>
       <Name>ext_tinyxml2</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
-      <Project>{65EE8F16-347F-370D-91E1-BF8E136C0BBE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{584CF48B-29D7-37D6-A147-FAB9677D303A}</Project>
       <Name>ext_unzip</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
-      <Project>{09BE5678-F252-3F5D-AA0A-F56F622DB3DE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{5C33A4C0-4A1C-33B0-942F-9D307253AEC5}</Project>
       <Name>ext_xxhash</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
-      <Project>{2CE27FD9-18E7-3DB9-A5F6-85A8EDEFCD52}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{98596784-3CC8-3B58-9732-3F25401A44FF}</Project>
       <Name>ext_xxtea</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\external.vcxproj">
-      <Project>{D074FBE5-A132-3950-8E37-B242E3F9CD81}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\external.vcxproj">
+      <Project>{9DDEA00A-971B-3D51-AB77-0ADBD1D49708}</Project>
       <Name>external</Name>
     </ProjectReference>
   </ItemGroup>

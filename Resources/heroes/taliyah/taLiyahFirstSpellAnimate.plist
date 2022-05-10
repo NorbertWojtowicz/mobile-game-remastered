@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>taLiyah0.png</key>
+			<key>taliyah0.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{661,2595},{660,864}}</string>
@@ -18,7 +18,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah1.png</key>
+			<key>taliyah1.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{1983,865},{660,864}}</string>
@@ -32,7 +32,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah10.png</key>
+			<key>taliyah10.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{661,0},{660,864}}</string>
@@ -46,7 +46,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah11.png</key>
+			<key>taliyah11.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,2595},{660,864}}</string>
@@ -60,7 +60,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah12.png</key>
+			<key>taliyah12.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,1730},{660,864}}</string>
@@ -74,7 +74,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah13.png</key>
+			<key>taliyah13.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,865},{660,864}}</string>
@@ -88,7 +88,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah14.png</key>
+			<key>taliyah14.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,0},{660,864}}</string>
@@ -102,7 +102,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah2.png</key>
+			<key>taliyah2.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{1983,0},{660,864}}</string>
@@ -116,7 +116,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah3.png</key>
+			<key>taliyah3.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{1322,2595},{660,864}}</string>
@@ -130,7 +130,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah4.png</key>
+			<key>taliyah4.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{1322,1730},{660,864}}</string>
@@ -144,7 +144,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah5.png</key>
+			<key>taliyah5.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{1322,865},{660,864}}</string>
@@ -158,7 +158,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah6.png</key>
+			<key>taliyah6.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{1322,0},{660,864}}</string>
@@ -172,7 +172,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah7.png</key>
+			<key>taliyah7.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{1983,1730},{660,864}}</string>
@@ -186,7 +186,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah8.png</key>
+			<key>taliyah8.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{661,1730},{660,864}}</string>
@@ -200,7 +200,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah9.png</key>
+			<key>taliyah9.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{661,865},{660,864}}</string>

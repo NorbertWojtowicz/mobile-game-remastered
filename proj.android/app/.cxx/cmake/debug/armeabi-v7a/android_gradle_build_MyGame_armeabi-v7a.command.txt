@@ -1,7 +1,0 @@
-Executable : G:\androidstudioSDK\cmake\3.10.2.4988404\bin\ninja.exe
-arguments : 
--C
-G:\mobile_league_game\proj.android\app\.cxx\cmake\debug\armeabi-v7a
-MyGame
-jvmArgs : 
-

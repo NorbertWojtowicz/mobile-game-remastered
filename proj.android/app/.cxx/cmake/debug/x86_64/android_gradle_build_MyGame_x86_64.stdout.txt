@@ -1,1 +1,0 @@
-ninja: Entering directory `G:\mobile_league_game\proj.android\app\.cxx\cmake\debug\x86_64'

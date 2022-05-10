@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{26E75FC6-9728-3513-B7D0-B95DF9B51822}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{E652F39C-C0D1-34E4-BDD0-ABF9634E4958}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>win32</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -105,11 +105,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="G:\mobile_league_game\cocos2d\external\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule G:/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\newG\mobile_league_game\cocos2d\external\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule D:/newG/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -118,11 +118,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">G:\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\newG\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule G:/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule D:/newG/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -131,11 +131,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">G:\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\newG\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule G:/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule D:/newG/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -144,11 +144,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">G:\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\newG\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule G:/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule D:/newG/mobile_league_game/cocos2d/external/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/engine/external/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -157,61 +157,61 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">G:\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\newG\mobile_league_game\proj.win32\engine\external\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\ZERO_CHECK.vcxproj">
-      <Project>{0FAAA00D-98F2-3A85-A977-04CFE5BD23EE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{B0727CCE-9B84-3E00-B4BD-3A183E7C7B9E}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
-      <Project>{F77D142E-DD03-3701-911F-C9AA2E7EFACE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{16AB2569-E5A3-392F-8A0D-6358173F623A}</Project>
       <Name>ext_clipper</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
-      <Project>{D1E25216-E6DE-32AD-987D-9C88E892EE3F}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{653C3527-821D-3809-BE1B-FABB4ABC4438}</Project>
       <Name>ext_convertUTF</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
-      <Project>{36E9F9C2-5B4E-3F16-9C64-6918D3BCBC00}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{A8F164EC-35F4-304F-A09C-271B657C46D7}</Project>
       <Name>ext_edtaa3func</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\md5\ext_md5.vcxproj">
-      <Project>{B048C0CC-524E-3568-8E2F-347CD10E62E6}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{F3B573EA-1445-35FB-8638-B5A18B20E77D}</Project>
       <Name>ext_md5</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
-      <Project>{E925FA26-C2D9-3562-AA8E-D259FB7A20BD}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{8C8B6A95-5BD5-3441-962D-AAF6166FCB63}</Project>
       <Name>ext_poly2tri</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\recast\ext_recast.vcxproj">
-      <Project>{55583AD6-BFDE-3D2A-8546-8626A3469A9C}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{7FA6085E-7A94-3F5C-BCD6-FB8B7456FDF4}</Project>
       <Name>ext_recast</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
-      <Project>{D1716B57-EFB8-3E9B-8A03-8D1F39E75CC4}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{3FAD0806-C76E-30C5-A4C0-93E99915B78F}</Project>
       <Name>ext_tinyxml2</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
-      <Project>{65EE8F16-347F-370D-91E1-BF8E136C0BBE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{584CF48B-29D7-37D6-A147-FAB9677D303A}</Project>
       <Name>ext_unzip</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
-      <Project>{09BE5678-F252-3F5D-AA0A-F56F622DB3DE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{5C33A4C0-4A1C-33B0-942F-9D307253AEC5}</Project>
       <Name>ext_xxhash</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
-      <Project>{2CE27FD9-18E7-3DB9-A5F6-85A8EDEFCD52}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{98596784-3CC8-3B58-9732-3F25401A44FF}</Project>
       <Name>ext_xxtea</Name>
     </ProjectReference>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\engine\external\external.vcxproj">
-      <Project>{D074FBE5-A132-3950-8E37-B242E3F9CD81}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\engine\external\external.vcxproj">
+      <Project>{9DDEA00A-971B-3D51-AB77-0ADBD1D49708}</Project>
       <Name>external</Name>
     </ProjectReference>
   </ItemGroup>

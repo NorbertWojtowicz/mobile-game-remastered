@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>taLiyah0.png</key>
+			<key>taliyah0.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,865},{660,864}}</string>
@@ -18,7 +18,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah1.png</key>
+			<key>taliyah1.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{661,0},{660,864}}</string>
@@ -32,7 +32,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah2.png</key>
+			<key>taliyah2.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{661,865},{660,864}}</string>
@@ -46,7 +46,7 @@
 				<string>{660,864}</string>
 			</dict>
 
-			<key>taLiyah3.png</key>
+			<key>taliyah3.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,0},{660,864}}</string>

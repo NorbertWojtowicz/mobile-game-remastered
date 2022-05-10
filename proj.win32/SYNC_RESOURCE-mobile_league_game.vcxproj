@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BD84191E-327F-339F-98B3-F0B524FB0A45}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{5B4E0285-4BEC-385C-936B-A0C44531FCBC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>win32</Platform>
     <ProjectName>SYNC_RESOURCE-mobile_league_game</ProjectName>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -76,9 +76,9 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe G:/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s G:/mobile_league_game/Resources -d G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
+C:\Python27\python.exe D:/newG/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s D:/newG/mobile_league_game/Resources -d D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -100,9 +100,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe G:/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s G:/mobile_league_game/Resources -d G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
+C:\Python27\python.exe D:/newG/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s D:/newG/mobile_league_game/Resources -d D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -124,9 +124,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe G:/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s G:/mobile_league_game/Resources -d G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
+C:\Python27\python.exe D:/newG/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s D:/newG/mobile_league_game/Resources -d D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -148,9 +148,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "    copying to D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources"
 if %errorlevel% neq 0 goto :cmEnd
-C:\Python27\python.exe G:/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s G:/mobile_league_game/Resources -d G:/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
+C:\Python27\python.exe D:/newG/mobile_league_game/cocos2d/cmake/scripts/sync_folder.py -s D:/newG/mobile_league_game/Resources -d D:/newG/mobile_league_game/proj.win32/bin/mobile_league_game/$(Configuration)/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -161,7 +161,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="G:\mobile_league_game\proj.win32\CMakeFiles\47e4a3ee29ee770758e5c3742301b9d4\SYNC_RESOURCE-mobile_league_game.rule">
+    <CustomBuild Include="D:\newG\mobile_league_game\proj.win32\CMakeFiles\e170d1dac42c6f5c55a6826780e678ae\SYNC_RESOURCE-mobile_league_game.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo "Copying resources for mobile_league_game ..."
@@ -173,7 +173,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'"></Message>
@@ -187,7 +187,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'"></Message>
@@ -201,7 +201,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'"></Message>
@@ -215,17 +215,17 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="G:\mobile_league_game\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\newG\mobile_league_game\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -233,12 +233,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -246,12 +246,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,12 +259,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule G:/mobile_league_game/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule D:/newG/mobile_league_game/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SG:/mobile_league_game -BG:/mobile_league_game/proj.win32 --check-stamp-file G:/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/newG/mobile_league_game -BD:/newG/mobile_league_game/proj.win32 --check-stamp-file D:/newG/mobile_league_game/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,18 +272,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;G:\mobile_league_game\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">G:\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosBuildSet.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDefine.cmake;D:\newG\mobile_league_game\cocos2d\cmake\Modules\CocosConfigDepend.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeCXXCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;D:\newG\mobile_league_game\proj.win32\CMakeFiles\3.22.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\newG\mobile_league_game\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="G:\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game">
+    <None Include="D:\newG\mobile_league_game\proj.win32\CMakeFiles\SYNC_RESOURCE-mobile_league_game">
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="G:\mobile_league_game\proj.win32\ZERO_CHECK.vcxproj">
-      <Project>{0FAAA00D-98F2-3A85-A977-04CFE5BD23EE}</Project>
+    <ProjectReference Include="D:\newG\mobile_league_game\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{B0727CCE-9B84-3E00-B4BD-3A183E7C7B9E}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
